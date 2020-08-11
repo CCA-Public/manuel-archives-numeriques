@@ -2,11 +2,20 @@
 
 Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des documents d'archives nés numériques, quelle que soit la forme sous laquelle ils arrivent au CCA. Il comprend :
 
+* [Aperçu général](#aperçu)
+* [Transferts de réseau](#transferts)
+* [Supports physiques temporaires](#supports_temps)
+* [Supports physiques originaux](#supports_originaux)
+* [Intégrer des données d'accès "brutes" dans un dépôt numérique](#integrer)
+
+<a name="aperçu"></a> 
 ## Aperçu général
 
 En général, le contenu numérique arrive au CCA de l'une des trois façons suivantes : sous forme de transfert réseau (par exemple FTP, Dropbox, WeTransfer), sur des supports de transfert physique temporaires (par exemple clé USB, disque dur externe) ou sur des supports de stockage physique originaux. Un seul dépôt (versement) peut contenir des fichiers numériques arrivés au CCA par l'une ou l'autre de ces méthodes.
 
 Les procédures suivantes décrivent comment le CCA procède aux versements et stabilise le contenu de chacune de ces méthodes de versement, ainsi que la manière dont le CCA ingère le contenu "brut" d'un versement dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
+
+<a name="transferts"></a>
 ## Transferts de réseau
 Étapes :
 * **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou le Registraire)**
@@ -22,6 +31,8 @@ Les procédures suivantes décrivent comment le CCA procède aux versements et s
    * Supprimer les copies de fichiers non nécessaires de Digital Shipping Space, des postes de travail BitCurator, etc.
 * **GesCo**
    * Ajouter "Dark Archive" comme lieu de l'enregistrement d'acquisition (par exemple, versement)
+
+<a name="supports_temps"></a>
 ## Supports physiques temporaires
 Étapes : 
 * **GesCo : Créer des dossiers d'acquisition**
@@ -35,10 +46,11 @@ Les procédures suivantes décrivent comment le CCA procède aux versements et s
    * Reformater (effacer) le support et le retourner au donneur, le réorienter ou le élagage selon le cas
 * **GesCo**
    * Ajouter "Dark archive" comme lieu de l'enregistrement d'acquisition (par exemple, versement)
+
+<a name="supports_originaux"></a>
 ## Supports physiques originaux
 Note : Il s'agit d'une vaste catégorie qui peut inclure, par exemple, les disquettes, les supports optiques (CD/DVD), les ordinateurs, les disques durs internes, les formats de bandes de sauvegarde tels que les LTO, etc. Pour vous aider à identifier correctement les types de supports, veuillez consulter le [guide d'identification des supports informatiques](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/mediaIDGuide.docx) ou la page ["Know Your Media"](http://lib.utsa.edu/knowyourmedia/) des bibliothèques de l'UTSA.
 Étapes :
-
 
 * **GesCo**
    * Créer des dossiers d'acquisition comme décrit ci-dessus
@@ -60,6 +72,8 @@ Note : Il s'agit d'une vaste catégorie qui peut inclure, par exemple, les disqu
       * Les supports ont une valeur artéfactuelle et un échantillon sera conservé en permanence au CCA
       * Les médias n'ont pas de valeur artéfactuelle et seront détruits ou retournés au donateur
    * Tous les supports conservés au CCA sont conservés uniquement pour leur valeur artéfactuelle, et non comme supports de stockage ou "sauvegardes" de fichiers numériques dans la collection du CCA. La description et la disposition de ces objets doivent être discutées avec l'archiviste numérique et l'archiviste/chef/catalogueur approprié. Chaque fois que des supports sont retournés ou détruits, l'archiviste chargé du traitement en prend note dans le champ de saisie "Évaluation-destruction" du TMS au niveau du fonds.
+
+<a name="integrer"></a>
 ## Intégrer des données d'accès "brutes" dans un dépôt numérique
 Une fois les données de l'ensemble du transfert réseau, des supports temporaires et des supports originaux d'une acquisition stabilisées, la composante numérique de l'acquisition est ingérée dans le dépôt numérique du CCA basé sur Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données exactement comme elles sont arrivées au CCA jusqu'à ce qu'un archiviste traite l'acquisition. **Il est à noter que tous les fichiers provenant de transferts en réseau ou de supports temporaires doivent être exportés dans un format d'archive approprié (zip, tar, rar, etc.), faute de quoi Archivematica modifiera les noms de fichiers et les horodatages originaux, allant à l'encontre d'une partie de l'objectif de l'ingestion "brute". Au CCA, nous préférons généralement conserver les fichiers tar. Vérifiez que les fichiers ont été compressés avec succès et qu'ils peuvent être rouverts, car les fichiers zip défectueux peuvent entraîner la perte du matériel de collection. Notez également que cette étape peut ne pas être nécessaire si les images disque doivent être conservées comme partie du matériel traité.**
 Ce SIP est composé de tous les fichiers, paquets d'archives et images disques qui correspondent à une acquisition. Il est nommé selon la convention `<numéro d'acquisition>_raw`, toute la ponctuation est remplacée par des traits de soulignement (par exemple, `AR2018_0001_raw`).
