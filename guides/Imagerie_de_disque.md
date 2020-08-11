@@ -1,4 +1,13 @@
 # Imagerie de disque support physique original
+
+* [Imagerie de disque avec Guymager (Bitcurator)](#guymager)
+* [Étapes pour l'imagerie des supports physiques avec le FTK Imager](#ftk)
+* [Imagerie de disque avec IsoBuster](#isobuster)
+* [Imagerie de disques disquettes 5,25" avec FC5025](#fc5025)
+* [L'imagerie sur disque avec le Kryoflux](#kryoflux)
+* [L'imagerie sur disque avec le Nimbie et l'ImgBurn](#nimbie)
+* [Dépanage](#depanage)
+
 Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disque peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
 
 
@@ -11,7 +20,7 @@ Nous utilisons les outils suivants pour créer des images de disques : Kryoflux 
 
 Donnez à chaque média un numéro d'identification ARCH s'il n'en a pas déjà un, et créez un enregistrement d'objet "Record for Management Need" correspondant dans TMS. L'identificateur doit être écrit sur l'objet ou son étui avec un stylo feutre ou (très légèrement) au crayon, ou apposé sur l'étui à l'aide d'une étiqueteuse si elle est disponible.
 
-
+<a name="guymager"></a>
 ### Imagerie de disque avec Guymager (Bitcurator)
 Guymager est un outil d'imagerie disque open source que l'on trouve dans l'environnement Bitcurator, et l'un des outils prrivilégiés pour l'imagerie disque au CCA. Nous utilisons Guymager pour créer des images disque au format brut (dd).
 
@@ -47,13 +56,15 @@ Avant de commencer à créer des images disque à partir d'une acquisition, cré
 * Guymager suivra sa progression et vous donnera des indications par code couleur lorsque le processus est achevé avec succès ou échoue. En cas d'échec, notez ce fait dans le document Excel de stabilisation du versement et mettez le disque de côté pour que l'archiviste numérique puisse l'examiner.
 * Si l'image est créé avec succès, allez dans votre dossier de projet sur le bureau et faites une vérification visuelle rapide pour vous assurer que tout est en ordre. Vous devriez voir deux fichiers : l'image disque elle-même et un fichier de métadonnées ".info".
 * Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois que tous les supports ont été imagés, alertez l'archiviste numérique.
+
+
 ### Imagerie de disque avec FTK Imager
 AccessData FTK Imager est un outil d'imagerie de disque gratuit, mais basé sur Windows et faisant partie de la suite logicielle commerciale Forensics Toolkit. Au CCA, nous utilisons FTK Imager pour créer des images disque pour des supports ne pouvant être imagés par Guymager.
 
 
 Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilisez la station de travail d'imagerie de disque (DSK-065-14) du laboratoire numérique du CCA. Créez un dossier de projet dans lequel vous allez enregistrer votre travail. Donnez à ce dossier un nom mémorable et significatif, par exemple un numéro d'acquisition ou d'identification.
 
-
+<a name="ftk"></a>
 #### Étapes pour l'imagerie des supports physiques avec le FTK Imager :
 
 
@@ -106,7 +117,7 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 * Si l'image est créée avec succès, allez dans votre dossier de projet dans le dossier Dépôt numérique et faites une vérification visuelle rapide pour vous assurer que tout semble bon. Vous devriez voir au moins deux fichiers : la ou les images disque elles-mêmes (éventuellement divisées en plusieurs fichiers portant le même nom mais avec des extensions .001, .002, etc.), un fichier de métadonnées ".txt"., ainsi qu’un fichier de métadonnées ".txt". Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois tous les supports imagés, alertez l'archiviste numérique.
 * Note: Le processus d'imagerie de disque de l'imageur FTK est très persistant. Si le disque que vous voulez imager prend beaucoup de temps à traiter, il n'est pas nécessairement défectueux. L'imageur continuera d'essayer d'imager les secteurs du disque jusqu'à ce que ce soit fait. Il est toujours possible d'extraire une image utilisable d'un disque après 30 heures ou plus de tentatives, alors gardez cela à l'esprit.
 
-
+<a name="isobuster"></a>
 ### Imagerie de disque avec IsoBuster
 [IsoBuster ](https://www.isobuster.com/help/) est un outil d'imagerie de disque basé sur Windows et produit par Smart Projects (géré par Peter Van Hove). Au CCA, nous utilisons IsoBuster pour créer des images disques pour des types particuliers de supports optiques - principalement des DVD, des CD audio et des supports optiques contenant plus de 1024 Mo de données - et comme outil pour documenter l'état actuel des supports endommagés.
 
@@ -153,6 +164,7 @@ Etapes:
       1. **REMARQUE** : Les fichiers cue-sheet (.cue) sont couramment utilisés et combinés avec les **fichiers d'image de disque optique** pour avoir une idée de la disposition des pistes des CD, DVD, BD. Les fichiers cue sont en fait des fichiers texte, pour lesquels les données réelles du CD sont toujours contenues dans un fichier différent (.bin, .iso,...) Donc si vous ouvrez un fichier .cue avec IsoBuster, il connaîtra la disposition des pistes de l'image mais obtiendra les données réelles d'un autre fichier. Le nom de ce fichier est également contenu dans le fichier .cue.
    3. Vérifiez que les dépôts et les fichiers sont tous là, pour garantir l'intégrité du fichier image. Si un X rouge apparaît à côté de certains fichiers, c'est que ces fichiers comportent des erreurs de lecture et qu'ils n'ont peut-être pas été imagés correctement.
    4. Faites un clic droit sur l'icône du support (CD), puis dans le menu déroulant, sélectionnez "Verify this image file with existing MD5 Checksum file". Le message "The checksum matches with the image file" confirme que l'image disque correspond aux données du support original.
+
 #### L'imagerie disque d'un CD audio
 1. Suivez les étapes 1 et 2.
 2. Utiliser le paramètre d'ajustement de la taille de fichier IsoBuster évite de fractionner les gros fichiers images - comme le contenu d'un DVD - en plusieurs fichiers images plus petits. Si vous avez un DVD ou tout autre support contenant plus de 1024 Mo de données, vous pouvez utiliser IsoBuster au lieu de l'imageur FTK. Ce dernier fractionnera tout fichier image volumineux en fichiers image plus petits de 1024 Mo.
@@ -184,6 +196,8 @@ Les lignes directrices suivantes peuvent être utiles si vous rencontrez des dif
 
 5. En fonction des résultats des deux analyses précédentes, vous pouvez soit procéder à l'extraction de l'image du disque, soit identifier que le disque ne peut pas être imagé dans le tableur de stabilisation du versement. Suivez les étapes 3 et 4 pour extraire l'image disque.
 6. Identifiez les supports endommagés dans la feuille de calcul de stabilisation du versement, en incluant autant de détails que possible sur l'état réel des supports. Inscrivez les noms de fichiers des journaux d'erreurs dans la colonne "Note" de le document Excel de stabilisation des versements pour référence ultérieure.
+
+<a name="fc5025"></a>
 ### Imagerie de disques disquettes 5,25" avec FC5025
 Le FC5025 est un contrôleur de disquettes 5,25" qui se branche sur le port USB de n'importe quel ordinateur et permet de lire des disquettes 5,25". Il est accompagné d’un programme d'image disque et d'outils de navigation permettant de créer et d'accéder à des copies de matériel numérique. Il y a deux façons d'utiliser le logiciel FC5025 pour l'imagerie disque : à partir de l'interface graphique ou de la ligne de commande. Chacune de ces options possèdent ses avantages et ses inconvénients : l'interface graphique offre une interface instinctive et facile à utiliser, tandis que la ligne de commande vous permettra de capturer le processus d'imagerie du disque en envoyant la sortie standard et les erreurs standards dans un fichier.
 
@@ -206,6 +220,7 @@ Avant de commencer le traitement, vous devez d'abord insérer la disquette dans 
 ![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_01.JPG?raw=true)
 8. **Capture de disque** : Cliquez sur le bouton "Capturer le fichier image du disque" pour commencer à utiliser le lecteur. Chaque erreur de lecture est indiquée dans la fenêtre d'affichage de la progression. S'il y a plusieurs erreurs, elles sont généralement affichées rapidement l'une après l'autre, chaque erreur successive effaçant celle qui la précède. Il s’agit de l'un des principaux inconvénients de l'utilisation de l'interface graphique pour l'imagerie de disque. Nous pouvons garder une trace des multiples erreurs de lecture et garder une trace du processus d'imagerie du disque en utilisant la ligne de commande. Les directives suivantes nous montreront comment faire.
 ![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_04.JPG?raw=true)
+
 #### L'image du disque avec la ligne de commande
 1. Sur le poste de travail d'imagerie de disque (DSK-065-14), ouvrez l'invite de commande à partir du menu Démarrer.
 2. **Erreurs d'enregistrement** : Si vous devez enregistrer la sortie standard et les erreurs standard de votre traitement, vous pouvez utiliser la commande fcimage pour les diriger toutes les deux vers un rapport d’erreurs. Commencez par placer l'invite de commande sur le chemin d'accès de votre dossier de projet. Assurez-vous que vous êtes sur le bon serveur :
@@ -217,6 +232,8 @@ Avant de commencer le traitement, vous devez d'abord insérer la disquette dans 
 
 
 7. Une fois la commande terminée, ouvrez votre dossier de projet et assurez-vous que tout y est. Vous devez disposer d'un fichier .img (votre fichier image disque) et d'un fichier .log (les erreurs enregistrées).
+
+<a name ="kryoflux"></a>
 ### L'imagerie sur disque avec le Kryoflux
 Note : Les éléments des lignes directrices ci-dessous ont été recueillis dans le [Guide de l'archiviste pour KryoFlux](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#), une ressource complète pour les praticiens travaillant avec des documents nés numériques dans un contexte archivistique.
 Le [Kryoflux](https://www.kryoflux.com/) est une carte contrôleur de disquettes développée par [Software Preservation Society](http://www.softpres.org/) pour l'imagerie d'une grande variété de disquettes anciennes. Sa particularité réside dans sa capacité à capturer des données de piste brutes en échantillonnant la fluctuation des cellules de bits sur le plateau, permettant la capture de tout type de disquette 5,25" ou 3,5", malgré son format.
@@ -289,7 +306,7 @@ Voici les étapes à suivre pour produire de nouveaux fichiers d'images encodés
 4. Sélectionnez le(s) format(s) de l'image disque à l'aide de la liste déroulante située sous le champ du nom de fichier.
 5. Cliquez sur Start et sélectionnez le dossier contenant les fichiers de flux que vous souhaitez traiter. Cliquez sur Ouvrir et la création du fichier d'image disque commencera immédiatement. Les résultats s'afficheront dans les cellules de l'interface graphique, comme d'habitude.
 
-
+<a name="nimbie"></a>
 ### L'imagerie sur disque avec le Nimbie et l'ImgBurn
 Le Nimbie est un dispositif d'autochargement utilisé pour lire, écrire et créer simultanément, des images disques pour de nombreux CD ou DVD, tout en requérant un minimum d'intervention de l'utilisateur. Veuillez lire le [manuel d'utilisation du Nimbie](http://www.acronova.com/file/2/download.html) pour savoir comment configurer l'unité Nimbie. Le logiciel qui peut être utilisé en conjonction avec le Nimbie est ImgBurn. Pour créer des images disque en utilisant le Nimbie et ImgBurn, vous aurez besoin de ce qui suit :
 * Windows XP/Vista/ 7 ou Apple OS X 10.6 / 10.7 (pour QQGetTray uniquement)
@@ -341,6 +358,8 @@ Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https:/
 
 **Si vous voulez voir le rapport de ce que vous avez fait**
 ImgBurn génère automatiquement un rapport qui répertorie toutes les actions récemment effectuées. Pour consulter ce fichier, vous pouvez aller à Affichage et cliquer sur Journal . Le rapport apparaîtra alors dans une fenêtre séparée. Pour enregistrer ce fichier, allez à Fichier et cliquez sur Enregistrer sous.
+
+<a name="depanage"></a>
 ### Dépannage
 
 
