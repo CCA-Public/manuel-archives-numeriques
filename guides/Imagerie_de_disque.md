@@ -1,7 +1,7 @@
 # Imagerie de disque support physique original
 
 * [Imagerie de disque avec Guymager (Bitcurator)](#guymager)
-* [Étapes pour l'imagerie des supports physiques avec le FTK Imager](#ftk)
+* [L'imagerie des supports physiques avec le FTK Imager](#ftk)
 * [Imagerie de disque avec IsoBuster](#isobuster)
 * [Imagerie de disques disquettes 5,25" avec FC5025](#fc5025)
 * [L'imagerie sur disque avec le Kryoflux](#kryoflux)
@@ -58,13 +58,13 @@ Avant de commencer à créer des images disque à partir d'une acquisition, cré
 * Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois que tous les supports ont été imagés, alertez l'archiviste numérique.
 
 
+<a name="ftk"></a>
 ### Imagerie de disque avec FTK Imager
 AccessData FTK Imager est un outil d'imagerie de disque gratuit, mais basé sur Windows et faisant partie de la suite logicielle commerciale Forensics Toolkit. Au CCA, nous utilisons FTK Imager pour créer des images disque pour des supports ne pouvant être imagés par Guymager.
 
 
 Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilisez la station de travail d'imagerie de disque (DSK-065-14) du laboratoire numérique du CCA. Créez un dossier de projet dans lequel vous allez enregistrer votre travail. Donnez à ce dossier un nom mémorable et significatif, par exemple un numéro d'acquisition ou d'identification.
 
-<a name="ftk"></a>
 #### Étapes pour l'imagerie des supports physiques avec le FTK Imager :
 
 
