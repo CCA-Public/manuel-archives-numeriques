@@ -6,7 +6,7 @@
 * [Imagerie de disques disquettes 5,25" avec FC5025](#fc5025)
 * [L'imagerie sur disque avec le Kryoflux](#kryoflux)
 * [L'imagerie sur disque avec le Nimbie et l'ImgBurn](#nimbie)
-* [Dépanage](#depanage)
+* [Dépannage](#depannage)
 
 Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disque peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
 
@@ -359,7 +359,7 @@ Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https:/
 **Si vous voulez voir le rapport de ce que vous avez fait**
 ImgBurn génère automatiquement un rapport qui répertorie toutes les actions récemment effectuées. Pour consulter ce fichier, vous pouvez aller à Affichage et cliquer sur Journal . Le rapport apparaîtra alors dans une fenêtre séparée. Pour enregistrer ce fichier, allez à Fichier et cliquez sur Enregistrer sous.
 
-<a name="depanage"></a>
+<a name="depannage"></a>
 ### Dépannage
 
 
