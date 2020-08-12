@@ -10,8 +10,21 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 
 <a name="guides"></a>
 ### Guides détaillés
-* **[L'adhésion et la stabilisation des archives nées numériques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#depanage)**
+* **[L'adhésion et la stabilisation des archives nées numériques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md)**
+   - [Transferts de réseau](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#transferts)
+   - [Supports physiques temporaires](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#supports-physiques-temporaires)
+   - [Supports physiques originaux](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#supports-physiques-originaux)
+   - [Intégrer des données d'accès "brutes" dans un dépôt numérique](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#integrer)
 
+* **[Imagerie de disque support physique original](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md)**
+   - [Imagerie de disque avec Guymager (Bitcurator)](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#guymager)
+   - [L'imagerie des supports physiques avec le FTK Imager](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#ftk)
+   - [Imagerie de disque avec IsoBuster](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#isobuster)
+   - [Imagerie de disques disquettes 5,25" avec FC5025](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#fc5025)
+   - [L'imagerie sur disque avec le Kryoflux](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#kryoflux)
+   - [L'imagerie sur disque avec le Nimbie et l'ImgBurn](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#nimbie)
+   - [Dépannage](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#depannage)
+   
 **INSERT LINKS AT END**
 
 <a name="introduction"></a>
