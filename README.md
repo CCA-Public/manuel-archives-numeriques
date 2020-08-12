@@ -3,39 +3,39 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 
 ## Table des matières
 
-* **[Guides détaillés](#guides)**
+* **[Guides détaillés](#details)**
 * **[Introduction au traitement des archives nées-numériques](#introduction)**
 * **[Le workflow des archives numériques en bref](#workflow)**
 * **[Aperçu général sur la conservation numérique au CCA](#aperçu)**
 
-<a name="guides"></a>
+<a name="details"></a>
 ### Guides détaillés
-* **[L'adhésion et la stabilisation des archives nées numériques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md)**
-   - [Transferts de réseau](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#transferts)
-   - [Supports physiques temporaires](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#supports-physiques-temporaires)
-   - [Supports physiques originaux](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#supports-physiques-originaux)
-   - [Intégrer des données d'accès "brutes" dans un dépôt numérique](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/stabilisation.md#integrer)
+* **[L'adhésion et la stabilisation des archives nées numériques](guides/stabilisation.md)**
+   - [Transferts de réseau](guides/stabilisation.md#transferts)
+   - [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
+   - [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
+   - [Intégrer des données d'accès "brutes" dans un dépôt numérique](guides/stabilisation.md#integrer)
 
-* **[Imagerie de disque support physique original](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md)**
-   - [Imagerie de disque avec Guymager (Bitcurator)](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#guymager)
-   - [L'imagerie des supports physiques avec le FTK Imager](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#ftk)
-   - [Imagerie de disque avec IsoBuster](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#isobuster)
-   - [Imagerie de disques disquettes 5,25" avec FC5025](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#fc5025)
-   - [L'imagerie sur disque avec le Kryoflux](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#kryoflux)
-   - [L'imagerie sur disque avec le Nimbie et l'ImgBurn](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#nimbie)
-   - [Dépannage](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#depannage)
+* **[Imagerie de disque support physique original](guides/Imagerie_de_disque.md)**
+   - [Imagerie de disque avec Guymager (Bitcurator)](guides/Imagerie_de_disque.md#guymager)
+   - [L'imagerie des supports physiques avec le FTK Imager](guides/Imagerie_de_disque.md#ftk)
+   - [Imagerie de disque avec IsoBuster](guides/Imagerie_de_disque.md#isobuster)
+   - [Imagerie de disques disquettes 5,25" avec FC5025](guides/Imagerie_de_disque.md#fc5025)
+   - [L'imagerie sur disque avec le Kryoflux](guides/Imagerie_de_disque.md#kryoflux)
+   - [L'imagerie sur disque avec le Nimbie et l'ImgBurn](guides/Imagerie_de_disque.md#nimbie)
+   - [Dépannage](guides/Imagerie_de_disque.md#depannage)
    
-* **[Prétraitement : Triage et évaluation des archives nées numériques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md)**
-* [Analyse des images de disque avec le Disk Image Processor](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#analyse)
-* [Extraction de fichiers à partir de paquets et d'images disque](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#paquets)
-  - [Extraction de fichiers à partir d'images de disque avec Bitcurator](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#extraction_bitcurator)
-    + [Outil de reporting BitCurator - Accès aux fichiers](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#reporting)
-    + [Script de montage de l'image disque](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#script)
-  - [Extraction de fichiers à partir d'images de disque avec FTK Imager](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#ftk)
-  - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#hfs)
-* [Extraction des archives et rapport sur les fichiers logiques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#fichiers_logiques)
-* [Déplacement des dossiers vers le lieu de traitement](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#deplacement)
-* [Soumission des fichiers à PRONOM](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#pronom)
+* **[Prétraitement : Triage et évaluation des archives nées numériques](guides/Pretraitement.md)**
+* [Analyse des images de disque avec le Disk Image Processor](guides/Pretraitement.md#analyse)
+* [Extraction de fichiers à partir de paquets et d'images disque](guides/Pretraitement.md#paquets)
+  - [Extraction de fichiers à partir d'images de disque avec Bitcurator](guides/Pretraitement.md#extraction_bitcurator)
+    + [Outil de reporting BitCurator - Accès aux fichiers](guides/Pretraitement.md#reporting)
+    + [Script de montage de l'image disque](guides/Pretraitement.md#script)
+  - [Extraction de fichiers à partir d'images de disque avec FTK Imager](guides/Pretraitement.md#ftk)
+  - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](guides/Pretraitement.md#hfs)
+* [Extraction des archives et rapport sur les fichiers logiques](guides/Pretraitement.md#fichiers_logiques)
+* [Déplacement des dossiers vers le lieu de traitement](guides/Pretraitement.md#deplacement)
+* [Soumission des fichiers à PRONOM](guides/Pretraitement.md#pronom)
    
 **INSERT LINKS AT END**
 
