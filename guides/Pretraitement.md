@@ -4,7 +4,8 @@ Lorsqu'une acquisition doit être traitée, l'archiviste numérique télécharge
 
 * [Analyse des images de disque avec le Disk Image Processor](#analyse)
 * [Extraction de fichiers à partir de paquets et d'images disque](#paquets)
-  - [Outil de reporting BitCurator - Accès aux fichiers](#reporting)
+  - [Extraction de fichiers à partir d'images de disque avec Bitcurator](#extraction_bitcurator)
+    +[Outil de reporting BitCurator - Accès aux fichiers](#reporting)
     + [Script de montage de l'image disque](#script)
   - [Extraction de fichiers à partir d'images de disque avec FTK Imager](#ftk)
   - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](#hfs)
@@ -54,6 +55,7 @@ Une autre possibilité consiste à utiliser l'un des nombreux outils permettant 
 
 Pour l'extraction de fichiers à partir d'images disques en dehors du processus de rapport, nous utilisons généralement l'un des deux outils d'extraction de fichiers à partir d'images de disques : [Bitcurator](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#bitcuratorfiles)ou [FTK Imager](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#ftkimagerfiles).
 
+<a name="extraction_bitcurator"></a>
 ### Extraction de fichiers à partir d'images de disque avec Bitcurator
 Bitcurator dispose de deux outils natifs pour extraire des fichiers d'images disque : [l'interface d'accès aux images disque Bitcurator](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#bcaccess) et le script de [montage d'images disque](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#mountscript).
 
