@@ -30,17 +30,17 @@ L'outil crée en outre un fichier "analyse.csv" qui contient les informations su
 * Étendue
 * Virus trouvé (Vrai/Faux)
 * Liste triée des formats de fichiers
+
 ![diskimageprocessoranalysis](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/dip-analysis.png)
 
 
 L'utilisation du mode Analyse peut vous aider à comprendre des aspects cruciaux d'une collection d'images disques, et à commencer à formuler une stratégie pour leur classement, leur description, et tout travail de normalisation de format ou autre travail de préservation qui pourrait être nécessaire.
 
-
 ### Extraction de fichiers à partir de paquets et d'images disque
 Une autre possibilité consiste à utiliser l'un des nombreux outils permettant soit de découper des fichiers à partir d'images disque, soit de monter l'image disque et de copier les fichiers à partir du disque monté. Dans les deux cas, cela vous permettra de copier les fichiers sur le lecteur du catalogueur et de les visualiser ensuite à partir de n'importe quel ordinateur connecté au réseau du CCA.
 
-
 Pour l'extraction de fichiers à partir d'images disques en dehors du processus de rapport, nous utilisons généralement l'un des deux outils d'extraction de fichiers à partir d'images de disques : [Bitcurator](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#bitcuratorfiles)ou [FTK Imager](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#ftkimagerfiles).
+
 ### Extraction de fichiers à partir d'images de disque avec Bitcurator
 Bitcurator dispose de deux outils natifs pour extraire des fichiers d'images disque : [l'interface d'accès aux images disque Bitcurator](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#bcaccess) et le script de [montage d'images disque](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#mountscript).
 
@@ -56,6 +56,8 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 
 
 * Cliquez avec le bouton droit de la souris sur l'image disque. Dans le menu Scripts, choisissez "Monter l'image disque".
+
+
 ![mountscript1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript1.png)  
 
 
@@ -67,6 +69,7 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 * ```ls /media```
 * Si vous voyez l'identifiant du disque dans les résultats, c'est que l'image du disque n'a pas encore été démontée.
   ![mountscript4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript4.png)  
+
 ### Extraction de fichiers à partir d'images de disque avec FTK Imager
 * Dans le menu Fichier, sélectionnez "Add Evidence...".
 * ![ftkextract1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract1.jpg)  
@@ -140,3 +143,16 @@ Brunnhilde recueillera des informations telles que :
 * Problèmes potentiels de préservation
 * Problèmes potentiels liés aux informations personnelles et à la confidentialité
 Si bulk_extractor est exécuté avec Brunnhilde, les rapports résultants peuvent être analysés dans BitCurator à l'aide de BEViewer.
+
+## Déplacement des dossiers vers le lieu de traitement
+Une fois les fichiers prêts à être classés et décrits et les rapports préliminaires établis, les copies de travail des fichiers sont déplacées vers un dossier dans le réseau partagé des catalogueurs. Il s'agit de copies temporaires destinées uniquement à être consultées sur les postes de travail CAO et autres ordinateurs en réseau au CCA. Les copies "master" des SIP doivent être conservées dans BitCurator dans un répertoire siuté dans /mnt/1TB_RAID/ jusqu'à ce que le traitement soit terminé.
+
+
+## Soumission des types de fichiers à PRONOM
+Si Brunnhilde renvoie des types de fichiers non identifiés, il peut être utile de les soumettre à [PRONOM](http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new), le registre des formats de fichiers qui supporte Siegfried. Pour ce faire :
+1. Remplissez une nouvelle ligne sur le document de suivi interne pour les soumissions de CCA à PRONOM. Tous les champs sont facultatifs, car la quantité d'informations dont vous disposez sur chaque type de format variera. Le document Excel se trouve ici : \int.cca\Divisions\Collection\06_Archives\Archives numériques\Systems Development\PRONOM\PRONOM_FileFormatsSubmissions.xlsx
+2. Utilisez les informations du tableur pour remplir le [formulaire de soumission PRONOM](https://www.nationalarchives.gov.uk/contact-us/submit-information-for-pronom/pronom-request-form/). Cochez la case indiquant si vous disposez d'échantillons de fichiers, et veillez à inclure la signature hexagonale du nouveau type de fichier si vous avez pu en identifier un.
+3. Ensuite, compressez vos échantillons de fichiers (2-3 maximum si possible) et soumettez-les à PRONOM. Cela peut se faire de deux façons :
+   1. Si les fichiers sont suffisamment petits pour tenir dans un e-mail, ils peuvent être envoyés directement à l'employé de la TNA qui vous contactera.
+   2. Si les fichiers zippés sont trop volumineux, vous pouvez partager le dossier via le Cloud en faisant une demande auprès du service informatique. Remplissez le "Formulaire de partage externe" disponible sur l'Intranet du CCA et envoyez-le à soutien.informatique@cca.qc.ca. Le formulaire de demande est disponible sur l'Intranet (Formulaires, Technologies. Une fois rempli, il peut être envoyé au soutien informatique (soutiens@cca.qc.ca).
+Une fois la demande traitée, le format de fichier sera pris en considération pour être inclus dans une prochaine version de PRONOM.
