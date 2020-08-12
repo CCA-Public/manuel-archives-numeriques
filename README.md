@@ -25,6 +25,18 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    - [L'imagerie sur disque avec le Nimbie et l'ImgBurn](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#nimbie)
    - [Dépannage](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#depannage)
    
+* **[Prétraitement : Triage et évaluation des archives nées numériques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md)**
+* [Analyse des images de disque avec le Disk Image Processor](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#analyse)
+* [Extraction de fichiers à partir de paquets et d'images disque](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#paquets)
+  - [Extraction de fichiers à partir d'images de disque avec Bitcurator](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#extraction_bitcurator)
+    + [Outil de reporting BitCurator - Accès aux fichiers](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#reporting)
+    + [Script de montage de l'image disque](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#script)
+  - [Extraction de fichiers à partir d'images de disque avec FTK Imager](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#ftk)
+  - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#hfs)
+* [Extraction des archives et rapport sur les fichiers logiques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#fichiers_logiques)
+* [Déplacement des dossiers vers le lieu de traitement](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#deplacement)
+* [Soumission des fichiers à PRONOM](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Pretraitement.md#pronom)
+   
 **INSERT LINKS AT END**
 
 <a name="introduction"></a>
