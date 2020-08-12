@@ -64,25 +64,41 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 * Si le script a réussi à monter l'image disque, vous verrez un nouveau lecteur disponible sur le bureau et dans le dock sur le côté gauche de l'écran.
 ![mountscript2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript2.png)  
 * Cliquez sur l'icône du lecteur sur le dock (ou sur le bureau). Cela vous permettra d'accéder aux fichiers sur le disque par l'intermédiaire de l'interface graphique. De là, copiez et collez le répertoire racine ou tout fichier dans un nouveau dossier de votre dossier de projet sur le bureau (nommé d'après l'identifiant du disque).
+
 ![mountscript3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript3.png)
-* Note : Comme vous pouvez le voir dans la fenêtre du terminal, sur la capture d'écran ci-dessous, le script de montage de l'image disque fonctionne en montant le disque dans le répertoire /media. L'image restera montée comme un lecteur dans ce répertoire jusqu'à ce que vous démontiez l'image disque. Veillez à démonter l'image disque après avoir terminé la copie de tous les fichiers. Pour démonter l'image disque, cliquez avec le bouton droit de la souris sur le fichier d'image disque. Dans le menu Scripts, choisissez "Démonter l'image disque". Si vous n'êtes pas sûr que l'image ait été démontée, vous pouvez ouvrir un terminal et entrer la commande suivante :
-* ```ls /media```
+
+* Note : Comme vous pouvez le voir dans la fenêtre du terminal, sur la capture d'écran ci-dessous, le script de montage de l'image disque fonctionne en montant le disque dans le répertoire /media. L'image restera montée comme un lecteur dans ce répertoire jusqu'à ce que vous démontiez l'image disque. Veillez à démonter l'image disque après avoir terminé la copie de tous les fichiers. Pour démonter l'image disque, cliquez avec le bouton droit de la souris sur le fichier d'image disque. Dans le menu Scripts, choisissez "Démonter l'image disque". Si vous n'êtes pas sûr que l'image ait été démontée, vous pouvez ouvrir un terminal et entrer la commande suivante : ```ls /media```
+
 * Si vous voyez l'identifiant du disque dans les résultats, c'est que l'image du disque n'a pas encore été démontée.
-  ![mountscript4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript4.png)  
+
+![mountscript4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript4.png)  
 
 ### Extraction de fichiers à partir d'images de disque avec FTK Imager
+
 * Dans le menu Fichier, sélectionnez "Add Evidence...".
-* ![ftkextract1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract1.jpg)  
+
+![ftkextract1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract1.jpg)  
+
 * Dans le menu "Select Source", sélectionnez "Image File" et appuyez sur "Next".
-* ![ftkextract2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract2.jpg)  
+
+![ftkextract2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract2.jpg)  
+
 * Dans le menu de sélection des sources, cliquez sur "Browse", trouvez le fichier image disque dont vous souhaitez extraire des fichiers, puis appuyez sur "Open" et "Finish".
-* ![ftkextract3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract3.jpg)
+
+![ftkextract3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract3.jpg)
+
 * Vous devriez maintenant voir les médias énumérés dans la fenêtre de l'arborescence. Dans cette arborescence (et non dans la liste des fichiers, comme illustré ci-dessous), cliquez avec le bouton droit de la souris sur le dossier racine que vous souhaitez extraire et choisissez "Export Files...".
+
 ![ftkextract4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract4.jpg)  
+
 * Sélectionnez une destination pour les fichiers que vous extrayez.
+
 ![ftkextract5](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract5.jpg)  
+
 * Si le processus est réussi, vous devriez voir apparaître une fenêtre "Résultats de l'exportation" avec des détails sur le nombre de dossiers, de fichiers et d'octets copiés. Si le processus a réussi, appuyez sur "OK" et vérifiez visuellement dans l'explorateur de fichiers que les fichiers ont été enregistrés à l'endroit prévu. Si tout semble correct, notez que les fichiers ont été extraits dans le tableur de stabilisation du versement, et passez à l'image disque suivante. S'il y a eu des erreurs, notez-les dans le tableur de stabilisation du versement et consultez l'archiviste numérique.
+
 ![ftkextract6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract6.jpg)  
+
 ### Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)
 Dans certains cas, vous constaterez que ni Bitcurator ni FTK Imager ne sont capables d'extraire des fichiers d'une image disque. En général, cela est dû au fait que le support est formaté à l'aide d'un système de fichiers que les systèmes d'exploitation modernes ne peuvent pas lire.
 
@@ -92,8 +108,8 @@ Neuf fois sur dix, lorsqu'une image disque ne peut être lue ou montée sur une 
 
 HFSExplorer ne peut lire que des images disque brutes. Si vous commencez avec une image disque EWF/E01, vous devez d'abord convertir votre image disque E01 en un format brut que HFSExplorer peut lire. Pour ce faire, utilisez un utilitaire en ligne de commande appelé ewfexport. Dans Bitcurator, ouvrez un terminal de ligne de commande, naviguez jusqu'au répertoire contenant l'image disque E01 cible et entrez la commande
 
-
 ```ewfexport [FILENAME.E01]```
+
 Si l'image de la disquette Encase a été divisée en plusieurs parties (E01, E02, etc.), il suffit de faire pointer ewfexport sur le fichier E01.
 À ce stade, ewfexport vous demandera de fournir des informations supplémentaires. Saisissez les données suivantes :
 * **Exportation au format** : brut (ce devrait être le format par défaut ; si c'est le cas, il suffit d'appuyer sur entrée)
@@ -103,6 +119,7 @@ Si l'image de la disquette Encase a été divisée en plusieurs parties (E01, E0
 * **Nombre d'octets à exporter** : valeur maximale dans la plage (ce devrait être la valeur par défaut ; si c'est le cas, il suffit d'appuyer sur la touche Entrée)
 À ce stade, ewfexport vous indiquera que le processus peut prendre quelques minutes et que vous pouvez commencer. Lorsque le processus est terminé, il devrait y avoir un fichier *.raw dans votre destination cible pour correspondre au fichier E01 que vous avez sélectionné comme entrée.
 Une fois l'image disque brute obtenue, ouvrez HFSExplorer (situé dans le dossier "Additional Tools" sur le bureau).
+
 ![hfsexplorer1](http://wiki.bitcurator.net/images/c/c2/HFS1.png)
 
 
@@ -122,12 +139,19 @@ La dernière étape consiste à exporter ces fichiers de HFSExplorer vers un emp
 
 
 * Sélectionnez tous les fichiers à exporter (à ce stade, il devrait s'agir de tout, y compris les fichiers système) et appuyez sur le bouton "Extraire".
+
 ![hfsexplorer3](http://wiki.bitcurator.net/images/8/88/HFSextract1.png)  
+
 * Choisissez votre lieu de destination et sélectionnez "Extraire ici".
+
 ![hfsexplorer4](http://wiki.bitcurator.net/images/6/61/HFSextract2.png)  
+
 * Une fenêtre pop-up apparaîtra pour vous demander si vous souhaitez suivre des liens symboliques pendant l'extraction. Sélectionnez "Yes".
+
 ![hfsexplorer5](http://wiki.bitcurator.net/images/0/0a/HFSextract3.png)  
+
 * Si tout se passe bien, vous recevrez un message disant "Extraction terminée". REMARQUE : il est fréquent que HFSExplorer rencontre un problème de caractères non valides dans les noms de fichiers pendant le processus d'exportation, en raison des différences entre les caractères de noms de fichiers autorisés par HFS et les systèmes de fichiers modernes. Lorsque HFSExplorer rencontre des fichiers contenant de tels caractères, une fenêtre contextuelle apparaît et vous demande de renommer automatiquement ou manuellement les fichiers. Vous pouvez sélectionner le renommage automatique, qui remplacera les caractères "illégaux" tels que les barres obliques ("/") et les points (".") par des traits de soulignement ("_").
+
 ## Extraction des archives et rapport sur les fichiers logiques
 Les fichiers peuvent être extraits des paquets d'archives via l'utilisation de logiciels libres et open source tels que 7zip (Windows/Linux) ou The Unarchiver (Mac). L'extraction de fichiers peut ne pas être nécessaire à des fins de rapport, car des outils comme Brunnhilde sont capables d'analyser le contenu de paquets d'archives communs.
 
@@ -149,6 +173,7 @@ Une fois les fichiers prêts à être classés et décrits et les rapports prél
 
 
 ## Soumission des types de fichiers à PRONOM
+
 Si Brunnhilde renvoie des types de fichiers non identifiés, il peut être utile de les soumettre à [PRONOM](http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new), le registre des formats de fichiers qui supporte Siegfried. Pour ce faire :
 1. Remplissez une nouvelle ligne sur le document de suivi interne pour les soumissions de CCA à PRONOM. Tous les champs sont facultatifs, car la quantité d'informations dont vous disposez sur chaque type de format variera. Le document Excel se trouve ici : \int.cca\Divisions\Collection\06_Archives\Archives numériques\Systems Development\PRONOM\PRONOM_FileFormatsSubmissions.xlsx
 2. Utilisez les informations du tableur pour remplir le [formulaire de soumission PRONOM](https://www.nationalarchives.gov.uk/contact-us/submit-information-for-pronom/pronom-request-form/). Cochez la case indiquant si vous disposez d'échantillons de fichiers, et veillez à inclure la signature hexagonale du nouveau type de fichier si vous avez pu en identifier un.
