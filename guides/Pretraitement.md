@@ -1,7 +1,19 @@
 ## Prétraitement : Triage et évaluation des archives nées numériques
 
 Lorsqu'une acquisition doit être traitée, l'archiviste numérique télécharge les AIP "bruts" contenant toutes les données numériques et commence le processus de triage et d’inventaire. Le résultat de ce processus sera des fichiers de travail que le responsable du traitement pourra classer et décrire, ainsi que des rapports détaillés pour aider à la prise de décision concernant le classement, la description et la préservation des archives. Ce guide décrit les étapes de cette étape de prétraitement et comprend:
-LINKS
+
+* [Analyse des images de disque avec le Disk Image Processor](#analyse)
+* [Extraction de fichiers à partir de paquets et d'images disque](#paquets)
+  - [Outil de reporting BitCurator - Accès aux fichiers](#reporting)
+    + [Script de montage de l'image disque](#script)
+  - [Extraction de fichiers à partir d'images de disque avec FTK Imager](#ftk)
+  - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](#hfs)
+* [Extraction des archives et rapport sur les fichiers logiques](#fichiers_logiques)
+* [Déplacement des dossiers vers le lieu de traitement](#deplacement)
+* [Soumission des fichiers à PRONOM](#pronom)
+
+
+<a name="analyse"></a>
 ### Analyse des images de disque avec le Disk Image Processor
 *Note : Cette section est exacte à partir de Disk Image Processor v1.0.0.*
 
@@ -36,6 +48,7 @@ L'outil crée en outre un fichier "analyse.csv" qui contient les informations su
 
 L'utilisation du mode Analyse peut vous aider à comprendre des aspects cruciaux d'une collection d'images disques, et à commencer à formuler une stratégie pour leur classement, leur description, et tout travail de normalisation de format ou autre travail de préservation qui pourrait être nécessaire.
 
+<a name="paquets"></a>"
 ### Extraction de fichiers à partir de paquets et d'images disque
 Une autre possibilité consiste à utiliser l'un des nombreux outils permettant soit de découper des fichiers à partir d'images disque, soit de monter l'image disque et de copier les fichiers à partir du disque monté. Dans les deux cas, cela vous permettra de copier les fichiers sur le lecteur du catalogueur et de les visualiser ensuite à partir de n'importe quel ordinateur connecté au réseau du CCA.
 
@@ -44,10 +57,12 @@ Pour l'extraction de fichiers à partir d'images disques en dehors du processus 
 ### Extraction de fichiers à partir d'images de disque avec Bitcurator
 Bitcurator dispose de deux outils natifs pour extraire des fichiers d'images disque : [l'interface d'accès aux images disque Bitcurator](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#bcaccess) et le script de [montage d'images disque](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#mountscript).
 
-
+<a name="reporting"></a>
 #### Outil de reporting BitCurator - Accès aux fichiers
 Voir les instructions pour [l'exportation de fichiers à partir d'images disque](https://wiki.bitcurator.net/index.php?title=File_Access) sur le wiki BitCurator
 Notez que cette méthode peut ne pas conserver les horodatages originaux des dossiers. Si les dates originales du système de fichiers doivent être conservées, vous pouvez tenter d'extraire les fichiers de l'image disque par la méthode suivante : [Script de montage de l'image disque](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#mountscript) de Bitcurator.
+
+<a name="script"></a>
 #### Script de montage de l'image disque
 En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitCurator offre une autre option : le montage d'images de disque en tant que lecteurs via un script de système de fichiers Mount Disk Image inclus et la copie manuelle sur les fichiers.
 
@@ -62,7 +77,9 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 
 
 * Si le script a réussi à monter l'image disque, vous verrez un nouveau lecteur disponible sur le bureau et dans le dock sur le côté gauche de l'écran.
+
 ![mountscript2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript2.png)  
+
 * Cliquez sur l'icône du lecteur sur le dock (ou sur le bureau). Cela vous permettra d'accéder aux fichiers sur le disque par l'intermédiaire de l'interface graphique. De là, copiez et collez le répertoire racine ou tout fichier dans un nouveau dossier de votre dossier de projet sur le bureau (nommé d'après l'identifiant du disque).
 
 ![mountscript3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript3.png)
@@ -73,6 +90,7 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 
 ![mountscript4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript4.png)  
 
+<a name="ftk"></a>
 ### Extraction de fichiers à partir d'images de disque avec FTK Imager
 
 * Dans le menu Fichier, sélectionnez "Add Evidence...".
@@ -99,6 +117,7 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 
 ![ftkextract6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract6.jpg)  
 
+<a name="hfs"></a)
 ### Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)
 Dans certains cas, vous constaterez que ni Bitcurator ni FTK Imager ne sont capables d'extraire des fichiers d'une image disque. En général, cela est dû au fait que le support est formaté à l'aide d'un système de fichiers que les systèmes d'exploitation modernes ne peuvent pas lire.
 
@@ -152,6 +171,7 @@ La dernière étape consiste à exporter ces fichiers de HFSExplorer vers un emp
 
 * Si tout se passe bien, vous recevrez un message disant "Extraction terminée". REMARQUE : il est fréquent que HFSExplorer rencontre un problème de caractères non valides dans les noms de fichiers pendant le processus d'exportation, en raison des différences entre les caractères de noms de fichiers autorisés par HFS et les systèmes de fichiers modernes. Lorsque HFSExplorer rencontre des fichiers contenant de tels caractères, une fenêtre contextuelle apparaît et vous demande de renommer automatiquement ou manuellement les fichiers. Vous pouvez sélectionner le renommage automatique, qui remplacera les caractères "illégaux" tels que les barres obliques ("/") et les points (".") par des traits de soulignement ("_").
 
+<a name="fichiers_logiques"></a>
 ## Extraction des archives et rapport sur les fichiers logiques
 Les fichiers peuvent être extraits des paquets d'archives via l'utilisation de logiciels libres et open source tels que 7zip (Windows/Linux) ou The Unarchiver (Mac). L'extraction de fichiers peut ne pas être nécessaire à des fins de rapport, car des outils comme Brunnhilde sont capables d'analyser le contenu de paquets d'archives communs.
 
@@ -168,11 +188,12 @@ Brunnhilde recueillera des informations telles que :
 * Problèmes potentiels liés aux informations personnelles et à la confidentialité
 Si bulk_extractor est exécuté avec Brunnhilde, les rapports résultants peuvent être analysés dans BitCurator à l'aide de BEViewer.
 
+<a name="deplacement"></a>
 ## Déplacement des dossiers vers le lieu de traitement
 Une fois les fichiers prêts à être classés et décrits et les rapports préliminaires établis, les copies de travail des fichiers sont déplacées vers un dossier dans le réseau partagé des catalogueurs. Il s'agit de copies temporaires destinées uniquement à être consultées sur les postes de travail CAO et autres ordinateurs en réseau au CCA. Les copies "master" des SIP doivent être conservées dans BitCurator dans un répertoire siuté dans /mnt/1TB_RAID/ jusqu'à ce que le traitement soit terminé.
 
-
-## Soumission des types de fichiers à PRONOM
+<a name="pronom"></a>
+## Soumission des fichiers à PRONOM
 
 Si Brunnhilde renvoie des types de fichiers non identifiés, il peut être utile de les soumettre à [PRONOM](http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=new), le registre des formats de fichiers qui supporte Siegfried. Pour ce faire :
 1. Remplissez une nouvelle ligne sur le document de suivi interne pour les soumissions de CCA à PRONOM. Tous les champs sont facultatifs, car la quantité d'informations dont vous disposez sur chaque type de format variera. Le document Excel se trouve ici : \int.cca\Divisions\Collection\06_Archives\Archives numériques\Systems Development\PRONOM\PRONOM_FileFormatsSubmissions.xlsx
