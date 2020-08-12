@@ -5,7 +5,7 @@ Lorsqu'une acquisition doit être traitée, l'archiviste numérique télécharge
 * [Analyse des images de disque avec le Disk Image Processor](#analyse)
 * [Extraction de fichiers à partir de paquets et d'images disque](#paquets)
   - [Extraction de fichiers à partir d'images de disque avec Bitcurator](#extraction_bitcurator)
-    +[Outil de reporting BitCurator - Accès aux fichiers](#reporting)
+    + [Outil de reporting BitCurator - Accès aux fichiers](#reporting)
     + [Script de montage de l'image disque](#script)
   - [Extraction de fichiers à partir d'images de disque avec FTK Imager](#ftk)
   - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](#hfs)
