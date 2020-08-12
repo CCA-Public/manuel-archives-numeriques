@@ -8,8 +8,9 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 * **[Le workflow des archives numériques en bref](#workflow)**
 * **[Aperçu général sur la conservation numérique au CCA](#aperçu)**
 
-<a name="aperçu"></a>
+<a name="guides"></a>
 ### Guides détaillés
+* **[L'adhésion et la stabilisation des archives nées numériques](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/Imagerie_de_disque.md#depanage)**
 
 **INSERT LINKS AT END**
 
