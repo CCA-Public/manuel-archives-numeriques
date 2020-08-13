@@ -10,6 +10,12 @@ ePADD peut être téléchargé [ici](https://library.stanford.edu/projects/epadd
 
 Cette documentation est à jour à partir de la version 5.0 d'ePADD (mai 2018).
 
+* [Formats de courriel](#formats)
+* [Module d'importation et d'évaluation](#importation)
+* [Module de traitement](#traitement)
+* [Module de livraison](#livraison)
+
+<a name="formats"></a>
 ## Formats de courriel
 ePADD fonctionne avec des comptes de courrier électronique en direct (y compris IMAP) et des archives de courrier électronique au format MBOX. Si vos archives de courrier électronique sont dans un format différent, elles devront être converties en utilisant [Emailchemy](https://weirdkid.com/emailchemy/), un convertisseur de format de courrier électronique situé sur la station de travail d'imagerie CD. Notez que l'utilitaire en ligne de commande readpst n'est pas recommandé.
 
@@ -41,6 +47,8 @@ Pour utiliser Emailchemy :
 3. Sur l'écran suivant, trouvez le fichier ou le dossier contenant vos fichiers d'archives de courrier électronique. **Si vous pointez vers un dossier, les fichiers doivent se trouver dans un seul répertoire.** Emailchemy ne se répète pas. Cliquez sur suivant.
 4. Assurez-vous que la case "filtrer les messages en double" est cochée, et que toutes les autres sont décochées. Cliquez sur convertir. Cela peut prendre un certain temps.
 5. Trouvez le fichier journal créé lors de la conversion et enregistrez-le. Il sera éventuellement inclus dans vos métadonnées au niveau SIP.
+
+<a name="importation"></a>
 ## Module d'importation et d'évaluation
 NOTE : Avant d'importer de nouvelles archives dans ePADD, assurez-vous que l'utilisateur précédent a correctement nettoyé [ePADD de sa session](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/email.md#cleanupepadd).
 
@@ -62,6 +70,8 @@ Dans le cas particulier du CCA, le module d'évaluation est utilisé par son imp
 Étant donné que le module d'évaluation n'offre aucune fonctionnalité unique et que le cas d'utilisation du CCA ne prévoit pas d'examen par les donateurs, l'étape suivante consiste à exporter le courriel du module d'évaluation vers le module de traitement. Pour ce faire :
 7. Cliquez sur l'onglet Exporter en haut de l'écran.
 8. Sous "Exporter des messages et des pièces jointes", cliquez sur Parcourir, et choisissez C:/Utilisateurs/utilisateur. Cliquez sur Exporter (PAS "Exporter vers MBOX"). Cela peut prendre un certain temps. Il sera enregistré comme "archive ePADD de (nom du créateur de l'archive)". Ce dossier est maintenant prêt à être importé dans le module de traitement.
+
+<a name="traitement"></a>
 ## Module de traitement
 L'archiviste peut commencer à examiner, restreindre et attribuer des métadonnées dans le module de traitement. Pour ce faire :
 
@@ -104,6 +114,7 @@ Le processus de révision ne doit pas nécessairement se dérouler dans un ordre
 
 ### L'onglet Recherche
 En plus de l'utilisation des lexiques, l'onglet Recherche permet la recherche par mot-clé. Vous pouvez l’utiliser si vous remarquez que des courriers électroniques hors du champ d'application ne sont pas signalés par la recherche dans les lexiques. Par exemple, dans le fonds AP195, la créatrice des archives a utilisé son courrier électronique personnel pour trouver un nouvel appartement. Aucun des mots pertinents n'a été repéré par les lexiques, et des termes de recherche par mot-clé comme "loyer", "bail" et "appartement" ont permis de filtrer ce matériel.
+
 ### L'onglet Autorités
 L'onglet Autorités peut être utilisé pour attribuer des noms d'autorités de LCNAF, VIAF, FAST et Wikipédia. Les pratiques descriptives actuelles du CCA n'impliquent pas d'analyse approfondie du sujet ; cependant, l'attribution d'autorités à ce stade pourrait être utile pour une description et un accès ultérieurs, notamment pour remplir le champ "Noms" pour la description au niveau du fichier.
 
@@ -117,7 +128,7 @@ Lorsque vous avez terminé de consulter tous les courriels, vous pouvez les expo
 3. Vous pouvez également exporter uniquement les pièces jointes aux courriels, ou les fichiers CSV des autorités assignées ou les lignes d'objet des courriels en fonction des besoins de traitement d'une collection particulière ; ces options sont également disponibles sur cet écran. Notez qu'ils exporteront TOUT ce qui se trouve dans le module d'évaluation, y compris les documents marqués "Ne pas transférer".
 Notez que le fichier MBOX final ne doit pas être exporté du module d'évaluation, car il comprendra tous les documents à diffusion restreinte.
 
-
+<a name="livraison"></a>
 ## Module de livraison
 Le module de livraison est l'interface d'accès destinée aux chercheurs. Il est également utilisé pour créer une copie de préservation finale des fichiers. Il peut être ouvert dans l'onglet "mode ePADD", comme pour les autres modules. Pour lancer le module de livraison :
 
