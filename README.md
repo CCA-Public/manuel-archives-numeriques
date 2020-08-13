@@ -26,18 +26,18 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    - [Dépannage](guides/Imagerie_de_disque.md#depannage)
    
 * **[Prétraitement : Triage et évaluation des archives nées numériques](guides/Pretraitement.md)**
-* [Analyse des images de disque avec le Disk Image Processor](guides/Pretraitement.md#analyse)
-* [Extraction de fichiers à partir de paquets et d'images disque](guides/Pretraitement.md#paquets)
-  - [Extraction de fichiers à partir d'images de disque avec Bitcurator](guides/Pretraitement.md#extraction_bitcurator)
-    + [Outil de reporting BitCurator - Accès aux fichiers](guides/Pretraitement.md#reporting)
-    + [Script de montage de l'image disque](guides/Pretraitement.md#script)
-  - [Extraction de fichiers à partir d'images de disque avec FTK Imager](guides/Pretraitement.md#ftk)
-  - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](guides/Pretraitement.md#hfs)
-* [Extraction des archives et rapport sur les fichiers logiques](guides/Pretraitement.md#fichiers_logiques)
-* [Déplacement des dossiers vers le lieu de traitement](guides/Pretraitement.md#deplacement)
-* [Soumission des fichiers à PRONOM](guides/Pretraitement.md#pronom)
+   * [Analyse des images de disque avec le Disk Image Processor](guides/Pretraitement.md#analyse)
+   * [Extraction de fichiers à partir de paquets et d'images disque](guides/Pretraitement.md#paquets)
+      - [Extraction de fichiers à partir d'images de disque avec Bitcurator](guides/Pretraitement.md#extraction_bitcurator)
+         + [Outil de reporting BitCurator - Accès aux fichiers](guides/Pretraitement.md#reporting)
+         + [Script de montage de l'image disque](guides/Pretraitement.md#script)
+      - [Extraction de fichiers à partir d'images de disque avec FTK Imager](guides/Pretraitement.md#ftk)
+      - [Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)](guides/Pretraitement.md#hfs)
+   * [Extraction des archives et rapport sur les fichiers logiques](guides/Pretraitement.md#fichiers_logiques)
+   * [Déplacement des dossiers vers le lieu de traitement](guides/Pretraitement.md#deplacement)
+   * [Soumission des fichiers à PRONOM](guides/Pretraitement.md#pronom)
 
-* **[Archives du courriele et ePADD](guides/courriele.md)
+* **[Archives du courriele et ePADD](guides/courriele.md)**
 
    
 **INSERT LINKS AT END**
