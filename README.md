@@ -36,6 +36,9 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 * [Extraction des archives et rapport sur les fichiers logiques](guides/Pretraitement.md#fichiers_logiques)
 * [Déplacement des dossiers vers le lieu de traitement](guides/Pretraitement.md#deplacement)
 * [Soumission des fichiers à PRONOM](guides/Pretraitement.md#pronom)
+
+* **[Archives du courriele et ePADD](guides/courriele.md)
+
    
 **INSERT LINKS AT END**
 
