@@ -39,7 +39,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 
 * **[Archives du courriele et ePADD](guides/courriele.md)**
 
-* **[Capturer les archives du Web à l'aide d'Archive-It](guides/archive-it.md)
+* **[Capturer les archives du Web à l'aide d'Archive-It](guides/archive-it.md)**
    
 **INSERT LINKS AT END**
 
