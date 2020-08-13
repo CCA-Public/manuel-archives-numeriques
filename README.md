@@ -11,19 +11,19 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 <a name="details"></a>
 ### Guides détaillés
 * **[L'adhésion et la stabilisation des archives nées numériques](guides/stabilisation.md)**
-   - [Transferts de réseau](guides/stabilisation.md#transferts)
-   - [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
-   - [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
-   - [Intégrer des données d'accès "brutes" dans un dépôt numérique](guides/stabilisation.md#integrer)
+   * [Transferts de réseau](guides/stabilisation.md#transferts)
+   * [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
+   * [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
+   * [Intégrer des données d'accès "brutes" dans un dépôt numérique](guides/stabilisation.md#integrer)
 
 * **[Imagerie de disque support physique original](guides/Imagerie_de_disque.md)**
-   - [Imagerie de disque avec Guymager (Bitcurator)](guides/Imagerie_de_disque.md#guymager)
-   - [L'imagerie des supports physiques avec le FTK Imager](guides/Imagerie_de_disque.md#ftk)
-   - [Imagerie de disque avec IsoBuster](guides/Imagerie_de_disque.md#isobuster)
-   - [Imagerie de disques disquettes 5,25" avec FC5025](guides/Imagerie_de_disque.md#fc5025)
-   - [L'imagerie sur disque avec le Kryoflux](guides/Imagerie_de_disque.md#kryoflux)
-   - [L'imagerie sur disque avec le Nimbie et l'ImgBurn](guides/Imagerie_de_disque.md#nimbie)
-   - [Dépannage](guides/Imagerie_de_disque.md#depannage)
+   * [Imagerie de disque avec Guymager (Bitcurator)](guides/Imagerie_de_disque.md#guymager)
+   * [L'imagerie des supports physiques avec le FTK Imager](guides/Imagerie_de_disque.md#ftk)
+   * [Imagerie de disque avec IsoBuster](guides/Imagerie_de_disque.md#isobuster)
+   * [Imagerie de disques disquettes 5,25" avec FC5025](guides/Imagerie_de_disque.md#fc5025)
+   * [L'imagerie sur disque avec le Kryoflux](guides/Imagerie_de_disque.md#kryoflux)
+   * [L'imagerie sur disque avec le Nimbie et l'ImgBurn](guides/Imagerie_de_disque.md#nimbie)
+   * [Dépannage](guides/Imagerie_de_disque.md#depannage)
    
 * **[Prétraitement : Triage et évaluation des archives nées numériques](guides/Pretraitement.md)**
    * [Analyse des images de disque avec le Disk Image Processor](guides/Pretraitement.md#analyse)
