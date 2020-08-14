@@ -2,9 +2,25 @@
 La première étape du traitement des archives (qu'elles soient en format numérique ou analogique) est la classification. Ce guide décrit l'approche du CCA en matière de classement des archives nées numériques et comprend :
 
 
-LINKS
+* [Le principe de l'organisation des archives de personnes nées numériques](#principe)
+* [Facteurs affectant l'organisation des archives nées numériques](#facteurs)
+  * [L’arrivée des archives au CCA](#arriver)
+    * [Les gros transferts](#gros_transferts)
+    * [Répartition des archives sur des supports de stockage plus petits](#repartition)
+  * [Organisation existante](#existante)
+  * [Contexte de création et d'utilisation](#contexte)
+  * [Nature de la collection d'archives](#nature)
+  * [Priorités institutionnelles](#priorities)
+  * [Élaboration d'un plan de traitement](#elaboration)
+  * [SIP non emballé (de préférence)](#non_emballe)
+  * [SIP emballé (juste au cas où - il n'y a normalement aucune raison de créer un SIP sous cette forme)](#emballe)
+* [Traitement des images disque avec Disk Image Processor](#disk_image_processor)
+* [Traitement des répertoires de fichiers avec Folder Processor](#folder_processor)
+* [Normalisation manuelle pour Archivematica](#normalisation)
+* [Traitement des dossiers en cours de migration](#migration)
+    
 
-
+<a name="principe"></a>
 ## Le principe de l'organisation des archives de personnes nées numériques
 
 
@@ -23,24 +39,29 @@ Comme pour les documents physiques, le niveau de travail impliqué dans l'arrang
 
 
 Il est toujours préférable, à moins de circonstances extraordinaires (qui doivent être discutées avec l'archiviste numérique lors des réunions de prétraitement et/ou des vérifications en cours de traitement), d’organiser des répertoires et non des fichiers individuels.
+
+<a name="facteurs"></a>
 ## Facteurs affectant l'organisation des archives nées numériques
 Comme indiqué ci-dessus, les pratiques en matière d’organisation varient en fonction d'un certain nombre de facteurs. Notamment les suivants:
 
+<a name="arriver"></a>
 ### L’arrivée des archives au CCA
 Les archives peuvent être transférées vers le CCA de deux façons : soit sous la forme d'un ou de plusieurs gros transferts (comme un disque dur ou un transfert réseau) ou réparti sur de nombreux petits supports de stockage (comme des disquettes ou des CD). La forme sous laquelle les archives numériques ont été stockés et sont parvenues au CCA définit les paramètres de l’organisation et de la classification des archives pendant le traitement.
+
+<a name="gros_transferts"></a>
 #### Les gros transferts
 * (Par exemple, le contenu entier d'un disque dur ou un transfert de réseau important)
 * Plus susceptibles de conserver leur structure organisationnelle d'origine
 * Plus susceptibles de contenir des liens inconnus entre les dossiers qui pourraient se briser avec le réarrangement
 * Une description de plus haut niveau et un traitement moins manuel pourraient être préférables
 
-
+<a name="repartition"></a>
 #### Répartition des archives sur des supports de stockage plus petits
 * Le matériel a-t-il été compartimenté sur différents supports par nécessité ou cela reflète-t-il un choix organisationnel ?
 * Il est plus probable qu'il y ait un rapport détaillé en lien avec du matériel physique spécifique (par exemple, une disquette dans un dossier contenant de la correspondance ou des dossiers de projet)
 * Les documents situés au même endroit nécessitent un classement plus actif et/ou une description plus précise
 
-
+<a name="existante"></a>
 ### Organisation existante
 Un autre facteur à prendre en compte est l'organisation existante du matériel. L'ordre existant semble-t-il avoir un sens ? Existe-t-il des preuves selon lesquelles cette organisation constitue un ordre original, tel qu'utilisé par le créateur des archives? L'ordre existant reflète-t-il une approche de gestion volontaire ou résulte-t-il simplement des contraintes matérielles des supports de stockage (par exemple, une sauvegarde répartie entre plusieurs disquettes ou CD en raison de l'espace de stockage limité sur chaque disque) ? La documentation produites par les créateurs de disques et/ou les sources de dons peut grandement aider à tirer ces conclusions.
 
@@ -50,20 +71,23 @@ L’organisation initiale du matériel doit être considérée en fonction des b
 
 En cas de réorganisation, nous mettrons à la disposition des chercheurs des informations sur l'organisation antérieure des dossiers au moment du transfert, tels que des documents Excel joints à la description du fonds.
 
-
+<a name="contexte"></a>
 ### Contexte de création et d'utilisation 
 Le contexte de création et d'utilisation des dossiers est un autre facteur à prendre en compte. Quelles relations, le cas échéant, les documents numériques ont-ils avec les documents analogiques et physiques du fonds ? Des documents de différents formats ont-ils été conservés ensemble lorsque les documents étaient en cours d'utilisation ?
 
 
 Quelles sont les relations entre les dossiers du fonds ? Les fichiers sont-ils liés à des références externes (par exemple, un bloc titre utilisé dans un certain nombre de fichiers AutoCAD) ? Si oui, quel travail doit être effectué pour s'assurer que nous ne brisons pas les liens vers de telles ressources externes ?
+
+<a name="nature"></a>
 ### Nature de la collection d'archives
 Un autre facteur à prendre en compte lors de la réflexion sur l'organisation est la nature des archives auxquelles les documents appartiennent. Le CCA a-t-il acquis l'intégralité du fonds de ce créateur ou les documents appartiennent-ils à un projet d'archives ou à un ensemble d'archives ? Le CCA s'attend-il à recevoir d'autres acquisitions qui devront être intégrées dans les archives à une date ultérieure ?
 
+<a name="priorities"></a>
 ### Priorités institutionnelles
 * Lien avec d'autres projets CCA
 * Utilisation anticipée par les chercheurs
 
-
+<a name="elaboration"></a>
 ## Élaboration d'un plan de traitement
 Une fois les copies de consultation des dossiers, rapports et autres documents placées dans le réseau des catalogueurs, l'archiviste chargé du traitement doit se familiariser avec le matériel pendant une à deux semaines. Cela a lieu pendant ou juste après la phase d'enquête et implique l'analyse de la structure organisationnelle des documents, la lecture de la documentation et la consultation des fichiers sur les ordinateurs et/ou sur l'un des postes de travail CAO.
 
@@ -72,6 +96,7 @@ Après cette période, l'archiviste chargé du traitement, l'archiviste numériq
 ## Emballage des SIP pour Archivematica
 Une fois le contenu de votre SIP déterminé, les outils de workflow du CCA tels que le  [Folder Processor et le Disk Image Processor](https://github.com/CCA-Public/cca-tools) aident à standardiser chaque SIP afin qu'il réponde aux exigences du CCA en matière d'intégration dans Archivematica. Tous les SIP doivent avoir l'une des deux structures suivantes :
 
+<a name="non_emballe"></a>
 ### SIP non emballé (de préférence)
 * Dossier d'information sur la soumission (SIP) : Nommé d'après l'identifiant (généralement, un numéro AP ou ARCH)
    * `objects/`: dossier pour les objets numériques à ingérer
@@ -81,6 +106,7 @@ Une fois le contenu de votre SIP déterminé, les outils de workflow du CCA tels
       * `checksum.md5` : manifeste contenant les sommes de contrôle pour chaque fichier dans les objets
       * `submissionDocumentation/` : dossier contenant toute documentation supplémentaire relative aux objets numériques
 
+<a name="emballe"></a>
 ### SIP emballé (juste au cas où - il n'y a normalement aucune raison de créer un SIP sous cette forme)
 * Dossier d'information sur la soumission (SIP) : Nommé d'après l'identifiant (généralement, un numéro AP ou ARCH)
    * `bag-info.txt` : fichier bagit
@@ -93,6 +119,8 @@ Une fois le contenu de votre SIP déterminé, les outils de workflow du CCA tels
          * `files/` : (dossier optionnel, à utiliser uniquement lorsque l'image disque et les fichiers sont ingérés ensemble)
       * `metadata/` : dossier pour les métadonnées associées aux objets numériques
          * `submissionDocumentation/` : dossier contenant toute documentation supplémentaire relative aux objets numériques
+
+<a name="disk_image_processor"></a>
 ## Traitement des images disque avec Disk Image Processor
 *Instructions valables pour Disk Image Processor v1.0.0*
 
@@ -139,6 +167,8 @@ Pour ce parcours, nous commencerons par un exemple de répertoire contenant 4 im
 ![diskimage8](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/diskimage8.png)  
 
 * À partir de là, il suffit de continuer à décrire les SIP dans le tableur et de renommer les répertoires SIP selon le schéma suivant : [identifiant]---[numéro d'accès].
+
+<a name="folder_processor"></a>
 ## Traitement des répertoires de fichiers avec Folder Processor
 * [Folder Processor](https://github.com/CCA-Public/folderprocessor) permet aux utilisateurs de créer des SIP de manière cohérente à partir de n'importe quel nombre de répertoires d'entrée sélectionnés. Chaque SIP est conditionné pour Archivematica et contient une copie des fichiers, un manifeste md5, un fichier DFXML et des rapports Brunnhilde.
 
@@ -170,6 +200,7 @@ Pour créer des SIP avec SIP Creator :
 * Lorsque le processus est terminé, le répertoire de destination contiendra une description CSV (contenant la description archivistique pré-remplie pour les SIP) et un répertoire contenant le SIP nouvellement généré. À partir de là, il suffit de continuer à décrire le SIP dans le tableur (vous pouvez copier et coller cette ligne dans un tableur existant de manière à ce qu'il n'y ait pas de tableur pour chaque fichier) et de renommer le répertoire SIP selon le schéma suivant : [identifiant]---[numéro d'accès].
 
 
+<a name="normalisation"></a>
 ## Normalisation manuelle pour Archivematica
 Dans certains cas, Archivematica ne normalisera pas automatiquement les fichiers dans leur format de conservation. Cela se produit principalement dans les cas où un type de fichier n'est pas conforme aux spécifications et n'est pas reconnu par Siegfried, mais est tout de même lisible. (Voir les MP3 manipulés par le logiciel Virtools dans AP167 : ONL NSA Muscle project records pour un exemple). Lorsque cela se produit, ces types de fichiers peuvent nécessiter une normalisation manuelle pour être préservés. Cela ne devrait s’effectuer qu’uniquement dans les cas où les fichiers peuvent être facilement normalisés en lot, par un logiciel ou script OU lorsque certains fichiers de grande valeur sont identifiés.
 
@@ -197,6 +228,7 @@ Dans certains cas, après l'ingestion, le rapport Archivematica pour le SIP norm
 Pour résoudre l'erreur, créez une feuille de calcul normalization.csv en suivant les instructions données [ici](https://www.archivematica.org/en/docs/archivematica-1.6/user-manual/ingest/manual-normalization/#normalizing-files-with-the-same-name), mettez à jour la somme de contrôle et réanalysez le SIP.
 
 
+<a name="migration"></a>
 ## Traitement des dossiers en cours de migration
 À des fins d'exposition, de recherche et d'accès, certains documents, faisant partie de l'ensemble numérique d’origine, ont été transférés dans une version plus récente de leur format original. Ces nouvelles versions des documents pourraient être utilisées comme copies d'accès, car elles sont plus faciles à consulter à travers les outils du CCA. Vous trouverez ci-dessous les lignes directrices permettant de conserver ces documents et d'y donner accès, tout en conservant le lien avec leurs versions originales.
 
