@@ -1,4 +1,4 @@
-# Classement des archives de personnes nées numériques
+# Classement des archives de personnes nées-numériques
 La première étape du traitement des archives (qu'elles soient en format numérique ou analogique) est la classification. Ce guide décrit l'approche du CCA en matière de classement des archives nées numériques et comprend :
 
 
