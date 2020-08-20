@@ -3,9 +3,17 @@
 
 
 Cette page décrit les configurations et les politiques utilisées par Archivematica pendant l'ingestion. Elle comprend :
-**LINKS**
+* [Configuration d'Archivematica au CCA](#configuration)
+* [Les workflows d’ingestion Archivematica](#workflows)
+   * [Outils d'automatisation](#automatisation)
+      * [Procédure d'ingestion des outils d'automatisation : archives numériques](#ingestion)
+   * [Utilisation de l'interface utilisateur d'Archivematica Web](#archivematica_web)
+* [Configurations de traitement d'Archivematica](#config_traitement)
+  * [Configuration pour l'ingestion de données "brutes" (Pipeline 1 par défaut)](#brutes)
+  
+   
 
-
+<a name="configuration"></a>
 ## Configuration d'Archivematica au CCA
 
 En plus de prendre en charge les serveurs de fichiers, l'infrastructure Archivematica du CCA fonctionne sur quatre machines virtuelles (VM) :
@@ -17,7 +25,7 @@ En plus de prendre en charge les serveurs de fichiers, l'infrastructure Archivem
 | VSP-AMPL-03 | Pipeline 3 | Le pipeline 3 est utilisé pour les actifs décrits dans Horizon. Il n'existe pas encore de protocole pour l'ingestion de documents provenant de la bibliothèque. L'accès est présumé se faire par la bibliothèque, et aucune copie d'accès n'est envoyée à SCOPE. Les copies d'accès sont temporairement stockées à \SVRDATA\ResearchMaterial$\01 - Library Access Copies. | Matériel de bibliothèque (à déterminer) |
 | VSP-AMSS-01 | Storage Service | Le service de stockage gère le stockage, l'indexation et la récupération des Archival Information Packages (AIP) et effectue des contrôles de stabilité de la bibliothèque de AIP. | (pas de pipeline, pas d'ingestion) |
 
-
+<a name="workflows"></a>
 ## Les workflows d’ingestion Archivematica
 Au CCA, il existe deux méthodes principales pour ingérer des données dans Archivematica : à l'aide [d'outils d'automatisation](https://github.com/artefactual/automation-tools) ou manuellement, par le biais du tableau de bord Web d'Archivematica.
 
@@ -29,14 +37,14 @@ Lorsque cela sera possible, nous favorisons l’utilisation des outils d'automat
 
 
 
-
+<a name="automatisation"></a>
 ### Outils d'automatisation
 Des outils d'automatisation sont actuellement mis en place sur les pipelines 1 et 2. Sur ces derniers, Automation Tools vérifie le répertoire /mnt/incoming/auto-transfers toutes les 5 minutes. Il s’assure d’abord que rien n'est en cours de transfert ou ingéré et exécute ensuite des scripts de pré-transfert (qui vérifient que le transfert soit du bon type, transmettent le numéro d'accès du transfert à Archivematica et ajoutent des métadonnées au transfert en utilisant l'API TMS). Finalement, Automation Tools lance le transfert suivant. Le reste du processus de transfert et d'ingestion est automatisé.
 
 
 Il revient à l'archiviste qui traite les documents numériques de s’assurer de la qualité des résultats de ce processus et de veiller à ce que tous les processus soient menés à terme, tout en respectant le cadre des paramètres acceptables pour la réussite.
 
-
+<a name="ingestion"></a>
 #### Procédure d'ingestion des outils d'automatisation : archives numériques
 Voici la procédure à suivre pour effectuer l'ingestion des SIP traités avec les outils d'automatisation :
 
@@ -75,7 +83,7 @@ Voici la procédure à suivre pour effectuer l'ingestion des SIP traités avec l
 #### Procédure d'ingestion des outils d'automatisation : A/V numérisé
 Procédures à venir.
 
-
+<a name="archivematica_web"></a>
 ### Utilisation de l'interface utilisateur d'Archivematica Web
 Les transferts de collections d’archives vers Archivematica peuvent également être lancés et contrôlés à partir du tableau de bord Web. Avant de commencer, vérifiez que le type de transfert sélectionné s’applique correctement au matériel que vous souhaitez ingérez. Modifiez ensuite la configuration de traitement de manière à ce qu'elle mette le processus en pause lorsque des métadonnées doivent être saisies. Vous devrez saisir manuellement les métadonnées selon le schéma décrit dans la section [Ajout de métadonnées descriptives à l'AIP](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/ingest.md#dcmetadata).
 
@@ -85,8 +93,10 @@ Les transferts de collections d’archives vers Archivematica peuvent également
 
 Lorsque vos SIP traités sont prêts dans `/mnt/1TB_RAID` sur l'une des machines BitCurator, que tous les SIP sont nommés avec le schéma [identifiant]---[numéro d'accès], et la saisie des données pour tous les SIP a été effectuée dans TMS, informez l'archiviste numérique du fait que vous êtes prêt à passer à la phase d'Ingestion du projet. Copiez ensuite les SIP dans /mnt/incoming/transfers sur le pipeline approprié en utilisant le script `send_to_archivematica.py`. Si les SIP sont constitués de matériel non traité, une image disque par exemple, n'utilisez que son identifiant pour le nommer.
 
-
+<a name="config_traitement"></a>
 ## Configurations de traitement d'Archivematica
+
+<a name="brutes"></a>
 ### Configuration pour l'ingestion de données "brutes" (Pipeline 1 par défaut)
 | VM | Nom | Caractéristiques | Matières à ingérer |
 | -------- | -------- | -------- | -------- |
