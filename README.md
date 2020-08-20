@@ -40,6 +40,22 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 * **[Archives du courriele et ePADD](guides/courriele.md)**
 
 * **[Capturer les archives du Web à l'aide d'Archive-It](guides/archive-it.md)**
+
+* **[Classement des archives de personnes nées-numériques](guides/classement.md)**
+    * [Le principe de l'organisation des archives de personnes nées numériques](guides/classement.md#principe)
+    * [Facteurs affectant l'organisation des archives nées numériques](guides/classement.md#facteurs)
+      * [L’arrivée des archives au CCA](guides/classement.md#arriver)
+      * [Organisation existante](guides/classement.md#existante)
+      * [Contexte de création et d'utilisation](guides/classement.md#contexte)
+      * [Nature de la collection d'archives](guides/classement.md#nature)
+      * [Priorités institutionnelles](guides/classement.md#priorities)
+      * [Élaboration d'un plan de traitement](guides/classement.md#elaboration)
+      * [SIP non emballé (de préférence)](guides/classement.md#non_emballe)
+      * [SIP emballé](guides/classement.md#emballe)
+    * [Traitement des images disque avec Disk Image Processor](guides/classement.md#disk_image_processor)
+    * [Traitement des répertoires de fichiers avec Folder Processor](guides/classement.md#folder_processor)
+    * [Normalisation manuelle pour Archivematica](guides/classement.md#normalisation)
+    * [Traitement des dossiers en cours de migration](guides/classement.md#migration)
    
 **INSERT LINKS AT END**
 
