@@ -1,7 +1,19 @@
-  # Description des archives nées numériques
+  # Description des archives nées-numériques
 Une fois le plan de traitement établi et l’organisation global de la ou des acquisition(s) finalisée, il est temps de réfléchir plus en détail à la seconde moitié du traitement : la description. Ce guide décrit les normes du CCA pour la description des documents nés numériques dans les fichiers Excel appropriés et au sein du système de musée (TMS), il comprend:
 
-## Principes et lignes directrices pour la description des archives nées numériques
+* [Principes et lignes directrices pour la description des archives nées-numériques](#principes)
+* [Description des fonds, des séries et des projets](#description_des_fonds)
+* [Description du niveau du fichier ("groupe")](#description_groupe)
+  * [Saisie de la description au niveau du fichier dans les documents Excel](#fichier_excel)
+  * [Saisie de la description au niveau du fichier dans le TMS](#fichier_tms)
+    * [Informations sur la gestion interne](#gestion_interne)
+    * [Éléments de description des archives](#elements_description)
+* [Description de la pièce ("item")](#description_piece)
+  
+
+
+<a name="principes"></a>
+## Principes et lignes directrices pour la description des archives nées-numériques
 * "Choisissez de guider, pas de cartographier" : Laissez le chercheur faire ses propres recherches, mais donnez-lui une idée suffisamment précise du contenu et du contexte des documents pour qu'il sache où concentrer ses énergies. Considérez le passage suivant de l'ouvrage de Maureen Callahan "[The Value of Archival Description, Considered](https://icantiemyownshoes.wordpress.com/2014/04/04/the-value-of-archival-description-considered/)" :
 
 
@@ -13,7 +25,7 @@ Lorsque j'enseigne la description, j'incite les travailleurs à évaluer les doc
 * La description sera saisie et mise à jour dans des documents Excel de traitement. La saisie de ces données dans TMS nécessitera la saisie manuelle de certains champs, mais vous pouvez faire un copier-coller à partir de votre document Excel de traitement lorsque cela est possible. Assurez-vous que toutes les révisions de votre description sont effectuées avant de saisir les données dans TMS.
 * Ne passez pas trop de temps au niveau du fichier. Les descriptions au niveau du fichier sont en grande partie automatisées par le processeur d'images disque et le processeur de dossiers du CCA. Dans de nombreux cas, il suffit d'examiner rapidement les fichiers inclus et d'ajouter un titre. Résistez à la tentation d'ouvrir et d'examiner chaque fichier numérique dans un répertoire/une image disque donné(e).
 
-
+<a name="description_des_fonds"></a>
 ## Description des fonds, des séries et des projets
 Vos descriptions de niveau supérieur (fonds, séries et projets) doivent suivre les directives établies pour ces niveaux de description dans le manuel général de traitement des archives du CCA.
 
@@ -23,14 +35,14 @@ Les documents relatifs aux fonds, séries et projets doivent être saisis direct
 
 L’information concernant les documents numériques dans les relevés de collationnement des documents au niveau du fonds, de la série et du dossier doivent prendre la forme suivante : "x fichiers numériques (y KB/MB/GB)", par exemple "760 fichiers numériques (18 GB)".
 
-
+<a name="description_groupe"></a>
 ## Description du niveau du fichier ("groupe")
 La description au niveau du dossier ("groupe") est le niveau de description le plus bas effectué au cours de projets typiques de traitement et doit suivre les directives énoncées dans le manuel général de traitement des archives du CCA. La description se fera d'abord dans des documents Excel. Ne saisissez aucune information au niveau du dossier dans TMS avant que ce document Excel n’ait reçu l'approbation de l'archiviste numérique.
 
 
 Notez que tous les répertoires de contenu numérique doivent être décrits comme des fichiers ("groupes"), même s'ils ne contiennent qu'un seul fichier numérique.
 
-
+<a name="fichier_excel"></a>
 ### Saisie de la description au niveau du fichier dans les documents Excel
 La description au niveau du fichier doit être saisie et examinée dans des documents Excel (une feuille de calcul par série ou par projet, en fonction du volume).
 
@@ -61,9 +73,8 @@ La description au niveau du fichier doit être saisie et examinée dans des docu
 | Description du statut | n/a | No | Laisser vide |
 | Niveau de détail | n/a | No | Laisser vide |
 
-
+<a name="fichier_tms"></a>
 ### Saisie de la description au niveau du fichier dans le TMS
-
 
 Une fois votre document Excel de traitement examinée et approuvée par l'archiviste numérique, suivez les instructions suivantes pour saisir les informations dans TMS, en faisant des copier-coller à partir des feuilles de calcul lorsque cela est possible. Le meilleur moyen d'y parvenir est d'utiliser des modèles. Il existe déjà des modèles pour la description au niveau du fichier de divers types de documents ; pour un travail plus efficace, créez une version personnalisée du modèle "Archives - Fichiers - Born Digital" pour votre archive, contenant les informations suivantes:
 
@@ -78,7 +89,7 @@ En particulier pour les collections de grand volume, l'utilisation d'un modèle 
 
 Les seuls types d'informations que vous devez saisir dans TMS et qui ne se trouveront pas dans votre feuille de calcul de traitement sont les associations et les éléments des [informations de gestion interne] ci-dessous (notez que nombre d'entre eux sont déjà saisis dans les modèles de saisie de données existants).
 
-
+<a name="gestion_interne"></a>
 #### Informations sur la gestion interne
 | Champ de TMS | Valeur |
 | :-----: | :-----: |
@@ -93,7 +104,7 @@ Les seuls types d'informations que vous devez saisir dans TMS et qui ne se trouv
 
 
 
-
+<a name="elements_description"></a>
 #### Éléments de description des archives
 | Colonne dans le tableur | Champ de TMS | Instructions |
 | :-----: | :-----: | :------ |
@@ -117,7 +128,7 @@ Les seuls types d'informations que vous devez saisir dans TMS et qui ne se trouv
 
 
 
-
+<a name="description_piece"></a>
 ## Description de la pièce ("item")
 Au CCA, nous ne traitons généralement pas les fichiers numériques au niveau des items. Les métadonnées au niveau de l'élément sont au contraire générées automatiquement par Archivematica et enregistrées dans un `amdSec` dans le fichier METS de l'AIP pour chaque fichier numérique dans un SIP. Ces informations sont accessibles aux chercheurs via SCOPE.
 
