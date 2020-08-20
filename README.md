@@ -56,6 +56,16 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
     * [Traitement des répertoires de fichiers avec Folder Processor](guides/classement.md#folder_processor)
     * [Normalisation manuelle pour Archivematica](guides/classement.md#normalisation)
     * [Traitement des dossiers en cours de migration](guides/classement.md#migration)
+    
+ * **[Description des archives nées-numériques](guides/description.md)**
+    * [Principes et lignes directrices pour la description des archives nées-numériques](guides/description.md#principes)
+    * [Description des fonds, des séries et des projets](guides/description.md#description_des_fonds)
+    * [Description du niveau du fichier ("groupe")](guides/description.md#description_groupe)
+      * [Saisie de la description au niveau du fichier dans les documents Excel](guides/description.md#fichier_excel)
+      * [Saisie de la description au niveau du fichier dans le TMS](guides/description.md#fichier_tms)
+        * [Informations sur la gestion interne](guides/description.md#gestion_interne)
+        * [Éléments de description des archives](guides/description.md#elements_description)
+    * [Description de la pièce ("item")](guides/classement.md#description_piece)
    
 **INSERT LINKS AT END**
 
