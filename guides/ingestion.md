@@ -9,7 +9,12 @@ Cette page décrit les configurations et les politiques utilisées par Archivema
       * [Procédure d'ingestion des outils d'automatisation : archives numériques](#ingestion)
    * [Utilisation de l'interface utilisateur d'Archivematica Web](#archivematica_web)
 * [Configurations de traitement d'Archivematica](#config_traitement)
-  * [Configuration pour l'ingestion de données "brutes" (Pipeline 1 par défaut)](#brutes)
+  * [Configuration pour l'ingestion de données "brutes" (Pipeline 1 par défaut)](#config_pipeline1)
+  * [Configuration pour l'ingestion de données "traitées" (par défaut Pipeline 2)](#config_pipeline2)
+  * [Configuration pour la ré-ingestion](#config_reingest)
+  * [Configuration pour la ré-installation des métadonnées uniquement](#config_meta)
+* [Ajout de métadonnées descriptives à l'AIP](#ajout_aip)
+* [Politiques relatives au format de fichier CCA](#politiques)
   
    
 
@@ -96,7 +101,7 @@ Lorsque vos SIP traités sont prêts dans `/mnt/1TB_RAID` sur l'une des machines
 <a name="config_traitement"></a>
 ## Configurations de traitement d'Archivematica
 
-<a name="brutes"></a>
+<a name="config_pipeline1"></a>
 ### Configuration pour l'ingestion de données "brutes" (Pipeline 1 par défaut)
 | VM | Nom | Caractéristiques | Matières à ingérer |
 | -------- | -------- | -------- | -------- |
@@ -108,7 +113,7 @@ Lorsque vos SIP traités sont prêts dans `/mnt/1TB_RAID` sur l'une des machines
 
 *Remarque : chaque bibliothèque AIP Store possède une capacité de 5 To. Ces emplacements sont remplis de manière séquentielle. Pour faciliter l'intégration avec les outils d'automatisation, chaque bibliothèque AIP ne doit être utilisé que pour un seul d'entre eux : les AIP pour lesquels des DIP sont générés, ou les AIP sans DIP correspondant.*
 
-
+<a name="config_pipeline2"></a>
 ### Configuration pour l'ingestion de données "traitées" (par défaut Pipeline 2)
 | Type | Valeur |
 | -------- | -------- |
@@ -146,7 +151,7 @@ Lorsque vos SIP traités sont prêts dans `/mnt/1TB_RAID` sur l'une des machines
 
 *Remarque : le CCA crée des DIP à partir de nos AIP par le biais du script [create_dip.py](https://github.com/artefactual/automation-tools/blob/master/aips/create_dip.py) plutôt que par l'option standard "Normalisation pour l'accès" d'Archivematica.*
 
-
+<a name="config_reingest"></a>
 ### Configuration pour la ré-ingestion
 *Remarque : Sauvegardé en tant que configuration de traitement "reingest" sur les pipelines.Ceux-ci n'ont pas été revus depuis la mise à jour de la version d'Archivematica de mai 2019.*
 
@@ -174,7 +179,7 @@ Lorsque vos SIP traités sont prêts dans `/mnt/1TB_RAID` sur l'une des machines
 | Garder emplacement d'AIP | *emplacement AIP approprié* |
 | Garder l'emplacement du DIP | "None" |  
 
-
+<a name="config_meta"></a>
 ### Configuration pour la ré-installation des métadonnées uniquement
 * Remarque : Sauvegardé en tant que configuration de traitement "update_metadata" sur les pipelines. Ceux-ci n'ont pas été revus depuis la mise à jour de la version d'Archivematica de mai 2019.*
 | Type | Valeur |
@@ -202,7 +207,7 @@ Lorsque vos SIP traités sont prêts dans `/mnt/1TB_RAID` sur l'une des machines
 
 
 
-
+<a name="ajout_aip"></a>
 ## Ajout de métadonnées descriptives à l'AIP
 Le CCA ajoute des métadonnées descriptives pour chaque AIP afin de faciliter la découverte et la réutilisation des données. Dans la plupart des cas, les métadonnées seront saisies automatiquement au cours du processus d'ingestion à l'aide des [outils d'automatisation](https://github.com/artefactual/automation-tools) et de [add-tms-metadata.py](https://github.com/CCA-Public/cca-scripts/blob/master/archivematica/add_tms_metadata.py). Le script add-tms-metadata.py récupère les métadonnées à l'aide d'une API TMS minimale GET uniquement. Cette fonction a été mise en œuvre par un ancien programmeur du CCA sur la base de travaux similaires réalisés en open source par le MoMA. Pour récupérer certaines métadonnées de base (avec des champs limités) pour un enregistrement dans TMS, faites un appel à l'API GET à http://api.tms.cca.qc.ca/API/Object/<enter ObjectNumber ici>. Par exemple, les informations relatives à l'enregistrement au niveau du fonds pour les enregistrements du projet Testa & Weiser (AP174) peuvent être consultées à l'adresse [http://api.tms.cca.qc.ca/API/Object/AP174](http://api.tms.cca.qc.ca/API/Object/AP174).
 
@@ -228,6 +233,6 @@ Les normes locales du CCA pour la saisie des métadonnées sont les suivantes :
 
 
 
-
+<a name="politiques"></a>
 ## Politiques relatives au format de fichier CCA
 Version actuelle : [Format Policy Registry, version 2](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/CCA%20Format%20Policy%20Registry%20v2%20201804.pdf)
