@@ -66,6 +66,12 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
         * [Informations sur la gestion interne](guides/description.md#gestion_interne)
         * [Éléments de description des archives](guides/description.md#elements_description)
     * [Description de la pièce ("item")](guides/classement.md#description_piece)
+    
+ * **[Ingestion dans Archivematica](guides/ingestion.md)**
+    * [Les workflows d’ingestion Archivematica](guides/ingestion.md#workflows)
+    * [Configurations de traitement d'Archivematica](guides/ingestion.md#config_traitement)
+    * [Ajout de métadonnées descriptives à l'AIP](guides/ingestion.md#ajout_aip)
+    * [Politiques relatives au format de fichier CCA](guides/ingestion.md#politiques)
    
 **INSERT LINKS AT END**
 
