@@ -72,6 +72,12 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
     * [Configurations de traitement d'Archivematica](guides/ingestion.md#config_traitement)
     * [Ajout de métadonnées descriptives à l'AIP](guides/ingestion.md#ajout_aip)
     * [Politiques relatives au format de fichier CCA](guides/ingestion.md#politiques)
+
+* **[Accès](guides/acces.md)**
+	* [Définition des DIP de type CCA](guides/acces.md#definition)
+	* [Créer des DIP de type CCA](guides/acces.md#creer)
+	* [Workflow d’Accès](guides/acces.md#workflow)
+ 
    
 **INSERT LINKS AT END**
 
