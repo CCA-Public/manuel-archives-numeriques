@@ -97,6 +97,16 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 
 * **[Logiciels et formats de fichiers CAO, BIM et modélisation 3D](guides/formats.md)**
 
+* **[Ressources supplémentaires](guides/ressources.md)**
+	* [Matériel de lecture](guides/ressources.md#lecture)
+	* [Identification et information des supports de stockage numérique](guides/ressources.md#stockage)
+	* [Identification et informations sur le format de fichier](guides/ressources.md#format_de_fichier)
+	* [Outils de préservation numérique](guides/ressources.md#preservation)
+	* [Ressources en matière de script](guides/ressources.md#res_script)
+	* [Scripts utiles en ligne de commande](guides/ressources.md#scripts)
+	* [Préservation de la conception assistée par ordinateur](guides/ressources.md#conception)
+	* [Ressources générales](#generales)
+
    
 **INSERT LINKS AT END**
 
