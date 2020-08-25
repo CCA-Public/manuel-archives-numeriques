@@ -107,9 +107,6 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 	* [Préservation de la conception assistée par ordinateur](guides/ressources.md#conception)
 	* [Ressources générales](#generales)
 
-   
-**INSERT LINKS AT END**
-
 <a name="introduction"></a>
 ## Introduction au traitement des archives nées-numériques
 Pour les chercheurs, le processus d'accès aux archives numériques consiste en plusieurs étapes distinctes. Il est préférable de considérer ces étapes comme le résultat de projets distincts. En tant qu'archiviste ou technicien d'archives numériques, vous serez impliqué dans les étapes de stabilisation, de prétraitement (triage), de traitement (classification et description) et d'ingestion. Chaque étape doit généralement commencer seulement lorsque l'étape précédente a été entièrement achevée (certains projets peuvent nécessiter une approche différente). Au sein d'une même archive ou même d'une même acquisition, ces étapes peuvent être réalisées par différentes personnes.
