@@ -95,6 +95,8 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 	* [Paramètres personnalisés d'Archivematica](guides/administration.md#parametres)
 	* [Mises à jour d'Archivematica et dépendances](guides/administration.md#dependances)
 
+* **[Logiciels et formats de fichiers CAO, BIM et modélisation 3D](guides/formats.md)**
+
    
 **INSERT LINKS AT END**
 
