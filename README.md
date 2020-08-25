@@ -78,6 +78,23 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 	* [Créer des DIP de type CCA](guides/acces.md#creer)
 	* [Workflow d’Accès](guides/acces.md#workflow)
  
+ * **[L'administration d'Archivematica](guides/administration.md)**
+ 	* [Connexion](guides/administration.md#connexion)
+	* [Commencer une ingestion](guides/administration.md#ingestion)
+	* [Surveillance des serveurs d'Archivematica](guides/administration.md#surveillance)
+	* [Vérification et réparation des réparations](guides/administration.md#verification)
+	* [L'abandon des données MySQL et ES dans les pipelines](guides/administration.md#abandon)
+	* [Suppression des AIP](guides/administration.md#suppression)
+	* [Nettoyage après l'ingestion réussie d'outils d'automatisation](guides/administration.md#nettoyage)
+	* [Réagir aux échecs des outils d'automatisation](guides/administration.md#reagir)
+	* [Ajout et changement d'emplacement des AIP Store](guides/administration.md#aip_store)
+	* [Mise à jour de la configuration de traitement des outils d'automatisation](guides/administration.md#miseajour)
+	* [Libérer de l'espace lorsque le disque local est presque plein](guides/administration.md#liberer)
+	* [Redémarrage des services](guides/administration.md#redemarrage)
+	* [Rapport des modifications apportées au FPR par défaut d'Archivematica](guides/administration.md#modifications)
+	* [Paramètres personnalisés d'Archivematica](guides/administration.md#parametres)
+	* [Mises à jour d'Archivematica et dépendances](guides/administration.md#dependances)
+
    
 **INSERT LINKS AT END**
 
