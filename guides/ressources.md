@@ -9,7 +9,7 @@ Des ressources utiles, notamment :
 * [Ressources en matière de script](#res_script)
 * [Scripts utiles en ligne de commande](#scripts)
 * [Préservation de la conception assistée par ordinateur](#conception)
-* [Ressources générales](generales)
+* [Ressources générales](#generales)
 
 
 <a name="lecture"></a>
