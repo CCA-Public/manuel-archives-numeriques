@@ -116,7 +116,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: ApiKey <SS u
 Lorsque les ingestions, entamées via les outils d'automatisation, se terminent avec succès, elles doivent ensuite être supprimées manuellement de la source de transfert (dans ce cas, `/mnt/incoming/auto-transfers/`). Ceci doit être fait par un utilisateur qui possède les permissions `sudo`, par exemple `sudo rm -rf /path/to/transfer/`. **Faites attention lorsque vous supprimez des fichiers à l’aide de la commande sudo, car il est très facile de supprimer accidentellement des fichiers que vous n'aviez pas l'intention de supprimer**.
 
 
-Tim a écrit un script pour le dépôt Automation Tools qui supprime automatiquement les fichiers sources de transfert après une ingestion réussie si le script `transfer-script.sh` est exécuté avec un drapeau `--delete`. Ce script est actuellement [en cours de révision](https://github.com/artefactual/automation-tools/pull/44) - si la demande d'extraction est acceptée et fusionnée, il ne sera plus nécessaire de procéder à un nettoyage manuel après une ingestion réussie des Automation Tools.
+Tessa a écrit un script pour le dépôt Automation Tools qui supprime automatiquement les fichiers sources de transfert après une ingestion réussie si le script `transfer-script.sh` est exécuté avec un drapeau `--delete`. Ce script est actuellement [en cours de révision](https://github.com/artefactual/automation-tools/pull/44) - si la demande d'extraction est acceptée et fusionnée, il ne sera plus nécessaire de procéder à un nettoyage manuel après une ingestion réussie des Automation Tools.
 
 <a name="reagir"></a>
 ## Réagir aux échecs des outils d'automatisation
