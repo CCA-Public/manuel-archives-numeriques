@@ -26,7 +26,7 @@ Chacun des deux scripts/modes prend un répertoire d'images disque et de fichier
 
 
 En mode analyse, l'outil peut être utilisé pour obtenir une compréhension à haut niveau du contenu d'une collection d'images disque. L'outil fait une boucle sur tous les fichiers d'un répertoire, détermine lesquels sont des images de disque, puis pour ceux-ci :
-________________
+
 * Convertit l'image en image brute, si elle est présentée comme une image disque (E01)
 * Créer un répertoire "reports" pour les images disques de la collection :
    * Un fichier DFXML
