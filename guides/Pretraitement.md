@@ -48,8 +48,8 @@ L'outil crée en outre un fichier "analyse.csv" qui contient les informations su
 
 
 L'utilisation du mode Analyse peut vous aider à comprendre des aspects cruciaux d'une collection d'images disques, et à commencer à formuler une stratégie pour leur classement, leur description, et tout travail de normalisation de format ou autre travail de préservation qui pourrait être nécessaire.
-
 <a name="paquets"></a>"
+
 ### Extraction de fichiers à partir de paquets et d'images disque
 Une autre possibilité consiste à utiliser l'un des nombreux outils permettant soit de découper des fichiers à partir d'images disque, soit de monter l'image disque et de copier les fichiers à partir du disque monté. Dans les deux cas, cela vous permettra de copier les fichiers sur le lecteur du catalogueur et de les visualiser ensuite à partir de n'importe quel ordinateur connecté au réseau du CCA.
 
