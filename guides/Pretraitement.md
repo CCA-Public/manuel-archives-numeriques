@@ -119,7 +119,7 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 
 ![ftkextract6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftkextract6.jpg)  
 
-<a name="hfs"></a)
+<a name="hfs"></a>
 ### Extraction de fichiers à partir d'images de disques HFS (Hierarchical File System)
 Dans certains cas, vous constaterez que ni Bitcurator ni FTK Imager ne sont capables d'extraire des fichiers d'une image disque. En général, cela est dû au fait que le support est formaté à l'aide d'un système de fichiers que les systèmes d'exploitation modernes ne peuvent pas lire.
 
