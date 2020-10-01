@@ -183,6 +183,8 @@ Les lignes directrices suivantes peuvent être utiles si vous rencontrez des dif
 1. Suivez les étapes 1 et 2. Si le disque sur lequel vous travaillez comporte de nombreux secteurs défectueux, il se peut que vous ne puissiez pas effectuer une analyse antivirus.
 2. Dans le panneau de gauche, cliquez avec le bouton droit de la souris sur l'icône du média (CD/DVD+R) et sélectionnez "Effectuer un balayage de surface".
 3. Une fois l'examen terminé, IsoBuster vous donne plus d'informations sur l'état de votre disque. Si tout est bon, le message "Aucune erreur physique rencontrée. Votre disque est toujours en bon état" apparaîtra. Sinon, IsoBuster génère un rapport vous indiquant la lisibilité du disque (en pourcentage).
+
+
 ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_07.PNG?raw=true)
 
 
@@ -212,13 +214,20 @@ Avant de commencer le traitement, vous devez d'abord insérer la disquette dans 
 2. **Lecteur source**: Doit toujours indiquer le dispositif FC5025. Aucune autre option ne devrait être disponible à cette étape.
 3. **Type de disque** : Sélectionnez le format du disque que vous êtes en train de lire sur l'appareil. Si le type de disque n'est pas précis, le disque ne sera tout simplement pas lu correctement ou ne sera pas lu du tout. Pour définir le type de disque, vous pouvez sélectionner une option dans le menu déroulant et la tester en premier lieu. Examinez d'abord l'étiquette afin de trouver toute information indiquant le type de disque. Par exemple, si vous avez une disquette de 360KB 5,25" créée dans un environnement DOS, sélectionnez "MS-DOS 360k".
 4. Après avoir sélectionné le type de disquette, cliquez sur "Parcourir le contenu de la disquette". Une nouvelle fenêtre s'affiche. Si le type de disque correspond, le disque est lu correctement et la liste des fichiers apparaît dans la fenêtre de dialogue.
+
 ![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_03.JPG?raw=true)
+
 5. Si le type de disque ne correspond pas, un message l'indique : "Unable to get file listing!". Notez que cette fonction n'est pas disponible pour tous les types de disques. 
+
 ![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_02.JPG?raw=true)
+
 6. **Répertoire des images de sortie** : Copiez le lien d'accès au répertoire qui contiendra le fichier image du disque.
 7. **Nom de fichier de l'image de sortie** : sélectionnez un emplacement et un nom qui décrivent le mieux le contenu que vous visualisez sur le disque, comme l'identifiant du média.
+
 ![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_01.JPG?raw=true)
+
 8. **Capture de disque** : Cliquez sur le bouton "Capturer le fichier image du disque" pour commencer à utiliser le lecteur. Chaque erreur de lecture est indiquée dans la fenêtre d'affichage de la progression. S'il y a plusieurs erreurs, elles sont généralement affichées rapidement l'une après l'autre, chaque erreur successive effaçant celle qui la précède. Il s’agit de l'un des principaux inconvénients de l'utilisation de l'interface graphique pour l'imagerie de disque. Nous pouvons garder une trace des multiples erreurs de lecture et garder une trace du processus d'imagerie du disque en utilisant la ligne de commande. Les directives suivantes nous montreront comment faire.
+
 ![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_04.JPG?raw=true)
 
 #### L'image du disque avec la ligne de commande
@@ -351,9 +360,10 @@ Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https:/
 
 (Ces instructions ont été prises [ici](http://www.acronova.com/howto/article/23/review.html#ancher-imgburn))
 **Si vous souhaitez que ImgBurn crée des fichiers de somme de contrôle pour chaque image disque réalisée**
-1.         Aller à Tools>settings 
-2.         Dans les outils, allez à l'onglet "Read".
-3.         Sélectionnez "Create MD5 File".
+
+1.	Aller à Tools>settings 
+2.	Dans les outils, allez à l'onglet "Read".
+3.	Sélectionnez "Create MD5 File".
 
 
 **Si vous voulez voir le rapport de ce que vous avez fait**
