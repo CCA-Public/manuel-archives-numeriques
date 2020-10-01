@@ -295,7 +295,9 @@ Couleur
 
 9. Lorsque vous entendez la tête de lecture revenir à son point de départ (0), le disque cesse de tourner et le voyant lumineux du lecteur s'éteint, ce qui signifie que la capture est terminée. Un fichier sera automatiquement généré dans le répertoire que vous avez sélectionné à l'étape 3.
 10. Pour imager un autre disque, revenez à l'étape 4 et continuez à partir de là. Si vous changez de disque et que vous n'avez pas calibré l'autre disque, continuez à partir de l'étape 3.
+
 ![Kryoflux](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/kryoflux_step7_cells.png)
+
 11. (Under image) *Les cellules colorées montrent que le profil d'image choisi n'était pas approprié pour le disque. Chaque fois que vous voyez un modèle de résultat alternant entre Inconnu et Bon (+ Modifié), vous avez probablement un disque de 40 pistes. Réessayez l'imagerie avec le profil de l'image du secteur MFM [40 pistes] et comparez les résultats.*
 ####Capture de disquettes présentant des dommages physiques ou des difficultés de lecture
 REMARQUE IMPORTANTE : chaque fois que vous remarquez la présence de moisissures ou de champignons sur un support numérique, consultez la Conservation et l'Archiviste numérique avant de capturer l'image disque. La moisissure pourrait se répandre à l'intérieur du lecteur et sur la tête de lecture risquant de contaminer d'autres disques par la suite. Pour réduire le risque de contamination, vous pourriez utiliser un lecteur exclusivement dédié à l'imagerie de supports contaminés. Pour les disques tenaces, qui semblent avoir de multiples mauvais secteurs et des dommages physiques, voici la procédure
