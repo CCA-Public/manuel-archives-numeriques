@@ -110,7 +110,7 @@ Une fois le contenu de votre SIP déterminé, les outils de workflow du CCA tels
 ### SIP emballé (juste au cas où - il n'y a normalement aucune raison de créer un SIP sous cette forme)
 * Dossier d'information sur la soumission (SIP) : Nommé d'après l'identifiant (généralement, un numéro AP ou ARCH)
    * `bag-info.txt` : fichier bagit
-   * bagit.txt` : fichier bagit
+   * `bagit.txt` : fichier bagit
    * `manifest-md5.txt` : fichier bagit
    * `tagmanifest-md5.txt` : fichier bagit
    * `data` : dossier bagit contenant le contenu du transfert
