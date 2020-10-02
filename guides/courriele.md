@@ -50,7 +50,7 @@ Pour utiliser Emailchemy :
 
 <a name="importation"></a>
 ## Module d'importation et d'évaluation
-NOTE : Avant d'importer de nouvelles archives dans ePADD, assurez-vous que l'utilisateur précédent a correctement nettoyé [ePADD de sa session](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/email.md#cleanupepadd).
+NOTE : Avant d'importer de nouvelles archives dans ePADD, assurez-vous que l'utilisateur précédent a correctement nettoyé [ePADD de sa session](https://github.com/CCA-Public/manuel-archives-numeriques/blob/master/guides/courriele.md#nettoyer-epadd).
 
 
 Le module d'évaluation est l'écran de démarrage par défaut après le lancement de ePADD. L'évaluation est destinée à être utilisée par le donateur pour effectuer un premier examen et une restriction de son propre courrier électronique. Notamment, l'indicateur "Ne pas transférer" supprime les courriels, ce qui empêche leur transfert vers le module de traitement.
