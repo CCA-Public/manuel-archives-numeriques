@@ -122,7 +122,6 @@ L'onglet Autorités peut être utilisé pour attribuer des noms d'autorités de 
 ### Exportation vers le module de livraison
 Lorsque vous avez terminé de consulter tous les courriels, vous pouvez les exporter vers les modules ePADD suivants, Discovery et Delivery. Pour ce faire :
 
-
 1. Cliquez sur l'onglet Exporter en haut de l'écran.
 2. Sous "Exporter les messages et les pièces jointes", cliquez sur Parcourir, et choisissez C:/Utilisateurs/utilisateur. Cliquez sur Exporter (PAS "Exporter vers MBOX"). Cela peut prendre un certain temps. Cela permettra d'enregistrer deux dossiers de module : "ePADD archive of (archive creator) - delivery" et "ePADD archive of (archive creator) - discovery". Le dossier "Discovery" n'est pas utilisé au CCA et peut être supprimé.
 3. Vous pouvez également exporter uniquement les pièces jointes aux courriels, ou les fichiers CSV des autorités assignées ou les lignes d'objet des courriels en fonction des besoins de traitement d'une collection particulière ; ces options sont également disponibles sur cet écran. Notez qu'ils exporteront TOUT ce qui se trouve dans le module d'évaluation, y compris les documents marqués "Ne pas transférer".
@@ -142,6 +141,7 @@ Afin d'exporter une copie de préservation au format MBOX :
 1. Naviguez jusqu'à l'onglet "Recherche".
 2. Sans rien saisir dans la barre de recherche, cliquez sur "Recherche". Ceci devrait retourner tous les courriels de la collection.
 3. Cliquez sur le bouton "Exporter ces messages au format MBOX" (la flèche vers le bas). ePADD préparera votre fichier MBOX. Cela peut prendre un certain temps.
+
 ![Screenshot of Export button](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/epadd_export.JPG)
 
 
@@ -165,6 +165,7 @@ Une fois dans le module de livraison ePADD, vous ne pouvez pas facilement reveni
 ```tskill PID```
 6. Relancer ePADD. Il démarrera par défaut dans le module d'évaluation.
 Il est également possible de se déconnecter du poste de travail et de se reconnecter.
+
 ## Accès au courrier électronique
 Afin de permettre l'accès à ces fichiers, le fichier MBOX du SIP peut être réimporté dans ePADD et passer par chaque phase d'exportation vers le module Delivery. Le chercheur peut utiliser le module Delivery pour naviguer dans les archives de courrier électronique en utilisant un grand nombre des mêmes outils que ceux dont disposait l'archiviste pendant le traitement. Il peut marquer et annoter des documents, comme dans les modules d'évaluation et de livraison. Il peut également enregistrer et télécharger une version annotée des archives de courrier électronique pour son usage personnel.
 
