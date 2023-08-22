@@ -8,7 +8,7 @@
 * [L'imagerie sur disque avec le Nimbie et l'ImgBurn](#nimbie)
 * [Dépannage](#depannage)
 
-Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disque peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
+test-Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disque peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
 
 
 Sauf lorsque les circonstances demandent des solutions différentes, le CCA préfère les formats d'image disque brute (par exemple "dd" ou "raw") ou les images ISO (pour les supports optiques).
