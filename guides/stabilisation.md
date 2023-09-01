@@ -1,4 +1,4 @@
-# L'adhésion et la stabilisation des archives nées numériques
+# Acquisition et la stabilisation des archives nées numériques
 
 Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des documents d'archives nés numériques, quelle que soit la forme sous laquelle ils arrivent au CCA. Il comprend :
 
