@@ -1,4 +1,4 @@
-# Archives du courriele et ePADD
+# Archives courriel et ePADD
 Les formats de courrier électronique nécessitent un traitement supplémentaire, car ils contiennent souvent des informations sensibles ou personnelles et, en tant que format, sont difficiles d'accès pour les utilisateurs. [ePADD](https://library.stanford.edu/projects/epadd), développé par les bibliothèques de l'université Stanford, permet à l'archiviste chargé du traitement de faire des recherches dans les courriers électroniques, de restreindre les documents éventuellement sensibles, de créer des copies d'accès et de conservation et de fournir une interface d'accès conviviale à l’utilisateur.
 
 
