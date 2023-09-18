@@ -37,7 +37,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    * [Déplacement des dossiers vers le lieu de traitement](guides/Pretraitement.md#deplacement)
    * [Soumission des fichiers à PRONOM](guides/Pretraitement.md#pronom)
 
-* **[Archives du courriele et ePADD](guides/courriele.md)**
+* **[Archives courriel et ePADD](guides/courriele.md)**
 
 * **[Capturer les archives du Web à l'aide d'Archive-It](guides/archive-it.md)**
 
