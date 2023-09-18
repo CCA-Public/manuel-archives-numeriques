@@ -4,8 +4,8 @@
 * [Création d'une image disque avec FTK Imager](#ftk)
 * [Création d'une image disque avec IsoBuster](#isobuster)
 * [Création d'une image disque avec FC5025](#fc5025)
-* [L'imagerie sur disque avec le Kryoflux](#kryoflux)
-* [L'imagerie sur disque avec le Nimbie et l'ImgBurn](#nimbie)
+* [Création d'une image disque avec Kryoflux](#kryoflux)
+* [Création d'une image disque avec le Nimbie et ImgBurn](#nimbie)
 * [Dépannage](#depannage)
 
 Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disque peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
@@ -118,7 +118,7 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 * Note: Le processus d'imagerie de disque de l'imageur FTK est très persistant. Si le disque que vous voulez imager prend beaucoup de temps à traiter, il n'est pas nécessairement défectueux. L'imageur continuera d'essayer d'imager les secteurs du disque jusqu'à ce que ce soit fait. Il est toujours possible d'extraire une image utilisable d'un disque après 30 heures ou plus de tentatives, alors gardez cela à l'esprit.
 
 <a name="isobuster"></a>
-### Imagerie de disque avec IsoBuster
+### Création d'unee image disque avec IsoBuster
 [IsoBuster ](https://www.isobuster.com/help/) est un outil d'imagerie de disque basé sur Windows et produit par Smart Projects (géré par Peter Van Hove). Au CCA, nous utilisons IsoBuster pour créer des images disques pour des types particuliers de supports optiques - principalement des DVD, des CD audio et des supports optiques contenant plus de 1024 Mo de données - et comme outil pour documenter l'état actuel des supports endommagés.
 
 
@@ -200,7 +200,7 @@ Les lignes directrices suivantes peuvent être utiles si vous rencontrez des dif
 6. Identifiez les supports endommagés dans la feuille de calcul de stabilisation du versement, en incluant autant de détails que possible sur l'état réel des supports. Inscrivez les noms de fichiers des journaux d'erreurs dans la colonne "Note" de le document Excel de stabilisation des versements pour référence ultérieure.
 
 <a name="fc5025"></a>
-### Imagerie de disques disquettes 5,25" avec FC5025
+### Création d'une image disque avec FC5025
 Le FC5025 est un contrôleur de disquettes 5,25" qui se branche sur le port USB de n'importe quel ordinateur et permet de lire des disquettes 5,25". Il est accompagné d’un programme d'image disque et d'outils de navigation permettant de créer et d'accéder à des copies de matériel numérique. Il y a deux façons d'utiliser le logiciel FC5025 pour l'imagerie disque : à partir de l'interface graphique ou de la ligne de commande. Chacune de ces options possèdent ses avantages et ses inconvénients : l'interface graphique offre une interface instinctive et facile à utiliser, tandis que la ligne de commande vous permettra de capturer le processus d'imagerie du disque en envoyant la sortie standard et les erreurs standards dans un fichier.
 
 
@@ -230,7 +230,7 @@ Avant de commencer le traitement, vous devez d'abord insérer la disquette dans 
 
 ![FC5025](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/fc5025_04.JPG?raw=true)
 
-#### L'image du disque avec la ligne de commande
+#### Création d'une image disque avec la ligne de commande
 1. Sur le poste de travail d'imagerie de disque (DSK-065-14), ouvrez l'invite de commande à partir du menu Démarrer.
 2. **Erreurs d'enregistrement** : Si vous devez enregistrer la sortie standard et les erreurs standard de votre traitement, vous pouvez utiliser la commande fcimage pour les diriger toutes les deux vers un rapport d’erreurs. Commencez par placer l'invite de commande sur le chemin d'accès de votre dossier de projet. Assurez-vous que vous êtes sur le bon serveur :
 ```cd Users\username\Desktop\ARCH222229```
@@ -243,7 +243,7 @@ Avant de commencer le traitement, vous devez d'abord insérer la disquette dans 
 7. Une fois la commande terminée, ouvrez votre dossier de projet et assurez-vous que tout y est. Vous devez disposer d'un fichier .img (votre fichier image disque) et d'un fichier .log (les erreurs enregistrées).
 
 <a name ="kryoflux"></a>
-### L'imagerie sur disque avec le Kryoflux
+### Création d'une image disque avec Kryoflux
 Note : Les éléments des lignes directrices ci-dessous ont été recueillis dans le [Guide de l'archiviste pour KryoFlux](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#), une ressource complète pour les praticiens travaillant avec des documents nés numériques dans un contexte archivistique.
 Le [Kryoflux](https://www.kryoflux.com/) est une carte contrôleur de disquettes développée par [Software Preservation Society](http://www.softpres.org/) pour l'imagerie d'une grande variété de disquettes anciennes. Sa particularité réside dans sa capacité à capturer des données de piste brutes en échantillonnant la fluctuation des cellules de bits sur le plateau, permettant la capture de tout type de disquette 5,25" ou 3,5", malgré son format.
 #### Capture d'images de disque à l'aide de l'interface utilisateur graphique (GUI)
