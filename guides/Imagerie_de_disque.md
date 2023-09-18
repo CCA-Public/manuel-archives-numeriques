@@ -1,6 +1,6 @@
 # Imagerie de disque support physique original
 
-* [Imagerie de disque avec Guymager (Bitcurator)](#guymager)
+* [Création d'une image disque avec Guymager](#guymager)
 * [L'imagerie des supports physiques avec le FTK Imager](#ftk)
 * [Imagerie de disque avec IsoBuster](#isobuster)
 * [Imagerie de disques disquettes 5,25" avec FC5025](#fc5025)
@@ -21,7 +21,7 @@ Nous utilisons les outils suivants pour créer des images de disques : Kryoflux 
 Donnez à chaque média un numéro d'identification ARCH s'il n'en a pas déjà un, et créez un enregistrement d'objet "Record for Management Need" correspondant dans TMS. L'identificateur doit être écrit sur l'objet ou son étui avec un stylo feutre ou (très légèrement) au crayon, ou apposé sur l'étui à l'aide d'une étiqueteuse si elle est disponible.
 
 <a name="guymager"></a>
-### Imagerie de disque avec Guymager (Bitcurator)
+### Création d'une image disque avec Guymager
 Guymager est un outil d'imagerie disque open source que l'on trouve dans l'environnement Bitcurator, et l'un des outils prrivilégiés pour l'imagerie disque au CCA. Nous utilisons Guymager pour créer des images disque au format brut (dd).
 
 
