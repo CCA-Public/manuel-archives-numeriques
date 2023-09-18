@@ -118,7 +118,7 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 * Note: Le processus d'imagerie de disque de l'imageur FTK est très persistant. Si le disque que vous voulez imager prend beaucoup de temps à traiter, il n'est pas nécessairement défectueux. L'imageur continuera d'essayer d'imager les secteurs du disque jusqu'à ce que ce soit fait. Il est toujours possible d'extraire une image utilisable d'un disque après 30 heures ou plus de tentatives, alors gardez cela à l'esprit.
 
 <a name="isobuster"></a>
-### Création d'unee image disque avec IsoBuster
+### Création d'une image disque avec IsoBuster
 [IsoBuster ](https://www.isobuster.com/help/) est un outil d'imagerie de disque basé sur Windows et produit par Smart Projects (géré par Peter Van Hove). Au CCA, nous utilisons IsoBuster pour créer des images disques pour des types particuliers de supports optiques - principalement des DVD, des CD audio et des supports optiques contenant plus de 1024 Mo de données - et comme outil pour documenter l'état actuel des supports endommagés.
 
 
@@ -318,7 +318,7 @@ Voici les étapes à suivre pour produire de nouveaux fichiers d'images encodés
 5. Cliquez sur Start et sélectionnez le dossier contenant les fichiers de flux que vous souhaitez traiter. Cliquez sur Ouvrir et la création du fichier d'image disque commencera immédiatement. Les résultats s'afficheront dans les cellules de l'interface graphique, comme d'habitude.
 
 <a name="nimbie"></a>
-### L'imagerie sur disque avec le Nimbie et l'ImgBurn
+### Création d'une image disque avec le Nimbie et ImgBurn
 Le Nimbie est un dispositif d'autochargement utilisé pour lire, écrire et créer simultanément, des images disques pour de nombreux CD ou DVD, tout en requérant un minimum d'intervention de l'utilisateur. Veuillez lire le [manuel d'utilisation du Nimbie](http://www.acronova.com/file/2/download.html) pour savoir comment configurer l'unité Nimbie. Le logiciel qui peut être utilisé en conjonction avec le Nimbie est ImgBurn. Pour créer des images disque en utilisant le Nimbie et ImgBurn, vous aurez besoin de ce qui suit :
 * Windows XP/Vista/ 7 ou Apple OS X 10.6 / 10.7 (pour QQGetTray uniquement)
 * 1 Go de RAM ou plus
@@ -327,7 +327,7 @@ Le Nimbie est un dispositif d'autochargement utilisé pour lire, écrire et cré
 * Unité Nimbie USB Plus avec les [pilotes appropriés installés](http://www.acronova.com/file/51/download.html)
 
 
-**Comment mettre en place le Nimbie pour l'imagerie sur disque**
+**Comment mettre en place le Nimbie pour la création d'image disque**
 1. Assurez-vous que l'appareil Nimbie est branché dans une prise murale et que le cordon USB est connecté à l'ordinateur.
 2. Fixez le bac à disques traités devant l'unité. Lorsque le Nimbie a fini de traiter un disque, il l'éjecte par la fente avant, dans le bac à disques. Si le Nimbie ne peut pas traiter un disque (à cause de la saleté ou d'un disque rayé, entre autres possibilités), le disque sera éjecté par le bas de l'appareil. Assurez-vous qu'il n'y a rien sous l'appareil pour laisser suffisamment de place aux disques rejetés.
 3. Ouvrez le couvercle de l'appareil. Il y a 4 lumières LED à l'avant de l'appareil qui vous indiquent son état. Un guide pictural à l'intérieur du couvercle vous indique la signification des configurations lumineuses.
