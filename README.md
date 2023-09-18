@@ -6,7 +6,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 * **[Guides détaillés](#details)**
 * **[Introduction au traitement des archives nées-numériques](#introduction)**
 * **[Le workflow des archives numériques en bref](#workflow)**
-* **[Aperçu général sur la conservation numérique au CCA](#aperçu)**
+* **[Aperçu général sur la préservation numérique au CCA](#aperçu)**
 
 <a name="details"></a>
 ### Guides détaillés
@@ -152,7 +152,7 @@ Peu de fonds sont uniquement constitués de matériel né numérique. Lorsque de
    3. Accès et soutien à l'utilisation de SCOPE par les chercheurs
    
 <a name="aperçu"></a>   
-## Aperçu général sur la conservation numérique au CCA
+## Aperçu général sur la préservation numérique au CCA
 Le CCA prend un certain nombre de mesures face à tous les fichiers numériques de sa collection, celles-ci contribuent à garantir leur accessibilité permanente pour une utilisation pérenne. Tous les fichiers des archives numériques du CCA sont :
 
 
