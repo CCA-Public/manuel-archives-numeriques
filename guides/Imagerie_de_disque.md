@@ -22,7 +22,7 @@ Donnez à chaque média un numéro d'identification ARCH s'il n'en a pas déjà 
 
 <a name="guymager"></a>
 ### Création d'une image disque avec Guymager
-Guymager est un outil d'imagerie disque open source que l'on trouve dans l'environnement Bitcurator, et l'un des outils prrivilégiés pour l'imagerie disque au CCA. Nous utilisons Guymager pour créer des images disque au format brut (dd).
+Guymager est un outil d'imagerie disque open source que l'on trouve dans l'environnement BitCurator, et l'un des outils privilégiés pour l'imagerie disque au CCA. Nous utilisons Guymager pour créer des images disque au format brut (dd).
 
 
 Avant de commencer à créer des images disque à partir d'une acquisition, créez un dossier dans le répertoire `/mnt/1TB_RAID` dans lequel vous enregistrez votre travail. Donnez à ce dossier un nom mémorable et significatif, tel qu'un numéro d'accession ou un autre identifiant.
