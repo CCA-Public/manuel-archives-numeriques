@@ -18,7 +18,7 @@ Les procédures suivantes décrivent comment le CCA procède aux versements et s
 <a name="transferts"></a>
 ## Transferts de fichiers en réseau
 Étapes :
-* **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou le Registraire)**
+* **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou GesCo)**
    * Aviser le Registraire et l'Archiviste Numérique, le cas échéant
    * Zipper les fichiers et déplacez le fichier zip dans un nouveau dossier ou dans le dossier Processing si le dossier d'acquisition n'a pas encore été créé.
 * **GesCo : Créer des dossiers d'acquisition**
