@@ -3,7 +3,7 @@
 Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des documents d'archives nés numériques, quelle que soit la forme sous laquelle ils arrivent au CCA. Il comprend :
 
 * [Aperçu général](#aperçu)
-* [Transferts de réseau](#transferts)
+* [Transferts de fichiers en réseau](#transferts)
 * [Supports physiques temporaires](#supports_temps)
 * [Supports physiques originaux](#supports_originaux)
 * [Ingestion des données "brutes" dans un dépôt numérique](#integrer)
@@ -16,7 +16,7 @@ En général, le contenu numérique arrive au CCA de l'une des trois façons sui
 Les procédures suivantes décrivent comment le CCA procède aux versements et stabilise le contenu de chacune de ces méthodes de versement, ainsi que la manière dont le CCA ingère le contenu "brut" d'un versement dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
 
 <a name="transferts"></a>
-## Transferts de réseau
+## Transferts de fichiers en réseau
 Étapes :
 * **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou le Registraire)**
    * Aviser le Registraire et l'Archiviste Numérique, le cas échéant
