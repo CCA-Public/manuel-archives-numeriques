@@ -6,29 +6,29 @@ Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des do
 * [Transferts de fichiers en réseau](#transferts)
 * [Supports physiques temporaires](#supports_temps)
 * [Supports physiques originaux](#supports_originaux)
-* [Ingestion des données "brutes" dans un dépôt numérique](#integrer)
+* [Ingestion des données brutes dans un dépôt numérique](#integrer)
 
 <a name="aperçu"></a> 
 ## Aperçu général
 
 En général, le contenu numérique arrive au CCA de l'une des trois façons suivantes : sous forme de transfert réseau (par exemple FTP, Dropbox, WeTransfer), sur des supports de transfert physique temporaires (par exemple clé USB, disque dur externe) ou sur des supports de stockage physique originaux. Un seul dépôt (versement) peut contenir des fichiers numériques arrivés au CCA par l'une ou l'autre de ces méthodes.
 
-Les procédures suivantes décrivent comment le CCA procède aux versements et stabilise le contenu de chacune de ces méthodes de versement, ainsi que la manière dont le CCA ingère le contenu "brut" d'un versement dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
+Les procédures suivantes décrivent comment le CCA procède aux versements et stabilise le contenu de chacune de ces méthodes de versement, ainsi que la manière dont le CCA ingère le contenu brut d'un versement dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
 
 <a name="transferts"></a>
 ## Transferts de fichiers en réseau
 Étapes :
-* **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou GesCo)**
-   * Aviser le Registraire et l'Archiviste Numérique, le cas échéant
-   * Zipper les fichiers et déplacez le fichier zip dans un nouveau dossier ou dans le dossier Processing si le dossier d'acquisition n'a pas encore été créé.
+* **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou un membre de l'équipe de gestion de collection, GesCo)**
+   * Aviser l'équipe GesCo et l'archiviste numérique, le cas échéant.
+   * Compresser les fichiers et déplacez le fichier compressé dans le dossier d'acquisition Processing.
 * **GesCo : Créer des dossiers d'acquisition**
    * Pour les entrées exclusivement numériques dans les archives, ne créer qu'une fiche de versement (pas d'objet de versement ou de fiche ARCH). Inclure une brève note d'identification de l'acquisition dans la "Description du contenu" (par exemple, le nom du dossier Dropbox)
    * Pour Photo/P&D, créez des enregistrements de groupe ou de pièce comme d'habitude
 * **Archiviste numérique : ingérer**
    * Ajouter une brève note descriptive sur le contenu au versement "Description du contenu".
-   * Emballer le contenu sous forme de SIP Archivematica et l'ingérer dans Archivematica, en suivant les [procédures d'ingestion des données "brutes"](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
-   * Faites une demande de déplacement des fichiers à localiser vers Dark Archive.
-   * Supprimer les copies de fichiers non nécessaires de Digital Shipping Space, des postes de travail BitCurator, etc.
+   * Emballer le contenu sous forme de SIP et l'ingérer dans Archivematica, en suivant les [procédures d'ingestion des données brutes](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
+   * Faites une demande de déplacement des fichiers vers l'emplacement "Dark Archive".
+   * Supprimer les copies des fichiers non nécessaires de Digital Shipping Space, des postes de travail BitCurator, etc.
 * **GesCo**
    * Ajouter "Dark Archive" comme lieu de l'enregistrement d'acquisition (par exemple, versement)
 
