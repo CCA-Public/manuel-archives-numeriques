@@ -14,7 +14,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    * [Transferts de réseau](guides/stabilisation.md#transferts)
    * [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
    * [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
-   * [Intégrer des données d'accès "brutes" dans un dépôt numérique](guides/stabilisation.md#integrer)
+   * [Ingestion des données "brutes" dans un dépôt numérique](guides/stabilisation.md#integrer)
 
 * **[Imagerie de disque support physique original](guides/Imagerie_de_disque.md)**
    * [Imagerie de disque avec Guymager (Bitcurator)](guides/Imagerie_de_disque.md#guymager)
