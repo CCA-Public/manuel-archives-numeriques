@@ -10,7 +10,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 
 <a name="details"></a>
 ### Guides détaillés
-* **[L'adhésion et la stabilisation des archives nées numériques](guides/stabilisation.md)**
+* **[L'acquisition et la stabilisation des archives nées numériques](guides/stabilisation.md)**
    * [Transferts de réseau](guides/stabilisation.md#transferts)
    * [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
    * [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
