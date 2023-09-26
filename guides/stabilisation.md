@@ -20,17 +20,17 @@ Les directives suivantes décrivent comment le CCA procède pour acquérir et st
 Étapes :
 * **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou un membre de l'équipe de gestion de collection, GesCo)**
    * Aviser l'équipe GesCo ou l'archiviste numérique, le cas échéant.
-   * Compresser les fichiers et déplacez le fichier nouvellement compressé dans le répertoire Processing du serveur de fichiers.
+   * Compresser les fichiers et déplacer le fichier nouvellement compressé dans le répertoire Processing du serveur de fichiers.
 * **GesCo : Création de l'acquisition dans TMS**
    * Pour les acquisitions comprenant exclusivement des archives nées numériques, ne créer qu'un numéro de versement dans TMS (pas de versement-objet ni de numéro ARCH). Inclure une brève note permettant d'identifier l'acquisition dans la section "Description du contenu". Par exemple, vous pouvez utiliser le nom du dossier Dropbox de l'acquisition.
    * Pour les acquisitions de photos ou de P&D, créer des enregistrements de groupe ou de pièce comme d'habitude.
 * **Archiviste numérique : ingestion**
    * Ajouter de l'information concernant le contenu des fichiers nouvellement acquis dans la section "Description du contenu" dans TMS.
    * Emballer le fichier compressé sous forme de SIP et l'ingérer dans Archivematica en suivant les [procédures d'ingestion des données brutes](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
-   * Faites une demande de déplacement auprès de GesCo afin de déplacer les fichiers vers l'emplacement "Dark Archive" dans TMS.
-   * Supprimer les copies des fichiers inutiles dans le répertoire Processing, Digital Shipping Space ou sur les postes de travail BitCurator.
+   * Faire une demande de déplacement auprès de GesCo afin de déplacer les fichiers vers l'emplacement "Dark Archive" dans TMS.
+   * Supprimer les fichiers inutiles dans le répertoire Processing, Digital Shipping Space ou sur les postes de travail BitCurator.
 * **GesCo**
-   * Ajouter "Dark Archive" comme lieu de l'enregistrement d'acquisition (par exemple, versement)
+   * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
 
 <a name="supports_temps"></a>
 ## Supports physiques temporaires
