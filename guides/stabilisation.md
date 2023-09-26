@@ -11,24 +11,24 @@ Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des do
 <a name="aperçu"></a> 
 ## Aperçu général
 
-En général, le contenu numérique arrive au CCA de l'une des trois façons suivantes : sous forme de transfert réseau (par exemple FTP, Dropbox, WeTransfer), sur des supports de transfert physique temporaires (par exemple clé USB, disque dur externe) ou sur des supports de stockage physique originaux. Un seul dépôt (versement) peut contenir des fichiers numériques arrivés au CCA par l'une ou l'autre de ces méthodes.
+En général, le contenu numérique arrive au CCA par l'une des trois façons suivantes : sous forme de transfert réseau (par exemple FTP, Dropbox, WeTransfer), sur des supports de transfert physique temporaires (par exemple clé USB, disque dur externe) ou sur des supports de stockage physique originaux (par exemple disquette, CD, DVD). Un seul dépôt (versement) peut contenir des fichiers numériques arrivés au CCA par l'une ou l'autre de ces méthodes.
 
-Les procédures suivantes décrivent comment le CCA procède aux versements et stabilise le contenu de chacune de ces méthodes de versement, ainsi que la manière dont le CCA ingère le contenu brut d'un versement dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
+Les directives suivantes décrivent comment le CCA procède pour acquérir et stabiliser le contenu numérique de chacune de ces méthodes de versement, ainsi que la manière dont le CCA ingère le contenu brut d'un versement dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
 
 <a name="transferts"></a>
 ## Transferts de fichiers en réseau
 Étapes :
 * **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou un membre de l'équipe de gestion de collection, GesCo)**
-   * Aviser l'équipe GesCo et l'archiviste numérique, le cas échéant.
-   * Compresser les fichiers et déplacez le fichier compressé dans le dossier d'acquisition Processing.
-* **GesCo : Créer des dossiers d'acquisition**
-   * Pour les entrées exclusivement numériques dans les archives, ne créer qu'une fiche de versement (pas d'objet de versement ou de fiche ARCH). Inclure une brève note d'identification de l'acquisition dans la "Description du contenu" (par exemple, le nom du dossier Dropbox)
-   * Pour Photo/P&D, créez des enregistrements de groupe ou de pièce comme d'habitude
-* **Archiviste numérique : ingérer**
-   * Ajouter une brève note descriptive sur le contenu au versement "Description du contenu".
-   * Emballer le contenu sous forme de SIP et l'ingérer dans Archivematica, en suivant les [procédures d'ingestion des données brutes](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
-   * Faites une demande de déplacement des fichiers vers l'emplacement "Dark Archive".
-   * Supprimer les copies des fichiers non nécessaires de Digital Shipping Space, des postes de travail BitCurator, etc.
+   * Aviser l'équipe GesCo ou l'archiviste numérique, le cas échéant.
+   * Compresser les fichiers et déplacez le fichier nouvellement compressé dans le répertoire Processing du serveur de fichiers.
+* **GesCo : Création de l'acquisition dans TMS**
+   * Pour les acquisitions comprenant exclusivement des archives nées numériques, ne créer qu'un numéro de versement dans TMS (pas de versement-objet ni de numéro ARCH). Inclure une brève note permettant d'identifier l'acquisition dans la section "Description du contenu". Par exemple, vous pouvez utiliser le nom du dossier Dropbox de l'acquisition.
+   * Pour les acquisitions de photos ou de P&D, créer des enregistrements de groupe ou de pièce comme d'habitude.
+* **Archiviste numérique : ingestion**
+   * Ajouter de l'information concernant le contenu des fichiers nouvellement acquis dans la section "Description du contenu" dans TMS.
+   * Emballer le fichier compressé sous forme de SIP et l'ingérer dans Archivematica en suivant les [procédures d'ingestion des données brutes](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
+   * Faites une demande de déplacement auprès de GesCo afin de déplacer les fichiers vers l'emplacement "Dark Archive" dans TMS.
+   * Supprimer les copies des fichiers inutiles dans le répertoire Processing, Digital Shipping Space ou sur les postes de travail BitCurator.
 * **GesCo**
    * Ajouter "Dark Archive" comme lieu de l'enregistrement d'acquisition (par exemple, versement)
 
