@@ -13,7 +13,7 @@ Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des do
 
 En général, le contenu numérique arrive au CCA par l'une des trois façons suivantes : sous forme de transfert réseau (par exemple FTP, Dropbox, WeTransfer), sur des supports de transfert physique temporaires (par exemple clé USB, disque dur externe) ou sur des supports de stockage physique originaux (par exemple disquette, CD, DVD). Une seule acquisition (versement) peut contenir des fichiers numériques envoyés par l'une ou l'autre de ces trois méthodes.
 
-Les directives suivantes décrivent comment le CCA procède pour acquérir et stabiliser le contenu numérique et la manière dont le CCA ingère le contenu brut d'un versement dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
+Les directives suivantes décrivent comment le CCA procède pour acquérir et stabiliser le contenu numérique d'un versement et la manière dont le CCA ingère le contenu brut dans son dépôt numérique, une fois toutes les étapes préparatoires complétées.
 
 <a name="transferts"></a>
 ## Transferts de fichiers en réseau
