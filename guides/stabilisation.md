@@ -19,7 +19,7 @@ Les directives suivantes décrivent comment le CCA procède pour acquérir et st
 ## Transferts de fichiers en réseau
 Étapes :
 * **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou un membre de l'équipe de gestion de collection, GesCo)**
-   * Aviser l'équipe GesCo ou l'archiviste numérique, le cas échéant.
+   * Aviser l'équipe GesCo ou l'archiviste numérique dès la réception du transfert.
    * Compresser les fichiers et déplacer le fichier nouvellement compressé dans le répertoire Processing du serveur de fichiers.
 * **GesCo : Création de l'acquisition dans TMS**
    * Pour les acquisitions comprenant exclusivement des archives nées numériques, ne créer qu'un numéro de versement dans TMS (pas de versement-objet ni de numéro ARCH). Inclure une brève note permettant d'identifier l'acquisition dans la section "Description du contenu". Par exemple, vous pouvez utiliser le nom du dossier Dropbox de l'acquisition.
@@ -41,30 +41,30 @@ Les directives suivantes décrivent comment le CCA procède pour acquérir et st
 * **Archiviste numérique : ingérer**
    * Ajouter une brève note descriptive sur le contenu au versement "Description du contenu".
    * Emballer le contenu sous forme de SIP Archivematica et l'ingérer dans Archivematica, en suivant les [procédures d'ingestion des données "brutes"](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
-   * Faites une demande de déplacement des fichiers à localiser vers Dark Archive.
+   * Faire une demande de déplacement des fichiers à localiser vers Dark Archive.
    * Supprimer les copies de fichiers inutiles de Digital Shipping Space, des postes de travail BitCurator, etc.
-   * Reformater (effacer) le support et le retourner au donneur, le réorienter ou le élagage selon le cas
+   * Reformater (effacer) le support et le retourner au donneur ou à la donatrice, le réutiliser ou le jeter.
 * **GesCo**
-   * Ajouter "Dark archive" comme lieu de l'enregistrement d'acquisition (par exemple, versement)
+   * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
 
 <a name="supports_originaux"></a>
 ## Supports physiques originaux
-Note : Il s'agit d'une vaste catégorie qui peut inclure, par exemple, les disquettes, les supports optiques (CD/DVD), les ordinateurs, les disques durs internes, les formats de bandes de sauvegarde tels que les LTO, etc. Pour vous aider à identifier correctement les types de supports, veuillez consulter le [guide d'identification des supports informatiques](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/mediaIDGuide.docx) ou la page ["Know Your Media"](http://lib.utsa.edu/knowyourmedia/) des bibliothèques de l'UTSA.
-Étapes :
+Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports optiques (CD/DVD), les ordinateurs, les disques durs internes et les stockages à bandes magnétiques tels que les LTO par exemple. Pour vous aider à identifier correctement les types de supports, veuillez consulter le [guide d'identification des supports informatiques](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/mediaIDGuide.docx) ou la page ["Know Your Media"](http://lib.utsa.edu/knowyourmedia/) des bibliothèques de l'Université du Texas à San Antonio (UTSA).
 
+Étapes :
 * **GesCo**
-   * Créer des dossiers d'acquisition comme décrit ci-dessus
-   * Déterminer s'il est possible de séparer les médias numériques à l'arrivée
-   * SI OUI : Le bureau d'enregistrement sépare les supports numériques des matériaux physiques à leur arrivée (stockés dans des rayonnages froids de la chambre forte) et crée des versement-objets distincts pour le(s) conteneur(s) des supports numériques.
-   * SI NON : le bureau d'enregistrement note dans le champ "Description du contenu" des enregistrements d'objets de versement qu'ils contiennent des supports numériques. Ce matériel sera ensuite stabilisé selon les workflow de l'arriéré des médias par le technicien des archives numériques dans le cadre de son travail habituel ou au moment du traitement.
+   * Créer l'acquisition dans TMS comme décrit ci-dessus.
+   * À l'arrivée des boîtes d'archives, déterminer s'il est possible de séparer les supports numériques.
+   * SI OUI : GesCo sépare les supports numériques des documents papiers (entreposé sur les étagères de la chambre froide) et crée des versement-objets distincts par conteneur.
+   * SI NON : GesCo doit indiquer dans TMS dans la section "Description du contenu" de la page du versement-objet que le versement contient des supports numériques. Le matériel numérique sera ensuite stabilisé par le technicien ou la technicienne des archives numériques ou le versement-objet sera ajouté dans le fichier du "Backlog Project". 
 * **Archiviste numérique**
-   * Note : Ces étapes peuvent être réalisées avec un certain retard
-   * Superviser l'imagerie disque des médias
-   * Si les archives ne doivent pas être traitées immédiatement, regroupez toutes les images disque dans un seul SIP Archivematica et insérez-le dans Archivematica, en suivant les [procédures d'insertion des données "brutes"](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
-   * Faites une demande de déplacement des fichiers à localiser vers Dark Archive.
-   * Supprimer les copies de fichiers non nécessaires de Digital Shipping Space, des postes de travail BitCurator, etc.
+   * Note : Ces étapes peuvent ne pas être réalisées immédiatement.
+   * Superviser le technicien ou la technicienne des archives numériques lors de la tâche de la création d'images disques.
+   * Si le versement ne peut pas être traité immédiatement, regrouper toutes les images disques dans un seul SIP et ingérer le SIP dans Archivematica en suivant les [procédures d'insertion des données "brutes"](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
+   * Faire une demande de déplacement auprès de GesCo afin de changer l'emplacement du versement-objet dans TMS au "Dark Archive".
+   * Supprimer les fichiers inutiles dans le répertoire Digital Shipping Space ou sur les postes de travail BitCurator.
 * **GesCo**
-   * Ajouter "Dark Archive" comme lieu de l'enregistrement d'adhésion (par exemple, versement)
+   * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
 * **Archiviste numérique, Archiviste/Chef/Curateur, Directeur associé**
    * **Note : Les politiques relatives à cette étape sont en cours de révision par Adria Seccareccia, Archiviste, en relation avec les politiques générales d’élagage du CCA**
    * Pendant ou après le traitement, l'Archiviste Numérique et soit l'Archiviste, soit le conservateur/chef approprié évaluent les supports pour leur valeur artéfactuelle et confirment avec le Directeur Associé de la Collection. Cette évaluation peut aboutir à trois résultats :
