@@ -26,7 +26,7 @@ Les directives suivantes décrivent comment le CCA procède pour acquérir et st
    * Pour les acquisitions de photos ou de P&D, créer des enregistrements de groupe ou de pièce comme d'habitude.
 * **Archiviste numérique : ingestion**
    * Ajouter de l'information concernant le contenu des fichiers nouvellement acquis dans la section "Description du contenu" dans TMS.
-   * Emballer le fichier compressé sous forme de SIP et l'ingérer dans Archivematica en suivant les [procédures d'ingestion des données brutes](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
+   * Emballer le fichier compressé sous forme de SIP (paquet d'information à archiver) et ingérez-le dans Archivematica en suivant les [procédures d'ingestion des données brutes](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
    * Faire une demande de déplacement auprès de GesCo afin de déplacer les fichiers vers l'emplacement "Dark Archive" dans TMS.
    * Supprimer les fichiers inutiles dans le répertoire Processing, Digital Shipping Space ou sur les postes de travail BitCurator.
 * **GesCo**
@@ -74,11 +74,12 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
 
 <a name="integrer"></a>
 ## Ingestion des données brutes dans un dépôt numérique
-Une fois que l'archiviste au traitement ou que le technicien/ la technicienne ait téléchargé les fichiers et stabilisé tous les supports physique ou temporaire, l'acquisition doit être ingérée dans le dépôt numérique du CCA, Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données  telles qu'elles sont arrivées au CCA. 
+Une fois que l'archiviste au traitement ou que le technicien/ la technicienne ait téléchargé les fichiers et stabilisé tous les supports physiques ou temporaires, l'acquisition doit être ingérée dans le dépôt numérique du CCA, Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données telles qu'elles sont arrivées au CCA. 
 
-**Il est à noter que tous les fichiers provenant de transferts en réseau ou de supports temporaires doivent être exportés dans un format d'archive approprié (zip, tar, rar, etc.), faute de quoi Archivematica modifiera les noms des fichiers et les dates originales, allant à l'encontre d'une partie de l'objectif de l'ingestion brute des données. Au CCA, nous préférons généralement conserver les fichiers tar. Vérifiez que les fichiers ont été compressés avec succès et qu'ils peuvent être rouverts, car les fichiers zip défectueux peuvent entraîner la perte du matériel de collection. Notez également que cette étape peut ne pas être nécessaire si les images disques doivent être conservées comme partie du matériel traité.**
+**Il est à noter que tous les fichiers provenant de transferts en réseau ou de supports temporaires doivent être exportés dans un format d'archive approprié (zip, tar, rar, etc.), faute de quoi Archivematica modifiera les noms des fichiers et les dates de créations des fichiers, allant à l'encontre de l'ingestion brute des données sans modification aucune. 
+Au CCA, nous préférons créer nos SIP en utilisant le format tar. Il est alors suggéré de bien vérifier que les fichiers ont été compressés avec succès et qu'ils peuvent être rouverts, car les fichiers zip défectueux peuvent entraîner la perte de documents et donc, de matériel de collection. Notez également que cette étape peut être facultative si les images disques doivent être conservées.**
 
-Ce SIP est composé de tous les fichiers, paquets d'archives et images disques qui correspondent à une acquisition. Il est nommé selon la convention `<numéro d'acquisition>_raw`, toute la ponctuation est remplacée par des traits de soulignement (par exemple, `AR2018_0001_raw`).
+Ce SIP est composé de tous les fichiers, les paquets d'archives et les images disques en lien avec l'acquisition. Il est nommé selon la convention de nommage suivante `<numéro d'acquisition>_raw`, toute la ponctuation est remplacée par des traits de soulignement (par exemple, `AR2018_0001_raw`).
 
 
 Pour l'ingestion de données brutes non traitées, nous utilisons le pipeline de traitement VSP-AMPL-01. Dans ce pipeline, Archivematica est configuré par défaut pour ne pas extraire de paquets, examiner le contenu ou normaliser les fichiers.
