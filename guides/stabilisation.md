@@ -75,7 +75,9 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
 <a name="integrer"></a>
 ## Ingestion des données brutes dans un dépôt numérique
 Une fois que l'archiviste au traitement ou que le technicien/ la technicienne ait téléchargé les fichiers et stabilisé tous les supports physique ou temporaire, l'acquisition doit être ingérée dans le dépôt numérique du CCA, Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données  telles qu'elles sont arrivées au CCA. 
+
 **Il est à noter que tous les fichiers provenant de transferts en réseau ou de supports temporaires doivent être exportés dans un format d'archive approprié (zip, tar, rar, etc.), faute de quoi Archivematica modifiera les noms des fichiers et les dates originales, allant à l'encontre d'une partie de l'objectif de l'ingestion brute des données. Au CCA, nous préférons généralement conserver les fichiers tar. Vérifiez que les fichiers ont été compressés avec succès et qu'ils peuvent être rouverts, car les fichiers zip défectueux peuvent entraîner la perte du matériel de collection. Notez également que cette étape peut ne pas être nécessaire si les images disques doivent être conservées comme partie du matériel traité.**
+
 Ce SIP est composé de tous les fichiers, paquets d'archives et images disques qui correspondent à une acquisition. Il est nommé selon la convention `<numéro d'acquisition>_raw`, toute la ponctuation est remplacée par des traits de soulignement (par exemple, `AR2018_0001_raw`).
 
 
