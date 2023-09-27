@@ -65,8 +65,7 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
    * Supprimer les fichiers inutiles dans le répertoire Digital Shipping Space ou sur les postes de travail BitCurator.
 * **GesCo**
    * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
-* **Archiviste numérique, Archiviste/Chef/Curateur, Directeur associé**
-   * **Note : Les politiques relatives à cette étape sont en cours de révision par Adria Seccareccia, Archiviste, en relation avec les politiques générales d’élagage du CCA**
+* **Archiviste numérique, Archiviste/Chef/Commissaire, Directeur associé/ Directrice associée**
    * Pendant ou après le traitement, l'Archiviste Numérique et soit l'Archiviste, soit le conservateur/chef approprié évaluent les supports pour leur valeur artéfactuelle et confirment avec le Directeur Associé de la Collection. Cette évaluation peut aboutir à trois résultats :
       * Les supports ont une valeur artéfactuelle et seront conservés en permanence au CCA dans leur intégralité
       * Les supports ont une valeur artéfactuelle et un échantillon sera conservé en permanence au CCA
@@ -74,7 +73,7 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
    * Tous les supports conservés au CCA sont conservés uniquement pour leur valeur artéfactuelle, et non comme supports de stockage ou "sauvegardes" de fichiers numériques dans la collection du CCA. La description et la disposition de ces objets doivent être discutées avec l'archiviste numérique et l'archiviste/chef/catalogueur approprié. Chaque fois que des supports sont retournés ou détruits, l'archiviste chargé du traitement en prend note dans le champ de saisie "Évaluation-destruction" du TMS au niveau du fonds.
 
 <a name="integrer"></a>
-## Ingestion des données "brutes" dans un dépôt numérique
+## Ingestion des données brutes dans un dépôt numérique
 Une fois les données de l'ensemble du transfert réseau, des supports temporaires et des supports originaux d'une acquisition stabilisées, la composante numérique de l'acquisition est ingérée dans le dépôt numérique du CCA basé sur Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données exactement comme elles sont arrivées au CCA jusqu'à ce qu'un archiviste traite l'acquisition. **Il est à noter que tous les fichiers provenant de transferts en réseau ou de supports temporaires doivent être exportés dans un format d'archive approprié (zip, tar, rar, etc.), faute de quoi Archivematica modifiera les noms de fichiers et les horodatages originaux, allant à l'encontre d'une partie de l'objectif de l'ingestion "brute". Au CCA, nous préférons généralement conserver les fichiers tar. Vérifiez que les fichiers ont été compressés avec succès et qu'ils peuvent être rouverts, car les fichiers zip défectueux peuvent entraîner la perte du matériel de collection. Notez également que cette étape peut ne pas être nécessaire si les images disque doivent être conservées comme partie du matériel traité.**
 Ce SIP est composé de tous les fichiers, paquets d'archives et images disques qui correspondent à une acquisition. Il est nommé selon la convention `<numéro d'acquisition>_raw`, toute la ponctuation est remplacée par des traits de soulignement (par exemple, `AR2018_0001_raw`).
 
