@@ -16,7 +16,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    * [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
    * [Ingestion des données "brutes" dans le système de préservation numérique](guides/stabilisation.md#integrer)
 
-* **[Imagerie de disque support physique original](guides/Imagerie_de_disque.md)**
+* **[Création d'une image disque à partir d'un support physique original](guides/Imagerie_de_disque.md)**
    * [Création d'images disques avec Guymager (Bitcurator)](guides/Imagerie_de_disque.md#guymager)
    * [Création d'images disques avec FTK Imager](guides/Imagerie_de_disque.md#ftk)
    * [Création d'images disques avec IsoBuster](guides/Imagerie_de_disque.md#isobuster)
