@@ -14,15 +14,15 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    * [Transferts de réseau](guides/stabilisation.md#transferts)
    * [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
    * [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
-   * [Ingestion des données "brutes" dans un dépôt numérique](guides/stabilisation.md#integrer)
+   * [Ingestion des données "brutes" dans le système de préservation numérique](guides/stabilisation.md#integrer)
 
 * **[Imagerie de disque support physique original](guides/Imagerie_de_disque.md)**
-   * [Imagerie de disque avec Guymager (Bitcurator)](guides/Imagerie_de_disque.md#guymager)
-   * [L'imagerie des supports physiques avec le FTK Imager](guides/Imagerie_de_disque.md#ftk)
-   * [Imagerie de disque avec IsoBuster](guides/Imagerie_de_disque.md#isobuster)
-   * [Imagerie de disques disquettes 5,25" avec FC5025](guides/Imagerie_de_disque.md#fc5025)
-   * [L'imagerie sur disque avec le Kryoflux](guides/Imagerie_de_disque.md#kryoflux)
-   * [L'imagerie sur disque avec le Nimbie et l'ImgBurn](guides/Imagerie_de_disque.md#nimbie)
+   * [Création d'images disques avec Guymager (Bitcurator)](guides/Imagerie_de_disque.md#guymager)
+   * [Création d'images disques avec FTK Imager](guides/Imagerie_de_disque.md#ftk)
+   * [Création d'images disques avec IsoBuster](guides/Imagerie_de_disque.md#isobuster)
+   * [Création d'images disques (pour les disquettes souples de 5,25") avec FC5025](guides/Imagerie_de_disque.md#fc5025)
+   * [Création d'images disques avec Kryoflux](guides/Imagerie_de_disque.md#kryoflux)
+   * [Création d'images disques avec Nimbie et ImgBurn](guides/Imagerie_de_disque.md#nimbie)
    * [Dépannage](guides/Imagerie_de_disque.md#depannage)
    
 * **[Prétraitement : Triage et évaluation des archives nées numériques](guides/Pretraitement.md)**
