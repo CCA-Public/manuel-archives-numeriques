@@ -6,7 +6,7 @@ Des ressources utiles, notamment :
 * [Identification et information des supports de stockage numérique](#stockage)
 * [Identification et informations sur le format de fichier](#format_de_fichier)
 * [Outils de préservation numérique](#preservation)
-* [Ressources en matière de script](#res_script)
+* [Ressources en matière de commandes](#res_script)
 * [Commandes utiles](#scripts)
 * [Préservation de la conception assistée par ordinateur](#conception)
 * [Ressources générales](#generales)
@@ -44,7 +44,7 @@ Des ressources utiles, notamment :
 * [Preserving optical media from the command line](http://blog.kbresearch.nl/2015/11/13/preserving-optical-media-from-the-command-line/)
 
 <a name="res_script"></a>
-## Ressources en matière de script
+## Ressources en matière de commandes
 * [Script Ahoy](http://dd388.github.io/crals/) : "Notre ressource communautaire est destinée à fournir des liens utiles et des codes de script spécifiquement tirés d'exemples réels dans les archives et les bibliothèques".
 * [Cours accéléré sur la ligne de commande](https://learnpythonthehardway.org/book/appendixa.html) : Learn Python the Hard Way
 
