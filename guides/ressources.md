@@ -26,9 +26,9 @@ Des ressources utiles, notamment :
 
 <a name="stockage"></a>
 ## Identification et information des supports de stockage numérique
-[Connaître vos médias](http://lib.utsa.edu/knowyourmedia/)
+* [Connaître vos médias](http://lib.utsa.edu/knowyourmedia/)
 
-<a name="format_de_fichier></a>
+<a name="format_de_fichier"></a>
 ## Identification et informations sur le format de fichier
 * [Siegfried](http://www.itforarchivists.com/siegfried) : Vous avez un dossier avec une extension de dossier manquant ou suspect ? Faites glisser le fichier sur le marteau de Siegfried et ce site fera de son mieux pour reconnaître le fichier pour vous.
 * [Toutes les extensions connues](http://www.digipres.org/formats/extensions/) : Vous ne savez rien d'un fichier à part son extension ? C'est un bon point de départ.
