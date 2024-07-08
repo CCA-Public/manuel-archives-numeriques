@@ -21,8 +21,7 @@ Des ressources utiles, notamment :
 ### Sur la description archivistique
 * Callahan, Maureen. "[The Value of Archival Description Considered](https://icantiemyownshoes.wordpress.com/2014/04/04/the-value-of-archival-description-considered/)", Chaos->Order, 2014 : Pas strictement une lecture de préservation numérique, mais de l’information utile qui devrait être lue et revisiter pour quiconque arrange et décrit des archives.
 
-
-Sur le code/logiciel
+### Sur le code/logiciel
 * Ford, Paul. "[What is code](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/) ?", Bloomberg Businessweek, 11 juin 2015 : Probablement le meilleur article jamais écrit (et le plus divertissant) sur la nature des codes/logiciels.
 
 <a name="stockage"></a>
