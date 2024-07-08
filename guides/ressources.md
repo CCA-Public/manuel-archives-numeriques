@@ -7,7 +7,7 @@ Des ressources utiles, notamment :
 * [Identification et informations sur le format de fichier](#format_de_fichier)
 * [Outils de préservation numérique](#preservation)
 * [Ressources en matière de script](#res_script)
-* [Scripts utiles en ligne de commande](#scripts)
+* [Commandes utiles](#scripts)
 * [Préservation de la conception assistée par ordinateur](#conception)
 * [Ressources générales](#generales)
 
@@ -50,7 +50,7 @@ Sur le code/logiciel
 * [Cours accéléré sur la ligne de commande](https://learnpythonthehardway.org/book/appendixa.html) : Learn Python the Hard Way
 
 <a name="scripts"></a>
-## Scripts utiles en ligne de commande
+## Commandes utiles
 
 * **Conversion par lots de fichiers dans un répertoire et des sous-répertoires en utilisant LibreOffice.**
 
@@ -154,6 +154,14 @@ Le script crée une copie du dossier source, nommé de la même façon, dans le 
     Notez que ce script **écrase, supprime et utilise sudo**, ce qui signifie qu'il est très puissant. Il n'est pas recommandé de l'utiliser sans avoir une certaine expérience de rsync.
 
 	   sudo rsync -qam --delete "/PATH/TO/SIPs/" "/PATH/TO/PARENT_OF_SIPs/"
+  
+
+* **Déverrouiller des dossiers**
+
+   Cette commande déverrouille le dossier en utilisant "sudo". 
+   Souvent, lors de la création d'une image disque sur le Bitcurator, un fichier vérouillé peut être créé. Si vous avez besoin de déverrouiller un dossier, remplacez le * par le chemin du dossier.
+    
+           sudo chmod 777 *
   
 
 * **Analyse antivirus**
