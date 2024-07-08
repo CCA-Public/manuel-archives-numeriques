@@ -350,10 +350,18 @@ ImgBurn génère automatiquement un rapport qui répertorie toutes les actions r
 <a name="depannage"></a>
 ### Dépannage
 * **Problème** : Un problème rencontré en utilisant le Nimbie pour la création d'images diques est que certaines copies provenant de CD ne générait pas les fichiers .iso, mais créait des fichier .bin. Apparemment, cela est dû au type de mode de secteur que le CD utilise pour stocker les données. Les CD utilisant le mode 1 donnent des fichiers d'image .iso, tandis que les CD utilisant le mode 2/type 1 donnent des fichiers .bin. Plus d'informations peuvent être trouvées [ici](http://www.multimediadirector.com/help/technology/cd-rom/cdrom_spec.htm).
-   * **Solution** : La meilleure solution qu'on a pu trouver a été de changer simplement l'extension de fichier de "nomdefichier.bin" à "nomdefichier.iso". Cela ne semble pas avoir d'effet sur le fichier image, car nous avons toujours été capable d'extraire des fichiers du fichier image sans problème. Cette solution a été trouvée [ici](http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/),
+   * **Solution** : La meilleure solution qu'on a pu trouver a été de changer simplement l'extension de fichier de "nomdefichier.bin" à "nomdefichier.iso". Cela ne semble pas avoir d'effet sur le fichier image, car nous avons toujours été capable d'extraire des fichiers du fichier image sans problème. Cette solution a été trouvée [ici](http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/).
+
 * **Problème** :  L'autochargeur Nimbie n'apparaît pas comme un lecteur utilisable dans ImgBurn
    * **Solution** : Il y a quelques causes possibles à cela, car cela s'est produit plusieurs fois en laboratoire. Voici les solutions que nous avons utilisées :
       * Changer le câble qui relie le Nimbie à l'ordinateur. Le câble nécessaire est de type B en USB 2.0 ou A en USB 2.0 ou 3.0
       * Réinstaller les pilotes de périphériques (nécessite des privilèges d'administrateur)
       * Vérifiez que le pilote est installé au bon endroit, c'est-à-dire à l'endroit où ImgBurn est installé (c'est-à-dire C:\Program Files\ImgBurn)
+    
+* **Problème :**
+l'icone du CD n'apparait pas sur le BitCurator.
+	* **Solution :** Essayez d'éjecter le disque et le réinsérer. Parfois il peut y avoir un bug lorsque le logiciel antivirus ClamTK est ouvert et qu'un CD a été inséré.
 
+* **Problème :**
+Après l'utilisation de Disk Image Processor ou Folder Processor (Outils développés par le CCA), le nom du fichier logigique est modifié (caractères ou syntaxe différents de ceux des autres documents, abréviations, etc.)
+	* **Solution :** Essayez de monter l'image disque et comparez les noms des dossiers. S'il y a une différence, copiez le nom du dossier de l'image disque montée dans votre SIP.
