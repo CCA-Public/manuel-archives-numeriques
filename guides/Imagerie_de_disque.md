@@ -42,7 +42,7 @@ Avant de commencer à créer des images disques à partir d'une acquisition, cr�
    * **Répertoire d'images** : Sélectionnez le répertoire que vous avez créé dans /mnt/1TB_RAID.
    * **Nom du fichier image** : entrez l'identifiant du disque sans espaces. Remplacez les deux points (':') par des traits de soulignement ('_').
    * **Nom de fichier info** : il devrait être créé automatiquement en fonction de votre nom de fichier image. Ne modifiez pas ce champ.
-   * Calcul/vérification du hachage :
+   * **Calcul/vérification du hachage** :
       * Cochez "Calculer MD5", "Calculer SHA-1", et "Vérifier l'image après acquisition".
       * Ne pas cocher les autres options
 
@@ -55,61 +55,52 @@ Avant de commencer à créer des images disques à partir d'une acquisition, cr�
 * Si l'image est créé avec succès, allez dans votre dossier de projet sur le bureau et faites une vérification visuelle rapide pour vous assurer que tout est en ordre. Vous devriez voir deux fichiers : l'image disque elle-même et un fichier de métadonnées ".info".
 * Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois que tous les supports ont été imagés, alertez l'archiviste numérique.
 
-
 <a name="ftk"></a>
 ### Création d'une image disque avec FTK Imager
-AccessData FTK Imager est un outil d'imagerie de disque gratuit, mais basé sur Windows et faisant partie de la suite logicielle commerciale Forensics Toolkit. Au CCA, nous utilisons FTK Imager pour créer des images disque pour des supports ne pouvant être imagés par Guymager.
+AccessData FTK Imager est un outil d'imagerie de disque gratuit mais propriétaire utilisé sur l'un de nos ordianteurs Windows et fait partie de la suite logicielle Forensics Toolkit. Au CCA, nous utilisons FTK Imager pour créer des images disques pour des supports ne pouvant être traitées par Guymager.
 
+FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans laboratoire numérique du CCA. Avant de commencer la création d'images disques créez d'abord un dossier dans lequel vous allez enregistrer votre travail et donnez lui un nom significatif, par exemple un numéro d'acquisition ou d'identification.
 
-Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilisez la station de travail d'imagerie de disque (DSK-065-14) du laboratoire numérique du CCA. Créez un dossier de projet dans lequel vous allez enregistrer votre travail. Donnez à ce dossier un nom mémorable et significatif, par exemple un numéro d'acquisition ou d'identification.
+#### Étapes :
 
-#### Étapes pour l'imagerie des supports physiques avec le FTK Imager :
+* Avant de créer une image disque, effectuez une analyse antivirus à l'aide du logiciel SentinelOne :
+   * Faite un clic droit sur le fichier ou sur le dossier que vous souhaitez analyser et sélectionnez l'option "Scan for threats" dans le menu déroulant.
+   * Si le logiciel ne trouve pas de virus informatique, procédez à l'étape suivante. Sinon, arrêtez-vous et assurez vous de notez le ou les virus trouvé(s) dans le fichier de travail "versement_stabilization", alertez ensuite l'Archiviste Numérique.
+     
+* Ouvrez le logiciel FTK Imager.
+* Dans le menu Fichier, sélectionnez "Create a disk image".
+![FTK1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture1-2.PNG)  
 
+* Sélectionnez la source appropriée : Pour les disques durs la source appropriée sera "Physical Drive". Pour la plupart des autres types de supports (y compris les CD, les DVD et les disquettes), la source sera "Logical Drive".
 
-* Avant de créer une image disque, faites un scan antivirus du support à l'aide de l'ESET :
-* Ouvrez ESET Endpoint Antivirus.
-* Dans le menu "Analyse de l'ordinateur", cliquez sur "Analyse personnalisée", puis sélectionnez le support pour lancer l'analyse antivirus.
-* S'il n'y a pas de virus, passez à l'étape suivante. Si ESET trouve des virus, arrêtez-vous, notez le(s) virus rencontré(s) dans le tableur de stabilisation du versement, mettez le support de côté et consultez l'archiviste numérique.
-* Ouvrez l'imageur FTK.
-![FTK1](https://blogs.sans.org/computer-forensics/files/2009/06/ftkimager.png)
+![FTK2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture2-1.PNG).
 
+* Sélectionnez le lecteur approprié dans le menu déroulant.
 
-* Dans le menu Fichier, sélectionnez Créer une image disque et choisissez la source et le lecteur appropriés.
-   * **Source** : Pour les disques durs pleins, la source appropriée sera "Physical Drive". Pour la plupart des autres types de supports (y compris les CD, les DVD et les disquettes), la source sera "Logical Drive".
-   * **Lecteur** : Sélectionnez le lecteur approprié dans la liste.
-![FTK2](https://blogs.sans.org/computer-forensics/files/2009/06/select-source.png)  
-
-
-![FTK3](https://blogs.sans.org/computer-forensics/files/2009/06/select-device.png) 
-
+![FTK3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture3.PNG) 
 
 * Sélectionnez "Add" pour ajouter la destination de l'image. Cochez "Verify images after they are created", mais laissez "Create directory listings..." non coché.
-![FTK4](https://blogs.sans.org/computer-forensics/files/2009/06/device-selected.png)
 
+![FTK4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture4.PNG)
 
 * Sélectionnez le type d'image "raw (dd)".
+  
 * FTK vous demandera d'ajouter des métadonnées pour votre image disque. Entrez les métadonnées suivantes :
-   * **Case number** : Versement
-   * **Evidence number** : Identifiant du média imaginé
+   * **Case number** : Numéro ou identifiant du versement
+   * **Evidence number** : Identifiant du support physique numérique que vous désirez copier
    * **Unique description** : Entrez une brève description du support et/ou ses annotations (par exemple, disquette 3,5" portant la mention "FOA Photos 2002")
    * **Examiner**: Votre nom
    * **Notes** : Laissez ce champ vide
-![FTK5](https://blogs.sans.org/computer-forensics/files/2009/06/select-image-type.png)
-![FTK6](https://blogs.sans.org/computer-forensics/files/2009/06/evidence-info.png)
-
-
-
 
 * FTK Imager va maintenant vous demander des informations sur l'endroit où enregistrer l'image disque et les fichiers de métadonnées qui en résultent. Saisissez les informations suivantes, puis sélectionnez "Finish" :
-   * **Dossier de destination de l'image** : Saisissez l'emplacement réseau de votre dossier de travail actuel dans le lecteur du catalogueur.
-   * **Nom du fichier image** : entrez l'identifiant du disque sans espaces. Remplacez les deux points (':') par des traits de soulignement ('_').
-* Vérifiez que la destination et les paramètres de l'image apparaissent correctement, puis sélectionnez "Start" pour lancer le processus d'imagerie du disque.
+   * **Image destination folder** : Saisissez l'emplacement réseau de votre dossier de travail actuel.
+   * **Image filename** : entrez l'identifiant du disque sans espaces. Remplacez les deux points (':') par des traits de soulignement ('_').
+ 
+![FTK5](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture5.PNG)
 
+* Vérifiez que la destination et les paramètres apparaissent correctement, puis sélectionnez "Start" pour lancer le processus de création d'image disque.
 
-![FTK7](https://blogs.sans.org/computer-forensics/files/2009/06/ready-to-create.png) 
-
-
-
+![FTK6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture6.PNG)
 
 * Une fenêtre de progression n'apparaîtra pas pour vous tenir informé de la progression de l'imagerie du disque. Si l'imagerie disque échoue ou semble être bloquée sur un grand nombre de secteurs défectueux, notez le dans le fichier Excel de stabilisation du versement et mettez le disque de côté pour que l'archiviste numérique puisse l'examiner.
 * Si l'image est créée avec succès, allez dans votre dossier de projet dans le dossier Dépôt numérique et faites une vérification visuelle rapide pour vous assurer que tout semble bon. Vous devriez voir au moins deux fichiers : la ou les images disque elles-mêmes (éventuellement divisées en plusieurs fichiers portant le même nom mais avec des extensions .001, .002, etc.), un fichier de métadonnées ".txt"., ainsi qu’un fichier de métadonnées ".txt". Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois tous les supports imagés, alertez l'archiviste numérique.
