@@ -1,6 +1,6 @@
 # Création d'images disques à partir d'un support physique original
 
-* [Création d'une image disque avec Guymager](#guymager)
+* [Création d'une image disque avec Guymager (BitCurator)](#guymager)
 * [Création d'une image disque avec FTK Imager](#ftk)
 * [Création d'une image disque avec IsoBuster](#isobuster)
 * [Création d'une image disque avec FC5025](#fc5025)
@@ -32,7 +32,7 @@ Avant de commencer à créer des images disques à partir d'une acquisition, cr�
 * Ouvrez Guymager (à partir du dossier "Imaging Tools" sur le bureau de Bitcurator).
 
 ![Bitcurator1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager_open.png)
-* Cliquez avec le bouton droit de la souris sur le lecteur sur lequel vous souhaitez créer une image et sélectionnez "Acquérir une image". Si le lecteur/appareil que vous souhaitez photographier n'apparaît pas, actualisez l'écran en cliquant sur "Rescan" dans le coin supérieur gauche de l'interface Guymager.
+* Faites un clic droit avec la souris sur le lecteur que vous souhiatez copier et sélectionnez "Acquire image (Acquérir l'image)". Si le lecteur/appareil que vous souhaitez copier n'apparaît pas, actualisez l'écran en cliquant sur "Rescan" dans le coin supérieur gauche de l'interface Guymager.
 
 ![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)
 *(Ces images ont été prises sur le site suivant : <a href="https://confluence.educopia.org/display/BC/Imaging+with+Guymager">BitCurator Environment</a>)*
