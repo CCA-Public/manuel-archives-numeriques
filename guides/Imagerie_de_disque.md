@@ -110,51 +110,44 @@ FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans labora
 ### Création d'une image disque avec IsoBuster
 [IsoBuster ](https://www.isobuster.com/help/) est un outil d'imagerie de disque basé sur Windows et produit par Smart Projects (géré par Peter Van Hove). Au CCA, nous utilisons IsoBuster pour créer des images disques pour des types particuliers de supports optiques - principalement des DVD, des CD audio et des supports optiques contenant plus de 1024 Mo de données - et comme outil pour documenter l'état actuel des supports endommagés.
 
-
 Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilisez la station de travail d'imagerie de disque (DSK-065-14) du laboratoire numérique du CCA. Créez un dossier de projet dans lequel vous enregistrez votre travail. Donnez à ce dossier un nom mémorable et significatif, par exemple un numéro d'acquisition ou d'identification.
 
+#### Étapes : 
 
-#### Imagerie sur disque
-Etapes: 
-1. Recherche de virus
-   1. Avant de créer l'image du disque, le virus analyse le support à l'aide de l'antivirus ESET Endpoint.
-      1. Ouvrez ESET Endpoint Antivirus dans le menu Démarrer.
-      2. Dans le menu de gauche, sélectionnez "Computer Scan", cliquez sur "Custom scan", puis sélectionnez le support pour lancer l'analyse antivirus.
-      3. S'il n'y a pas de virus, passez à l'étape suivante. Si ESET trouve des virus, arrêtez-vous, notez le(s) virus rencontré(s) dans le tableur de stabilisation du versement, mettez le support de côté et consultez l'archiviste numérique.
-2. Paramètres
-   1. Avant de procéder à l'imagerie du disque, passez en revue les paramètres suivants. Vous devrez peut-être modifier certains paramètres, en fonction de vos besoins pour votre projet de préservation numérique.
-      1. Fichier Cuesheet - Allez à Image Files dans le menu Options. Sous *Select when a cuesheet file will be created*, sélectionnez **Always after a CD, DVD or BD image is created**.
-      2. Fichier de checksum MD5 - Toujours sous Image Files, allez à *Select when an MD5 checksum file will be created* et sélectionnez **Always after an image is created.**
-      3. Taille du fichier image - Toujours sous Image Files, allez à *Image File Creation* images et décochez l'option *Split large Image Files to specified size*.
-3. Créer une image disque
-   1. Démarrer IsoBuster depuis le menu Démarrer
-      1. IsoBuster lit automatiquement le contenu entier du disque et affiche une vue arborescente des dépôts et fichiers dans la colonne de gauche. Si ce n'est pas le cas, sélectionnez le bon lecteur d'option dans la boîte déroulante sous le menu. Le message "No media present" s'affiche si aucun disque n'est monté sur le lecteur.
+* Étape 1 : Avant de créer une image disque, effectuez une analyse antivirus à l'aide du logiciel SentinelOne :
+   * Faite un clic droit sur le fichier ou sur le dossier que vous souhaitez analyser et sélectionnez l'option "Scan for threats" dans le menu déroulant.
+   * Si le logiciel ne trouve pas de virus informatique, procédez à l'étape suivante. Sinon, arrêtez-vous et assurez vous de notez le ou les virus trouvé(s) dans le fichier de travail "versement_stabilization", alertez ensuite l'Archiviste Numérique.
+* Étape 2 : Ouvrez le logiciel IsoBuster et allez directement dans le menu Start pour vérifier les paramêtres suivants. Il se peut que vous deviez modifier certains paramètres en fonction des besoins de votre projet de préservation numérique.
+   * **Image file size** : Allez à Image Files dans le menu Options , allez à *Image File Creation* images et décochez l'option *Split large Image Files to specified size*.
+   * **Cuesheet file** : Toujours sous Image Files, allez à *Select when a cuesheet file will be created*, sélectionnez **Always after a CD, DVD or BD image is created**.
+   * **MD5 checksum file** : Toujours sous Image Files, allez à *Select when an MD5 checksum file will be created* et sélectionnez **Always after an image is created.
+  
+* IsoBuster lit automatiquement le contenu entier du disque et affiche une vue arborescente des fichiers dans la colonne de gauche. Si ce n'est pas le cas, sélectionnez le bon lecteur d'option dans la boîte déroulante sous le menu. Le message "No media present" s'affiche si aucun disque n'est monté sur le lecteur.
 ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_01.PNG?raw=true)
 
-
-      2. Le support détecté (CD/DVD, disquette) apparaît en haut de l'arborescence. Cliquez sur la flèche à gauche de l'icône du système de fichiers (par exemple, l'icône verte UDF nommée "board2" dans l'image ci-dessous) afin d'afficher la structure interne des dépôts. Lorsque vous sélectionnez un dépôt, son contenu s'affiche dans le volet de droite.
+* Le support détecté (CD/DVD, disquette) apparaît en haut de l'arborescence. Cliquez sur la flèche à gauche de l'icône du système de fichiers (par exemple, l'icône verte UDF nommée "board2" dans l'image ci-dessous) afin d'afficher la structure interne des dépôts. Lorsque vous sélectionnez un dépôt, son contenu s'affiche dans le volet de droite.
 ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_06.PNG?raw=true)
 
-
-      3. Dans le volet de gauche, cliquez avec le bouton droit de la souris sur l'icône des médias. Sous l'option , sélectionnez "RAW (.bin, .iso)".
+* Dans le volet de gauche, cliquez avec le bouton droit de la souris sur l'icône des médias. Sous l'option , sélectionnez "RAW (.bin, .iso)".
 ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_02.png?raw=true)
 
+* Une nouvelle fenêtre s'ouvre, vous demandant où vous souhaitez enregistrer votre fichier image. Sélectionnez le dossier de projet que vous avez créé précédemment. Donnez un titre à l'image disque en saisissant l'identifiant du disque sans espace et en remplaçant 
+     les deux points par des traits de soulignement (par exemple : DR2008:0016:346 devient DR2008_0016_346).
+* Dans le menu "Save as type", sélectionnez l'extension .iso.
 
-      4. Une nouvelle fenêtre s'ouvre, vous demandant où vous souhaitez enregistrer votre fichier image. Sélectionnez le dossier de projet que vous avez créé précédemment. Donnez un titre à l'image disque en saisissant l'identifiant du disque sans espace et en remplaçant les deux points par des traits de soulignement (par exemple : DR2008:0016:346 devient DR2008_0016_346).
 ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_03.PNG?raw=true)
 
+* Cliquez sur "Save". Une nouvelle fenêtre s'ouvre, montrant la progression de l'extraction de l'image disque.
+* Une fois l'extraction terminée, IsoBuster créera un fichier checksum MD5.
 
-      5. Dans le menu "Save as type", sélectionnez l'extension .iso.
-      6. Cliquez sur "Save". Une nouvelle fenêtre s'ouvre, montrant la progression de l'extraction de l'image disque.
-      7. Une fois l'extraction terminée, IsoBuster créera un fichier checksum MD5.
-4. Vérifier le contenu de l'image disque
-   1. Une fois que vous avez créé une image disque, ouvrez votre dossier de projet et assurez-vous que vous avez tous les bons composants. Vous devez avoir au moins trois fichiers : le fichier d'image disque (.iso), un fichier de cuesheet (.cue) et un fichier de checksum (.md5).
-   2. Afin de vérifier l'intégrité du fichier image disque, retournez dans IsoBuster et sélectionnez Ouvrir un Fichier Image dans le menu de la barre d'outils "Fichier". Ensuite, double-cliquez sur le fichier cue (.cue) associé à votre fichier image (.iso).
-      1. **REMARQUE** : Les fichiers cue-sheet (.cue) sont couramment utilisés et combinés avec les **fichiers d'image de disque optique** pour avoir une idée de la disposition des pistes des CD, DVD, BD. Les fichiers cue sont en fait des fichiers texte, pour lesquels les données réelles du CD sont toujours contenues dans un fichier différent (.bin, .iso,...) Donc si vous ouvrez un fichier .cue avec IsoBuster, il connaîtra la disposition des pistes de l'image mais obtiendra les données réelles d'un autre fichier. Le nom de ce fichier est également contenu dans le fichier .cue.
-   3. Vérifiez que les dépôts et les fichiers sont tous là, pour garantir l'intégrité du fichier image. Si un X rouge apparaît à côté de certains fichiers, c'est que ces fichiers comportent des erreurs de lecture et qu'ils n'ont peut-être pas été imagés correctement.
-   4. Faites un clic droit sur l'icône du support (CD), puis dans le menu déroulant, sélectionnez "Verify this image file with existing MD5 Checksum file". Le message "The checksum matches with the image file" confirme que l'image disque correspond aux données du support original.
+Étape 3 : Vérifier le contenu de l'image disque
+* Une fois que vous avez créé une image disque, ouvrez votre dossier de projet et assurez-vous que vous avez tous les bons composants. Vous devez avoir au moins trois fichiers : le fichier d'image disque (.iso), un fichier de cuesheet (.cue) et un fichier de checksum (.md5).
+* Afin de vérifier l'intégrité du fichier image disque, retournez dans IsoBuster et sélectionnez Ouvrir un Fichier Image dans le menu de la barre d'outils "Fichier". Ensuite, double-cliquez sur le fichier cue (.cue) associé à votre fichier image (.iso).
+* **REMARQUE** : Les fichiers cue-sheet (.cue) sont couramment utilisés et combinés avec les **fichiers d'image de disque optique** pour avoir une idée de la disposition des pistes des CD, DVD, BD. Les fichiers cue sont en fait des fichiers texte, pour lesquels les données réelles du CD sont toujours contenues dans un fichier différent (.bin, .iso,...) Donc si vous ouvrez un fichier .cue avec IsoBuster, il connaîtra la disposition des pistes de l'image mais obtiendra les données réelles d'un autre fichier. Le nom de ce fichier est également contenu dans le fichier .cue.
+* Vérifiez que les dépôts et les fichiers sont tous là, pour garantir l'intégrité du fichier image. Si un X rouge apparaît à côté de certains fichiers, c'est que ces fichiers comportent des erreurs de lecture et qu'ils n'ont peut-être pas été imagés correctement.
+* Faites un clic droit sur l'icône du support (CD), puis dans le menu déroulant, sélectionnez "Verify this image file with existing MD5 Checksum file". Le message "The checksum matches with the image file" confirme que l'image disque correspond aux données du support original.
 
-#### L'imagerie disque d'un CD audio
+#### Pour créer une image disque d'un CD audio
 1. Suivez les étapes 1 et 2.
 2. Utiliser le paramètre d'ajustement de la taille de fichier IsoBuster évite de fractionner les gros fichiers images - comme le contenu d'un DVD - en plusieurs fichiers images plus petits. Si vous avez un DVD ou tout autre support contenant plus de 1024 Mo de données, vous pouvez utiliser IsoBuster au lieu de l'imageur FTK. Ce dernier fractionnera tout fichier image volumineux en fichiers image plus petits de 1024 Mo.
 3. Dans le panneau de gauche, cliquez avec le bouton droit de la souris sur l'icône du média (DVD+R). Sous "Extract DVD+R", sélectionnez "User Data (.tao, .bin, .iso)". Les DVD n'ont qu'un seul type de blocs, qui ne contiennent que des données utilisateur (il n'existe pas de DVD RAW). Sous "Extract DVD+R", les options RAW et RAW2User ont été grisées. Sélectionnez "Données utilisateur (.tao, .bin, .iso)" pour lancer le processus d'imagerie du disque.
@@ -167,17 +160,13 @@ Etapes:
 10. Marquez les DVD dans la feuille de calcul de stabilisation du versement.
 
 
-#### Supports endommagés par l'imagerie sur disque
+#### Supports endommagés par la création d'image disque
 Les lignes directrices suivantes peuvent être utiles si vous rencontrez des difficultés de lecture et/ou de support d'imagerie de disque. Elles ne vous permettront pas nécessairement de régler le problème, mais elles peuvent certainement vous aider à documenter l'état actuel du matériel numérique que vous conservez. Veuillez consulter l'archiviste numérique avant d'acquérir des supports numériques endommagés.
 1. Suivez les étapes 1 et 2. Si le disque sur lequel vous travaillez comporte de nombreux secteurs défectueux, il se peut que vous ne puissiez pas effectuer une analyse antivirus.
 2. Dans le panneau de gauche, cliquez avec le bouton droit de la souris sur l'icône du média (CD/DVD+R) et sélectionnez "Effectuer un balayage de surface".
 3. Une fois l'examen terminé, IsoBuster vous donne plus d'informations sur l'état de votre disque. Si tout est bon, le message "Aucune erreur physique rencontrée. Votre disque est toujours en bon état" apparaîtra. Sinon, IsoBuster génère un rapport vous indiquant la lisibilité du disque (en pourcentage).
 
-
 ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_07.PNG?raw=true)
-
-
-
 
 4. Vous pouvez lancer un rapport plus détaillé en cliquant avec le bouton droit de la souris sur l'icône du système de fichiers > Arbre des dossiers et informations sur les fichiers > Liste des fichiers présentant des erreurs de lecture (dans la fenêtre d'édition). Les fichiers comportant des erreurs de lecture sont identifiés par un X rouge dans le panneau de droite. Dans le rapport, notez "Fichiers avec erreurs de lecture dans [Numéro d'identification] :" et enregistrez la liste dans votre dossier de travail, en utilisant son numéro d'identification comme nom de fichier (par exemple : DR2008_0016_118_ErrorFileList).
 
@@ -194,8 +183,6 @@ Le FC5025 est un contrôleur de disquettes 5,25" qui se branche sur le port USB 
 
 
 Avant de commencer le traitement, vous devez d'abord insérer la disquette dans le lecteur FC5025, situé dans la station de travail d'imagerie de disque (DSK-065-14), avec la face avant vers le haut - généralement celle sur laquelle se trouvent les étiquettes - dirigée vers vous. L'encoche de protection en écriture devrait se trouver sur la gauche de la disquette lorsque vous la placez avec l'étiquette plus proche de vous. Une autre façon de s'assurer que la disquette est correctement insérée, consiste à examiner les faces de la disquette et à identifier le verso : vous devriez pouvoir discerner les parties pliées au verso de la pochette en plastique. Une fois la disquette insérée, tournez le bouton dans le sens des aiguilles d'une montre pour verrouiller la disquette dans le lecteur. Le témoin lumineux devrait alors s'allumer en vert lorsque la disquette est lue dans le lecteur. Lorsque le voyant s'éteint, vous pouvez retirer la disquette du lecteur en toute sécurité en la déverrouillant d'abord.
-
-
 
 
 #### Images du disque avec l’interface graphique
