@@ -8,7 +8,7 @@
 * [Création d'une image disque avec le Nimbie et ImgBurn](#nimbie)
 * [Dépannage](#depannage)
 
-Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disque peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
+Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disques peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
 
 Sauf lorsque les circonstances demandent des solutions différentes, le CCA préfère les formats d'image disque brute (par exemple "dd" ou "raw") ou les images ISO (pour les supports optiques).
 
@@ -32,7 +32,7 @@ Avant de commencer à créer des images disques à partir d'une acquisition, cr�
 * Ouvrez Guymager (à partir du dossier "Imaging Tools" sur le bureau de Bitcurator).
 
 ![Bitcurator1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager_open.png)
-* Faites un clic droit avec la souris sur le lecteur que vous souhiatez copier et sélectionnez "Acquire image (Acquérir l'image)". Si le lecteur/appareil que vous souhaitez copier n'apparaît pas, actualisez l'écran en cliquant sur "Rescan" dans le coin supérieur gauche de l'interface Guymager.
+* Faites un clic droit avec la souris sur le lecteur que vous souhaitez copier et sélectionnez "Acquire image". Si le lecteur/appareil que vous souhaitez copier n'apparaît pas, actualisez la fenêtre en cliquant sur "Rescan" dans le coin supérieur gauche de l'interface graphique Guymager.
 
 ![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)
 *(Ces images ont été prises sur le site suivant : <a href="https://confluence.educopia.org/display/BC/Imaging+with+Guymager">BitCurator Environment</a>)*
