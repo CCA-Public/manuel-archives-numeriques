@@ -1,5 +1,5 @@
 # Manuel de Traitement des Archives Numériques du CCA
-Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il consiste en un document vivant, édité en permanence, fonctionnant en tant que composante du manuel de traitement du CCA. Le manuel de traitement des archives numériques couvre chaque étape du processus de traitement des archives nées numériques, incluant la saisie de données, la classification, la description, ainsi que l'accès et l'ingestion dans notre dépôt numérique, Archivematica. Il comprend également des politiques et procédures générales, ainsi que des informations spécifiques sur les outils utilisés dans ce processus.
+Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il consiste en un document vivant, édité en permanence, fonctionnant en tant que composante du manuel de traitement du CCA. Le manuel de traitement des archives numériques couvre chaque étape du processus de traitement des archives nées numériques, incluant la saisie de données, la classification, la description, ainsi que l'accès et l'ingestion dans notre système de préservation numérique, Archivematica. Il comprend également des politiques et procédures générales, ainsi que des informations spécifiques sur les outils utilisés dans ce processus.
 
 ## Table des matières
 
