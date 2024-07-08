@@ -10,34 +10,32 @@
 
 Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'images disque brutes. Une image disque est un fichier informatique qui consiste en une réplique exacte du contenu d'un disque ou d'un autre support de stockage numérique. Comme les images disque peuvent être stockées de façon redondante, sauvegardées et contrôlées, contrairement aux supports physiques tels les DVD ou les disques durs externes, elles sont mieux adaptées à la préservation des informations numériques. Elles assurent également la conservation de toutes les caractéristiques du support physique d'origine.
 
-
 Sauf lorsque les circonstances demandent des solutions différentes, le CCA préfère les formats d'image disque brute (par exemple "dd" ou "raw") ou les images ISO (pour les supports optiques).
-Note : Afin de garantir que le média source reste inchangé par le processus de capture et de transfert des données, les disques durs et les lecteurs de médias amovibles doivent toujours être connectés au poste de capture par l'intermédiaire d'un bloqueur d'écriture.
 
+**Note : Afin de garantir que le média source reste inchangé par le processus de capture et de transfert des données, les disques durs et les lecteurs de médias amovibles doivent toujours être connectés au poste de capture par l'intermédiaire d'un bloqueur d'écriture.**
 
 Nous utilisons les outils suivants pour créer des images de disques : Kryoflux (par défaut), Guymager, FTK Imager, IsoBuster, ou FC5025. Quel que soit l'outil que vous utilisez, commencez toujours par effectuer l'étape suivante :
-
 
 Donnez à chaque média un numéro d'identification ARCH s'il n'en a pas déjà un, et créez un enregistrement d'objet "Record for Management Need" correspondant dans TMS. L'identificateur doit être écrit sur l'objet ou son étui avec un stylo feutre ou (très légèrement) au crayon, ou apposé sur l'étui à l'aide d'une étiqueteuse si elle est disponible.
 
 <a name="guymager"></a>
-### Création d'une image disque avec Guymager
-Guymager est un outil d'imagerie disque open source que l'on trouve dans l'environnement BitCurator, et l'un des outils privilégiés pour l'imagerie disque au CCA. Nous utilisons Guymager pour créer des images disque au format brut (dd).
+### Création d'une image disque avec Guymager (BitCurator)
+Guymager est un outil open source de création d'images disques au format brut (.dd) que l'on trouve dans l'environnement BitCurator et c'est l'un des outils privilégiés au CCA. 
 
+Avant de commencer à créer des images disques à partir d'une acquisition, créez un dossier dans le répertoire `/mnt/1TB_RAID` dans lequel vous enregistrerez votre travail. Donnez à ce dossier un nom mémorable et significatif, tel qu'un numéro d'acquisition ou un autre identifiant.
 
-Avant de commencer à créer des images disque à partir d'une acquisition, créez un dossier dans le répertoire `/mnt/1TB_RAID` dans lequel vous enregistrez votre travail. Donnez à ce dossier un nom mémorable et significatif, tel qu'un numéro d'accession ou un autre identifiant.
-#### Étapes pour la création d'images de supports physiques avec Guymager :
+### Étapes :
 
-
-* Avant de créer une image disque, faites un scan antivirus du support à l'aide de ClamTK:
-   * Ouvrez ClamTK (à partir du dossier "Additional Tools" sur le bureau Bitcurator).
-   * Assurez-vous que les paramètres soient corrects : Double-cliquez sur "Paramètres" et assurez-vous que tout est sélectionné, sauf "Scanner pour les PUA".
-   * Double-cliquez sur "Scanner un répertoire" dans l'onglet "Analyse" et choisissez ensuite le répertoire à scanner.
-   * S'il n'y a pas de virus, passez à l'étape suivante. Si ClamTK trouve des virus, arrêtez-vous, notez le(s) virus rencontré(s) dans le tableur de stabilisation du versement, mettez le support de côté et consultez l'archiviste numérique.
-
-
+* Avant de créer une image disque, faites un scan antivirus du support à l'aide de ClamAV.
+   * S'il n'y a pas de virus, passez à l'étape suivante.
+   * Si ClamAV trouve des virus, arrêtez-vous, notez le(s) virus rencontré(s) dans votre fichier de travail, mettez le support de côté et consultez l'archiviste numérique.
 * Ouvrez Guymager (à partir du dossier "Imaging Tools" sur le bureau de Bitcurator).
+
+![Bitcurator1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager_open.png)
 * Cliquez avec le bouton droit de la souris sur le lecteur sur lequel vous souhaitez créer une image et sélectionnez "Acquérir une image". Si le lecteur/appareil que vous souhaitez photographier n'apparaît pas, actualisez l'écran en cliquant sur "Rescan" dans le coin supérieur gauche de l'interface Guymager.
+
+![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)
+*(Ces images ont été prises sur le site suivant : <a href="https://confluence.educopia.org/display/BC/Imaging+with+Guymager">BitCurator Environment</a>)*
 * Choisissez le format de fichier "Linux dd raw image" (extension de fichier .dd ou .xxx).
 * Assurez-vous que l’option “Split size” ne soit pas cochée.
 * Entrez les métadonnées/réglages suivants :
