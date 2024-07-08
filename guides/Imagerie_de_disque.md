@@ -1,4 +1,4 @@
-# Imagerie de disque support physique original
+# Création d'images disques à partir d'un support physique original
 
 * [Création d'une image disque avec Guymager](#guymager)
 * [Création d'une image disque avec FTK Imager](#ftk)
