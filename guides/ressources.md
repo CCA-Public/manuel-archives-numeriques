@@ -159,10 +159,10 @@ Le script crée une copie du dossier source, nommé de la même façon, dans le 
 
    Cette commande déverrouille le dossier en utilisant "sudo". 
    Souvent, lors de la création d'une image disque sur le Bitcurator, un fichier vérouillé peut être créé. Si vous avez besoin de déverrouiller un dossier, remplacez le * par le chemin du dossier.
-    
-           sudo chmod 777 *
-  
 
+	   sudo chmod 777 *
+
+  
 * **Analyse antivirus**
 
     Cette commande utilise le logiciel clamAV pour lancer l'analyse antivirus sur un dossier ou sur des fichiers.
