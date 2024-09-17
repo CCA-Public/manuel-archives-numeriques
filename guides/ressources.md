@@ -164,7 +164,7 @@ Le script crée une copie du dossier source, nommé de la même façon, dans le 
 
     ou utilisez-la de manière récursive pour déverrouiller tous les sous-dossiers.
 
-           sudo chmod -R 777 *
+		sudo chmod -R 777 *
   
 * **Analyse antivirus**
 
