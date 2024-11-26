@@ -174,6 +174,11 @@ Le script crée une copie du dossier source, nommé de la même façon, dans le 
 
     X correspond à la plus grande taille de fichier (en mégaoctets) que vous souhaitez scanner, et Y correspond au plus grand nombre de mégaoctets que vous souhaitez extraire d'un seul fichier compressé.
 
+* **Pour ajouter un préfixe et un suffixe aux fichiers (répertoires)**
+
+        ls | xargs -I {} mv {} PRE_{}
+        ls | xargs -I {} mv {} {}_SUF
+
 <a name="conception"></a>
 ## Préservation de la conception assistée par ordinateur
 * Ball, Alex. "[Preserving Computer-Aided Design (CAD)](http://dx.doi.org/10.7207/twr13-02)," DPC Technology Watch Report 13-02, April 2013.
