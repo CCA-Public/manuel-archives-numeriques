@@ -53,23 +53,24 @@ Des ressources utiles, notamment :
 
 * **Conversion par lots de fichiers dans un répertoire et des sous-répertoires en utilisant LibreOffice.**
 
-	   cd topDirectory
-	   for f in $(find . -type f -name "*EXT"); do libreoffice --convert-to doc $f --outdir $(dirname $f); done
+      cd topDirectory
+      for f in $(find . -type f -name "*EXT"); do libreoffice --convert-to doc $f --outdir $(dirname $f); done
 
    Remplacez "EXT" par l'extension de fichier des fichiers originaux ; notez que cette opération est sensible aux espacements dans le nommage des fichiers Remplacez "doc" par l'extension de fichier vers laquelle les fichiers doivent être convertis.
    Voir "[Formats de fichiers supportés](https://en.wikipedia.org/wiki/LibreOffice)" pour plus d'informations.
 
 
-* **Décompressez de façon récursive les fichiers dans un nouveau dossier avec le titre du fichier zip à leur place actuelle dans le répertoire, puis supprimez le fichier zip original lorsque cela est fait** : 
-	   cd topDirectory
-	   for F in $(find . -type f -name *.zip); do unzip "$F" -d "${F%.*}/" && rm "$F"; done
+* **Décompressez de façon récursive les fichiers dans un nouveau dossier avec le titre du fichier zip à leur place actuelle dans le répertoire, puis supprimez le fichier zip original lorsque cela est fait** :
+
+      cd topDirectory
+      for F in $(find . -type f -name *.zip); do unzip "$F" -d "${F%.*}/" && rm "$F"; done
   
    [(Source)](https://stackoverflow.com/a/30339287/9459120)
 
    Pour le même résultat avec les fichiers .rar, utilisez :
 
-	   cd topDirectory
-	   for F in $(find . -name "*.rar"); do unrar x "$F" "${F%.*}/" && rm "$F"; done
+      cd topDirectory
+      for F in $(find . -name "*.rar"); do unrar x "$F" "${F%.*}/" && rm "$F"; done
 
    Notez que la commande find est sensible aux espacements dans le nommage des fichiers. Elle devra donc être modifiée en fonction des noms attribués aux fichiers zip ou rar. Les deux formats ne doivent pas comporter d'espaces dans leur nom de fichier, sinon la 
    commande échouera. Si nécessaire, utilisez la commande Detox avant d'extraire les fichiers.
@@ -81,10 +82,10 @@ Des ressources utiles, notamment :
 
    Exécutez les scripts suivants dans la ligne de commande individuellement. (Remplacez topDirectory par le chemin d'accès au fichier pour le répertoire de plus haut niveau).
 
-	   cd topDirectory/
-	   find . -type d >> /home/bcadmin/Desktop/directories.csv
-	   for D in $(find . -type d); do du -sh $D >> /home/bcadmin/Desktop/filesize.csv; done
-	   for D in $(find . -type d); do find $D -type f -exec md5sum {} + | awk '{print $1}' | sort | md5sum >> /home/bcadmin/Desktop/checksums.csv; done
+      cd topDirectory/
+      find . -type d >> /home/bcadmin/Desktop/directories.csv
+      for D in $(find . -type d); do du -sh $D >> /home/bcadmin/Desktop/filesize.csv; done
+      for D in $(find . -type d); do find $D -type f -exec md5sum {} + | awk '{print $1}' | sort | md5sum >> /home/bcadmin/Desktop/checksums.csv; done
 			
    Cette commande finale peut prendre un certain temps en fonction de la taille de la collection. Ensemble, ces commandes permettent de créer trois feuilles de calcul CSV Excel sur le bureau Bitcurator, contenant respectivement la liste des répertoires, leur taille 
    lisible par l'utilisateur et leurs sommes de contrôle. Déplacez les colonnes dans une seule feuille de calcul Excel, en gardant à l'esprit que les colonnes nécessitent un léger nettoyage des données afin de les aligner. Il peut être plus facile de faire du 
@@ -96,8 +97,8 @@ Des ressources utiles, notamment :
 
 * **Identifiez tous les fichiers avec des horodatages problématiques dans un répertoire et modifiez les horodatages :**
 
-	   cd topDirectory
-	   find . -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
+      cd topDirectory
+      find . -type f -newermt "YYYY-MM-DD" ! -newermt "YYYY-MM-DD" -exec touch -t "YYYYMMDDHHMM" {} +
 
    ([Source 1](https://askubuntu.com/questions/191044/how-to-find-files-between-two-dates-using-find) et [Source 2](https://stackoverflow.com/questions/3718645/unix-shell-script-update-timestamp-on-all-sub-directories-and-sub-files-includ))
 
@@ -111,37 +112,37 @@ Des ressources utiles, notamment :
 
    Pour faire un test (c'est-à-dire voir les changements de noms de fichiers proposés sans effectuer les changements) :
 
-	   detox -rn topDirectory
+      detox -rn topDirectory
 
    Pour effectuer les changements :
 
-	   detox -r topDirectory
+      detox -r topDirectory
 
 * **Lister et supprimer les fichiers et répertoires vides.**
     Pour lister tous les fichiers et répertoires vides :
 
-	   cd [topDirectory]
-	   find . -empty
+      cd [topDirectory]
+      find . -empty
 
     Pour supprimer les fichiers vides :
-	   find . -type f -empty -delete
+      find . -type f -empty -delete
 
     Pour supprimer les répertoires vides :
-	   find . -type d -empty -delete
+      find . -type d -empty -delete
   
 
 * **Imprimer les discordances de checksum entre le fichier checksum.md5 et le répertoire d'objets du terminal**
 
-	   cd /path/to/metadata/directory 
-	   md5deep -rlX checksum.md5 ../objects
+      cd /path/to/metadata/directory 
+      md5deep -rlX checksum.md5 ../objects
 
     (le drapeau -X affiche le hachage et le nom de fichier pour chaque fichier du répertoire des objets qui ne correspond pas à la liste des hachages connus dans le fichier checksum.md5)
   
 
 * **Supprimer en lot les virgules des noms de fichiers et les remplacer par des traits de soulignement**
 
-	   cd /path/to/directory
-	   for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done
+      cd /path/to/directory
+      for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done
 
     Notez que cela ne changera que la première virgule de chaque nom de fichier. Par exemple, si un nom de fichier contient cinq virgules, vous devrez exécuter la commande cinq fois pour remplacer chaque virgule.
 
@@ -152,7 +153,7 @@ Le script crée une copie du dossier source, nommé de la même façon, dans le 
 
     Notez que ce script **écrase, supprime et utilise sudo**, ce qui signifie qu'il est très puissant. Il n'est pas recommandé de l'utiliser sans avoir une certaine expérience de rsync.
 
-	   sudo rsync -qam --delete "/PATH/TO/SIPs/" "/PATH/TO/PARENT_OF_SIPs/"
+      sudo rsync -qam --delete "/PATH/TO/SIPs/" "/PATH/TO/PARENT_OF_SIPs/"
   
 
 * **Déverrouiller des dossiers**
@@ -160,24 +161,24 @@ Le script crée une copie du dossier source, nommé de la même façon, dans le 
    Cette commande déverrouille le dossier en utilisant "sudo". 
    Souvent, lors de la création d'une image disque sur le Bitcurator, un fichier vérouillé peut être créé. Si vous avez besoin de déverrouiller un dossier, remplacez le * par le chemin du dossier.
 
-	   sudo chmod 777 *
+      sudo chmod 777 *
 
     ou utilisez-la de manière récursive pour déverrouiller tous les sous-dossiers.
 
-		sudo chmod -R 777 *
+      sudo chmod -R 777 *
   
 * **Analyse antivirus**
 
     Cette commande utilise le logiciel clamAV pour lancer l'analyse antivirus sur un dossier ou sur des fichiers.
 
-	   clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
+      clamscan -r /path/to/staging --max-filesize=Xm --max-scansize=Ym > collection.log
 
     X correspond à la plus grande taille de fichier (en mégaoctets) que vous souhaitez scanner, et Y correspond au plus grand nombre de mégaoctets que vous souhaitez extraire d'un seul fichier compressé.
 
 * **Pour ajouter un préfixe et un suffixe aux fichiers (répertoires)**
 
-        ls | xargs -I {} mv {} PRE_{}
-        ls | xargs -I {} mv {} {}_SUF
+      ls | xargs -I {} mv {} PRE_{}
+      ls | xargs -I {} mv {} {}_SUF
 
 <a name="conception"></a>
 ## Préservation de la conception assistée par ordinateur
