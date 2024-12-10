@@ -130,14 +130,17 @@ Des ressources utiles, notamment :
     Pour supprimer les répertoires vides :
       find . -type d -empty -delete
 
-* **Pour supprimer les fichiers cachés**
+* **Pour trouver et supprimer les fichiers cachés**
 
-      rm -rf .*
-
-      find , and rename _ 
-      for f in $(find . -name "*,*"); do rename -v 's/,/_/' $f; done^C
+      cd filepath/to/directory find -type f -name '.*' (#pour trouver tous les fichiers qui commence par un .)
+      cd filepath/to/directory find -type f -name '.*' -delete (#pour supprimer tous les fichier qui commence par un .)
 
       find -type f -name "*.db" -delete
+
+      find -type f -name "~*" -delete
+
+      find -type f -name "*.DS_Store" -delete
+
 
 * **Imprimer les discordances de checksum entre le fichier checksum.md5 et le répertoire d'objets du terminal**
 
