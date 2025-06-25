@@ -382,7 +382,7 @@ Ces deux commandes créeront deux documents texte dans votre dossier Home que vo
 
 <a name="depannage"></a>
 ### Dépannage
-* **Problème** : Un problème rencontré en utilisant le Nimbie pour la création d'images diques est que certaines copies provenant de CD ne générait pas les fichiers .iso, mais créait des fichier .bin. Apparemment, cela est dû au type de mode de secteur que le CD utilise pour stocker les données. Les CD utilisant le mode 1 donnent des fichiers d'image .iso, tandis que les CD utilisant le mode 2/type 1 donnent des fichiers .bin. Plus d'informations peuvent être trouvées [ici](http://www.multimediadirector.com/help/technology/cd-rom/cdrom_spec.htm).
+* **Problème** : Un problème rencontré en utilisant le Nimbie pour la création d'images diques est que certaines copies provenant de CD ne générait pas les fichiers .iso, mais créait des fichier .bin. Apparemment, cela est dû au type de mode de secteur que le CD utilise pour stocker les données. Les CD utilisant le mode 1 donnent des fichiers d'image .iso, tandis que les CD utilisant le mode 2/type 1 donnent des fichiers .bin. 
    * **Solution** : La meilleure solution qu'on a pu trouver a été de changer simplement l'extension de fichier de "nomdefichier.bin" à "nomdefichier.iso". Cela ne semble pas avoir d'effet sur le fichier image, car nous avons toujours été capable d'extraire des fichiers du fichier image sans problème. Cette solution a été trouvée [ici](http://forum.imgburn.com/index.php?/topic/19845-image-from-disk-results-in-bin-file-instead-of-iso-file/).
 
 * **Problème** :  L'autochargeur Nimbie n'apparaît pas comme un lecteur utilisable dans ImgBurn
