@@ -23,6 +23,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    * [Création d'images disques (pour les disquettes souples de 5,25") avec FC5025](guides/Imagerie_de_disque.md#fc5025)
    * [Création d'images disques avec Kryoflux](guides/Imagerie_de_disque.md#kryoflux)
    * [Création d'images disques avec Nimbie et ImgBurn](guides/Imagerie_de_disque.md#nimbie)
+   * [Extraction d'un CD audio avec cdparanoia](guides/diskimaging.md/#cdparanoia)
    * [Dépannage](guides/Imagerie_de_disque.md#depannage)
    
 * **[Prétraitement : Triage et évaluation des archives nées numériques](guides/Pretraitement.md)**
@@ -123,7 +124,7 @@ Peu de fonds sont uniquement constitués de matériel né numérique. Lorsque de
 - Les mesures adoptées, à chaque étape du workflow des archives numériques, sont documentées. Cette documentation est cruciale pour démontrer l'authenticité des fichiers numériques et permettre les efforts de préservation futurs.
 
 <a name="workflow"></a>
-## Le workflow des archives numériques en bref
+## Le flux de travail des archives numériques en bref
 1. Le matériel d'archives (né-numérique ou hybride) est archivé et stabilisé :
    1. Les fichiers envoyés via des transferts réseau ou des supports temporaires (par exemple, clés USB, disques durs externes) sont emballés sous forme de fichiers tar et stockés dans les archives non-traitées ou Dark Archive sous forme de copie "brute" avec leurs données d'acquisition.
    2. Des images disque sont créées à partir des supports physiques originaux, elles sont ensuite stockées dans les archives non-traitées ou Dark Archive en tant que copie "brute" avec leurs données d'accès.
