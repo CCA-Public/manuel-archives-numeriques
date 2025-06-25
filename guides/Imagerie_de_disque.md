@@ -17,7 +17,7 @@ Sauf lorsque les circonstances demandent des solutions différentes, le CCA pré
 
 Nous utilisons les outils suivants pour créer des images de disques : Kryoflux (par défaut), Guymager, FTK Imager, IsoBuster, ou FC5025. Quel que soit l'outil que vous utilisez, commencez toujours par effectuer l'étape suivante :
 
-Donnez à chaque média un numéro d'identification ARCH s'il n'en a pas déjà un, et créez un enregistrement d'objet "Record for Management Need" correspondant dans TMS. L'identificateur doit être écrit sur l'objet ou son étui avec un stylo feutre ou (très légèrement) au crayon, ou apposé sur l'étui à l'aide d'une étiqueteuse si elle est disponible.
+Attribuez à chaque support numérique un identifiant AS (ArchivesSpace) si ce n'est pas déjà fait. Cet identifiant doit être inscrit sur le support et sur son boîtier au feutre ou au crayon (très légèrement), ou collé sur le boîtier en utilisant une étiqueteuse si disponible. Pour plus d'informations sur la création d'un identifiant AS, veuillez consulter le document « New Numbering Scheme for ArchivesSpace item-level records » disponible sur le serveur.
 
 <a name="guymager"></a>
 ### Création d'une image disque avec Guymager (BitCurator)
