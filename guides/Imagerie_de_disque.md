@@ -300,50 +300,51 @@ Voici les étapes à suivre pour produire de nouveaux fichiers d'images encodés
 
 <a name="nimbie"></a>
 ### Création d'une image disque avec le Nimbie et ImgBurn
-Le Nimbie est un dispositif d'autochargement utilisé pour lire, écrire et créer simultanément, des images disques pour de nombreux CD ou DVD, tout en requérant un minimum d'intervention de l'utilisateur. Veuillez lire le [manuel d'utilisation du Nimbie](http://www.acronova.com/file/2/download.html) pour savoir comment configurer l'unité Nimbie. Le logiciel qui peut être utilisé en conjonction avec le Nimbie est ImgBurn. Pour créer des images disque en utilisant le Nimbie et ImgBurn, vous aurez besoin de ce qui suit :
+Le Nimbie est un dispositif d'autochargement utilisé pour lire, écrire et créer simultanément, des images disques pour de nombreux CD ou DVD, tout en requérant un minimum d'intervention de l'utilisateur. Veuillez lire le [manuel d'utilisation du Nimbie](https://disc.acronova.com/file/2/download.html) pour savoir comment configurer l'unité Nimbie. Le logiciel qui peut être utilisé en conjonction avec le Nimbie est ImgBurn. Pour créer des images disque en utilisant le Nimbie et ImgBurn, vous aurez besoin de ce qui suit :
 * Windows XP/Vista/ 7 ou Apple OS X 10.6 / 10.7 (pour QQGetTray uniquement)
 * 1 Go de RAM ou plus
 * Port USB 3.0 (rétrocompatible avec USB 2.0)
-* ImgBurn version 2.5.8.0 (y compris le pack de [mise à jour BSRobots](http://www.acronova.com/files/BSRobots_2.2.0.333.zip)) ou ultérieure
-* Unité Nimbie USB Plus avec les [pilotes appropriés installés](http://www.acronova.com/file/51/download.html)
+* ImgBurn version 2.5.8.0 (y compris le pack de [mise à jour BSRobots](https://disc.acronova.com/files/BSRobots_2.2.0.333.zip)) ou ultérieure
+* Unité Nimbie USB Plus avec les [pilotes appropriés installés](https://disc.acronova.com/file/51/download.html)
 
 
-**Comment mettre en place le Nimbie pour la création d'image disque**
+**Comment configurer le Nimbie pour la création d'image disque**
 1. Assurez-vous que l'appareil Nimbie est branché dans une prise murale et que le cordon USB est connecté à l'ordinateur.
 2. Fixez le bac à disques traités devant l'unité. Lorsque le Nimbie a fini de traiter un disque, il l'éjecte par la fente avant, dans le bac à disques. Si le Nimbie ne peut pas traiter un disque (à cause de la saleté ou d'un disque rayé, entre autres possibilités), le disque sera éjecté par le bas de l'appareil. Assurez-vous qu'il n'y a rien sous l'appareil pour laisser suffisamment de place aux disques rejetés.
 3. Ouvrez le couvercle de l'appareil. Il y a 4 lumières LED à l'avant de l'appareil qui vous indiquent son état. Un guide pictural à l'intérieur du couvercle vous indique la signification des configurations lumineuses.
 4. Insérez les disques dans la machine, la face de l'étiquette tournée vers le haut. Le Nimbie peut traiter 20 disques à la fois, à moins que vous n'attachiez les 3 tiges d'extension fournies, auquel cas le Nimbie peut traiter jusqu'à 100 disques. Les tiges se vissent à trois endroits dans la lèvre sous le couvercle, et sont destinées à maintenir le couvercle ouvert et à empêcher la pile de disques de s'effondrer. Si vous souhaitez traiter plusieurs disques à la fois, il est nécessaire de soutenir le Nimbie sur une hauteur d'au moins 96 mm pour tenir compte des disques une fois que le Nimbie a fini de les traiter. Une fois que les disques sont dans le Nimbie, l'unité est alors configurée pour l'imagerie des disques.
-Attention : Bien que le manuel mentionne que le Nimbie peut traiter jusqu'à 100 disques par lot, il ne mentionne pas que l'utilisateur doit également s'assurer que son installation puisse traiter en toute sécurité le volume élevé de disques éjectés de l'unité Nimbie au cours du processus. Si ce n'est pas le cas, les disques éjectés et traités peuvent s'empiler et tomber, ce qui risque de les endommager.
+
+**Attention** : Bien que le manuel mentionne que le Nimbie peut traiter jusqu'à 100 disques par lot, il ne mentionne pas que l'utilisateur doit également s'assurer que son installation puisse traiter en toute sécurité le volume élevé de disques éjectés de l'unité Nimbie au cours du processus. Si ce n'est pas le cas, les disques éjectés et traités peuvent s'empiler et tomber, ce qui risque de les endommager.
+
 **Comment configurer ImgBurn pour qu'il fonctionne avec Nimbie USB Plus**
 1. Connectez le Nimbie USB au PC et allumez-le.
 2. Assurez-vous que les pilotes de l'autochargeur sont correctement installés.
 3. Téléchargez et installez [ImgBurn](http://www.imgburn.com/index.php?act=download).
 4. Téléchargez le BSRobots Upgrade Pack et extrayez les fichiers à l'endroit où vous avez installé ImgBurn (c'est-à-dire C:\Program Files\ImgBurn).
 5. Lancez ImgBurn, allez dans Outils > Paramètres
-![nimbie](http://www.acronova.com/images/howto/howto_imgburn_setup_screenshot1.png)
+![nimbie](https://disc.acronova.com/images/howto/howto_imgburn_setup_screenshot1.png)
 6.  Allez à I/O. Sous "Enumerate Devices", vérifiez "Auto Loaders" et "Acronova - BSRobots20.dll".
-![nimbie](http://www.acronova.com/images/howto/howto_imgburn_setup_screenshot2.png)
+![nimbie](https://disc.acronova.com/images/howto/howto_imgburn_setup_screenshot2.png)
 7. Cliquez sur OK pour fermer la fenêtre des paramètres, et fermez ImgBurn pour terminer l'installation.
-(Ces instructions ont été prises [ici](http://www.acronova.com/howto/article/23/review.html#ancher-imgburn))
+(Ces instructions ont été prises [ici](https://disc.acronova.com/howto/article/24/review.html#ancher-imgburn))
+
 **Pour créer des images de disque à partir de CD et de DVD**
 1. Assurez-vous que le Nimbie est connecté et allumé
 2. Démarrez ImgBurn et attendez que l'autochargeur ait terminé son initiation robotique.
 3. Sélectionnez la fonction Créer un fichier image à partir du disque
-![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-1.jpg)
+![nimbie](https://disc.acronova.com/images/howto/imgburn-create-image-1.jpg)
 4. Cochez **Batch mode**
-![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-2.jpg)
+![nimbie](https://disc.acronova.com/images/howto/imgburn-create-image-2.jpg)
 5. Cliquez sur l'icône pour commencer le chargement du disque
-![nimbie](http://www.acronova.com/images/howto/imgburn-create-image-3.jpg)
+![nimbie](https://disc.acronova.com/images/howto/imgburn-create-image-3.jpg)
 6. Une fois le premier disque chargé, ImgBurn demande à l'utilisateur de définir le dossier de destination pour le stockage des ISO. (L'invite n'apparaîtra que pour le premier disque).
 7. Tous les disques seront traités un par un jusqu'à ce que le chargeur soit vide.
 
-
 Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/)
 
-
 (Ces instructions ont été prises [ici](http://www.acronova.com/howto/article/23/review.html#ancher-imgburn))
-**Si vous souhaitez que ImgBurn crée des fichiers de somme de contrôle pour chaque image disque réalisée**
 
+**Si vous souhaitez que ImgBurn crée des fichiers de somme de contrôle pour chaque image disque réalisée**
 1.	Aller à Tools>settings 
 2.	Dans les outils, allez à l'onglet "Read".
 3.	Sélectionnez "Create MD5 File".
