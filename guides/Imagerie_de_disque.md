@@ -344,13 +344,12 @@ Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https:/
 2.	Dans les outils, allez à l'onglet "Read".
 3.	Sélectionnez "Create MD5 File".
 
-
 **Si vous voulez voir le rapport de ce que vous avez fait**
 ImgBurn génère automatiquement un rapport qui répertorie toutes les actions récemment effectuées. Pour consulter ce fichier, vous pouvez aller à Affichage et cliquer sur Journal . Le rapport apparaîtra alors dans une fenêtre séparée. Pour enregistrer ce fichier, allez à Fichier et cliquez sur Enregistrer sous.
 
 <a name="cdparanoia"></a>
 ### Extraction d’un CD audio avec cdparanoia (Bitcurator)  
-cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-d-un-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
+cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-dun-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
 
 Avant de commencer l'extraction, créez un dossier dans le répertoire /mnt/1TB_RAID pour y enregistrer votre travail. Nommez ce dossier avec un nom facile à retenir et significatif, comme un numéro d'acquisition ou un autre identifiant unique.
 
@@ -373,7 +372,7 @@ Ces deux commandes créeront deux documents texte dans votre dossier Home que vo
 	* Vérifiez la qualité des pistes audio pour vous assurer que tout fonctionne correctement. Vous pouvez transférer temporairement les fichiers du BitCurator vers un ordinateur Windows si vous rencontrez des difficultés pour écouter l’enregistrement audio.
 5. Finalisation :
 	* Déplacez tous les fichiers associés du dossier Home vers votre dossier de travail situé sur le RAID.
-	* Renommez les pistes avec leur identifiant unique, comme expliqué [ici](#pour-creer-une-image-disque-d-un-cd-audio)
+	* Renommez les pistes avec leur identifiant unique, comme expliqué [ici](#pour-creer-une-image-disque-dun-cd-audio)
 
 *(_Ces instructions ont été tirées du Disk Imaging Guide du musée Tate disponible_ <a href="https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf" target="blank">ici</a> et du blog BitsGalore disponible <a href="https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html" target="blank">ici</a>)*
 
@@ -399,5 +398,5 @@ Après l'utilisation de Disk Image Processor ou Folder Processor (Outils dévelo
 * **Problème :**
 L'ordinateur Windows éjecte automatiquement le CD audio. Cependant, lorsqu’on l’insert dans un ordinateur BitCurator, l’îcone du CD apparait et on y retrouve des fichiers audio verrouillés.
 	* **Solution :**
-Dans ce cas, vous pouvez utiliser [cdparanoia](https://xiph.org/paranoia/index.html) pour extraire les pistes audio verrouillées sur l'un des postes de travail BitCurator. Pour plus d’information sur notre flux de travail, veuillez-vous référer à [cette section](#extraction-d-un-cd-audio-avec-cdparanoia-bitcurator). 
+Dans ce cas, vous pouvez utiliser [cdparanoia](https://xiph.org/paranoia/index.html) pour extraire les pistes audio verrouillées sur l'un des postes de travail BitCurator. Pour plus d’information sur notre flux de travail, veuillez-vous référer à [cette section](#extraction-dun-cd-audio-avec-cdparanoia-bitcurator). 
 
