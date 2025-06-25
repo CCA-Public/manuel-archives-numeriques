@@ -110,7 +110,7 @@ FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans labora
 
 <a name="isobuster"></a>
 ### Création d'une image disque avec IsoBuster
-[IsoBuster ](https://www.isobuster.com/help/) est un outil d'imagerie de disque basé sur Windows et produit par Smart Projects (géré par Peter Van Hove). Au CCA, nous utilisons IsoBuster pour créer des images disques pour des types particuliers de supports optiques - principalement des DVD, des CD audio et des supports optiques contenant plus de 1024 Mo de données - et comme outil pour documenter l'état actuel des supports endommagés.
+[IsoBuster ](https://www.isobuster.com) est un outil d'imagerie de disque basé sur Windows et produit par Smart Projects (géré par Peter Van Hove). Au CCA, nous utilisons IsoBuster pour créer des images disques pour des types particuliers de supports optiques - principalement des DVD, des CD audio et des supports optiques contenant plus de 1024 Mo de données - et comme outil pour documenter l'état actuel des supports endommagés.
 
 Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilisez la station de travail d'imagerie de disque (DSK-065-14) du laboratoire numérique du CCA. Créez un dossier de projet dans lequel vous enregistrez votre travail. Donnez à ce dossier un nom mémorable et significatif, par exemple un numéro d'acquisition ou d'identification.
 
@@ -221,8 +221,6 @@ Avant de commencer le traitement, vous devez d'abord insérer la disquette dans 
 4. ```fcimage -f format outputfile 1> logfile 2>&1```
 5. À la suite de notre exemple, le commandement est :
 6. ```fcimage -f msdos360 ARCH222229.img 1> ARCH222229.log 2>&1```
-
-
 7. Une fois la commande terminée, ouvrez votre dossier de projet et assurez-vous que tout y est. Vous devez disposer d'un fichier .img (votre fichier image disque) et d'un fichier .log (les erreurs enregistrées).
 
 <a name ="kryoflux"></a>
