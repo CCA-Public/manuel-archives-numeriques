@@ -349,19 +349,19 @@ ImgBurn génère automatiquement un rapport qui répertorie toutes les actions r
 
 <a name="cdparanoia"></a>
 ### Extraction d’un CD audio avec cdparanoia (Bitcurator)  
-cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-dun-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
+cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-d'un-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
 
-Avant de commencer l'extraction, créez un dossier dans le répertoire /mnt/1TB_RAID pour y enregistrer votre travail. Nommez ce dossier avec un nom facile à retenir et significatif, comme un numéro d'acquisition ou un autre identifiant unique.
+Avant de commencer l'extraction, créez un dossier dans le répertoire `/mnt/1TB_RAID` pour y enregistrer votre travail. Nommez ce dossier avec un nom facile à retenir et significatif, comme un numéro d'acquisition ou un autre identifiant unique.
 
 Pour extraire un CD audio avec cdparanoia, suivez les étapes ci-dessous.
 
 1. Insérez le CD dans son lecteur sur l’un des BitCurators.
-2. Analysez le CD à l'aide d’un logiciel antivirus comme ClamAv. S'il n'y a pas de virus, passez à l'étape suivante. 
+2. Analysez le CD à l'aide d’un logiciel antivirus comme ClamAV. S'il n'y a pas de virus, passez à l'étape suivante. 
 3. Effectuez une analyse du disque optique :
 	* Ouvrez le terminal, saisissez la commande « lsblk » et appuyez sur Entrée. La commande lsblk (list block devices) affichera tous les périphériques de bloc disponibles. Vous y trouverez le nom attribué par Linux à votre lecteur optique. Ce nom doit ressembler à « sr# », par exemple sr0 ou sr1. Si le nom de votre montage est sr0, le chemin d'accès à votre lecteur sera « /dev/sr0 ».
-	* Saisissez « sudo disktype » + (chemin d’accès de votre lecteur) + «> filename-disktype.txt » comme ceci : 
+	* Saisissez « sudo disktype » + (chemin d’accès de votre lecteur) + « > filename-disktype.txt » comme ceci : 
 « sudo disktype /dev/sr# > filename-disktype.txt » et appuyez sur Entrée.
-	* Saisissez « sudo cd-info » + (chemin d’accès de votre lecteur) + «> filename-cdinfo.txt » comme ceci :
+	* Saisissez « sudo cd-info » + (chemin d’accès de votre lecteur) + « > filename-cdinfo.txt » comme ceci :
 « sudo cd-info /dev/sr# > filename-cdinfo.txt » et appuyez sur Entrée.
 Ces deux commandes créeront deux documents texte dans votre dossier Home que vous pouvez utiliser pour analyser votre CD.
 	* S’il est inscrit que le mode de votre disque est **« CD-DA »**, suivez les directives ci-dessous.
