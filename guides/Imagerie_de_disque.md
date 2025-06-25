@@ -350,7 +350,7 @@ ImgBurn génère automatiquement un rapport qui répertorie toutes les actions r
 
 <a name="cdparanoia"></a>
 ### Extraction d’un CD audio avec cdparanoia (Bitcurator)  
-cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#image-disque-d'un-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
+cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-d-un-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
 
 Avant de commencer l'extraction, créez un dossier dans le répertoire /mnt/1TB_RAID pour y enregistrer votre travail. Nommez ce dossier avec un nom facile à retenir et significatif, comme un numéro d'acquisition ou un autre identifiant unique.
 
@@ -373,7 +373,7 @@ Ces deux commandes créeront deux documents texte dans votre dossier Home que vo
 	* Vérifiez la qualité des pistes audio pour vous assurer que tout fonctionne correctement. Vous pouvez transférer temporairement les fichiers du BitCurator vers un ordinateur Windows si vous rencontrez des difficultés pour écouter l’enregistrement audio.
 5. Finalisation :
 	* Déplacez tous les fichiers associés du dossier Home vers votre dossier de travail situé sur le RAID.
-	* Renommez les pistes avec leur identifiant unique, comme expliqué [ici](#disk-imaging-an-audio-cd)
+	* Renommez les pistes avec leur identifiant unique, comme expliqué [ici](#pour-creer-une-image-disque-d-un-cd-audio)
 
 *(_Ces instructions ont été tirées du Disk Imaging Guide du musée Tate disponible_ <a href="https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf" target="blank">ici</a> et du blog BitsGalore disponible <a href="https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html" target="blank">ici</a>)*
 
@@ -395,3 +395,9 @@ l'icone du CD n'apparait pas sur le BitCurator.
 * **Problème :**
 Après l'utilisation de Disk Image Processor ou Folder Processor (Outils développés par le CCA), le nom du fichier logigique est modifié (caractères ou syntaxe différents de ceux des autres documents, abréviations, etc.)
 	* **Solution :** Essayez de monter l'image disque et comparez les noms des dossiers. S'il y a une différence, copiez le nom du dossier de l'image disque montée dans votre SIP.
+
+* **Problème :**
+L'ordinateur Windows éjecte automatiquement le CD audio. Cependant, lorsqu’on l’insert dans un ordinateur BitCurator, l’îcone du CD apparait et on y retrouve des fichiers audio verrouillés.
+	* **Solution :**
+Dans ce cas, vous pouvez utiliser [cdparanoia](https://xiph.org/paranoia/index.html) pour extraire les pistes audio verrouillées sur l'un des postes de travail BitCurator. Pour plus d’information sur notre flux de travail, veuillez-vous référer à [cette section](#extraction-d-un-cd-audio-avec-cdparanoia-bitcurator). 
+
