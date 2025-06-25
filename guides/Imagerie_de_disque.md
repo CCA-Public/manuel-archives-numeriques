@@ -1,7 +1,7 @@
 # Création d'images disques à partir d'un support physique
 
 * [Création d'une image disque avec Guymager (BitCurator)](#guymager)
-* [Création d'une image disque avec FTK Imager](#ftk)
+* [Création d'une image disque avec FTK Imager](#ftkimager)
 * [Création d'une image disque avec IsoBuster](#isobuster)
 * [Création d'une image disque avec FC5025](#fc5025)
 * [Création d'une image disque avec Kryoflux](#kryoflux)
@@ -13,9 +13,9 @@ Au CCA, nous saisissons le contenu des médias physiques originaux sous forme d'
 
 Sauf lorsque les circonstances demandent des solutions différentes, le CCA préfère les formats d'image disque brute (par exemple "dd" ou "raw") ou les images ISO (pour les supports optiques).
 
-**Note : Afin de garantir que le média source reste inchangé par le processus de capture et de transfert des données, les disques durs et les lecteurs de médias amovibles doivent toujours être connectés au poste de capture par l'intermédiaire d'un bloqueur d'écriture.**
+**Note : Afin de garantir que le média source reste inchangé par le processus de capture et de transfert des données, les disques durs et les lecteurs de médias amovibles doivent toujours être connectés au poste de travail par l'intermédiaire d'un bloqueur d'écriture.**
 
-Nous utilisons les outils suivants pour créer des images de disques : Kryoflux (par défaut), Guymager, FTK Imager, IsoBuster, ou FC5025. Quel que soit l'outil que vous utilisez, commencez toujours par effectuer l'étape suivante :
+Nous utilisons les outils suivants pour créer des images de disques : [Kryoflux](#kryoflux) (par défaut), [Guymager](#guymager), [FTK Imager](#ftkimager), [IsoBuster](#isobuster), ou [FC5025](#fc5025). Quel que soit l'outil que vous utilisez, commencez toujours par effectuer l'étape suivante :
 
 Attribuez à chaque support numérique un identifiant AS (ArchivesSpace) si ce n'est pas déjà fait. Cet identifiant doit être inscrit sur le support et sur son boîtier au feutre ou au crayon (très légèrement), ou collé sur le boîtier en utilisant une étiqueteuse si disponible. Pour plus d'informations sur la création d'un identifiant AS, veuillez consulter le document « New Numbering Scheme for ArchivesSpace item-level records » disponible sur le serveur.
 
@@ -57,7 +57,7 @@ Avant de commencer à créer des images disques à partir d'une acquisition, cr�
 * Si l'image est créé avec succès, allez dans votre dossier de projet sur le bureau et faites une vérification visuelle rapide pour vous assurer que tout est en ordre. Vous devriez voir deux fichiers : l'image disque elle-même et un fichier de métadonnées ".info".
 * Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois que tous les supports ont été imagés, alertez l'archiviste numérique.
 
-<a name="ftk"></a>
+<a name="ftkimager"></a>
 ### Création d'une image disque avec FTK Imager
 AccessData FTK Imager est un outil d'imagerie de disque gratuit mais propriétaire utilisé sur l'un de nos ordianteurs Windows et fait partie de la suite logicielle Forensics Toolkit. Au CCA, nous utilisons FTK Imager pour créer des images disques pour des supports ne pouvant être traitées par Guymager.
 
