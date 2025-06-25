@@ -332,17 +332,23 @@ Le Nimbie est un dispositif d'autochargement utilisé pour lire, écrire et cré
 1. Assurez-vous que le Nimbie est connecté et allumé
 2. Démarrez ImgBurn et attendez que l'autochargeur ait terminé son initiation robotique.
 3. Sélectionnez la fonction Créer un fichier image à partir du disque
+
 ![nimbie](https://disc.acronova.com/images/howto/imgburn-create-image-1.jpg)
+
 4. Cochez **Batch mode**
+
 ![nimbie](https://disc.acronova.com/images/howto/imgburn-create-image-2.jpg)
+
 5. Cliquez sur l'icône pour commencer le chargement du disque
+
 ![nimbie](https://disc.acronova.com/images/howto/imgburn-create-image-3.jpg)
+
 6. Une fois le premier disque chargé, ImgBurn demande à l'utilisateur de définir le dossier de destination pour le stockage des ISO. (L'invite n'apparaîtra que pour le premier disque).
 7. Tous les disques seront traités un par un jusqu'à ce que le chargeur soit vide.
 
-Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/)
+Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https://forum.imgburn.com/index.php?/topic/6232-the-imgburn-settings/).
 
-(Ces instructions ont été prises [ici](http://www.acronova.com/howto/article/23/review.html#ancher-imgburn))
+(Ces instructions ont été prises [ici](http://www.acronova.com/howto/article/23/review.html#ancher-imgburn)).
 
 **Si vous souhaitez que ImgBurn crée des fichiers de somme de contrôle pour chaque image disque réalisée**
 1.	Aller à Tools>settings 
@@ -350,7 +356,7 @@ Vous trouverez un récapitulatif complet des paramètres d'ImgBurn [ici](https:/
 3.	Sélectionnez "Create MD5 File".
 
 **Si vous voulez voir le rapport de ce que vous avez fait**
-ImgBurn génère automatiquement un rapport qui répertorie toutes les actions récemment effectuées. Pour consulter ce fichier, vous pouvez aller à Affichage et cliquer sur Journal . Le rapport apparaîtra alors dans une fenêtre séparée. Pour enregistrer ce fichier, allez à Fichier et cliquez sur Enregistrer sous.
+ImgBurn génère automatiquement un rapport qui répertorie toutes les actions récemment effectuées. Pour consulter ce fichier, vous pouvez aller à Affichage et cliquer sur Journal. Le rapport apparaîtra alors dans une fenêtre séparée. Pour enregistrer ce fichier, allez à Fichier et cliquez sur Enregistrer sous.
 
 <a name="cdparanoia"></a>
 ### Extraction d’un CD audio avec cdparanoia (Bitcurator)  
