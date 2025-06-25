@@ -149,7 +149,7 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 * Faites un clic droit sur l'icône du support (CD), puis dans le menu déroulant, sélectionnez "Verify this image file with existing MD5 Checksum file". Le message "The checksum matches with the image file" confirme que l'image disque correspond aux données du support original.
 
 #### Pour extraire les pistes d'un CD audio
-Les CD audio ne contiennent aucune donnée et n'ont donc pas de système de fichiers. Il n'y a ni fichiers de données ni dossiers sur un CD audio, mais des pistes audio répertoriées dans une table des matières (TOC).
+Les CD audio ne contiennent aucune donnée et n'ont donc pas de système de fichiers. Il n'y a donc ni fichiers de données ni dossiers sur un CD audio, mais des pistes audio répertoriées dans une table des matières (TOC).
 * Suivez les étapes 1 et 2
 * Extrayez le contenu de chaque piste audio dans un fichier WAVE non compressé.
 * Faites un clic droit sur l'icône du CD, puis sous « Extract CD <Content> », sélectionnez « Extract Audio to Wave File (\*.wav) ».
@@ -166,7 +166,7 @@ Les CD audio ne contiennent aucune donnée et n'ont donc pas de système de fich
 7. Cliquez sur "Enregistrer". Une nouvelle fenêtre apparaîtra, indiquant l'état d'avancement de l'extraction de l'image disque.
 8. Une fois l'extraction terminée avec succès, créera un fichier MD5 Checksum
 9. Suivez l'étape 3 pour vérifier l'intégrité du fichier d'image disque.
-10. Marquez les DVD dans la feuille de calcul de stabilisation du versement.
+10. Signalez tous les DVD dans votre document de travail Excel.
 
 #### Supports endommagés par la création d'image disque
 Les lignes directrices suivantes peuvent être utiles si vous rencontrez des difficultés de lecture et/ou de support d'imagerie de disque. Elles ne vous permettront pas nécessairement de régler le problème, mais elles peuvent certainement vous aider à documenter l'état actuel du matériel numérique que vous conservez. Veuillez consulter l'archiviste numérique avant d'acquérir des supports numériques endommagés.
@@ -354,7 +354,7 @@ ImgBurn génère automatiquement un rapport qui répertorie toutes les actions r
 
 <a name="cdparanoia"></a>
 ### Extraction d’un CD audio avec cdparanoia (Bitcurator)  
-cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-dun-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
+cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-extraire-les-pistes-dun-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
 
 Avant de commencer l'extraction, créez un dossier dans le répertoire `/mnt/1TB_RAID` pour y enregistrer votre travail. Nommez ce dossier avec un nom facile à retenir et significatif, comme un numéro d'acquisition ou un autre identifiant unique.
 
@@ -377,7 +377,7 @@ Ces deux commandes créeront deux documents texte dans votre dossier Home que vo
 	* Vérifiez la qualité des pistes audio pour vous assurer que tout fonctionne correctement. Vous pouvez transférer temporairement les fichiers du BitCurator vers un ordinateur Windows si vous rencontrez des difficultés pour écouter l’enregistrement audio.
 5. Finalisation :
 	* Déplacez tous les fichiers associés du dossier Home vers votre dossier de travail situé sur le RAID.
-	* Renommez les pistes avec leur identifiant unique, comme expliqué [ici](#pour-creer-une-image-disque-dun-cd-audio)
+	* Renommez les pistes avec leur identifiant unique, comme expliqué [ici](#pour-extraire-les-pistes-dun-cd-audio)
 
 *(_Ces instructions ont été tirées du Disk Imaging Guide du musée Tate disponible_ <a href="https://www.tate.org.uk/documents/3/sbapp_disk_imaging_guide_01_00.pdf" target="blank">ici</a> et du blog BitsGalore disponible <a href="https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html" target="blank">ici</a>)*
 
