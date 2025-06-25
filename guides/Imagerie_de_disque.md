@@ -70,7 +70,7 @@ FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans labora
    * Si le logiciel ne trouve pas de virus informatique, procédez à l'étape suivante. Sinon, arrêtez-vous et assurez vous de notez le ou les virus trouvé(s) dans le fichier de travail "versement_stabilization", alertez ensuite l'Archiviste Numérique.
      
 * Ouvrez le logiciel FTK Imager.
-* Dans le menu Fichier, sélectionnez "Create a disk image".
+* Dans le menu Fichier, sélectionnez "Create Disk Image...".
 ![FTK1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture1-2.PNG)  
 
 * Sélectionnez la source appropriée : Pour les disques durs la source appropriée sera "Physical Drive". Pour la plupart des autres types de supports (y compris les CD, les DVD et les disquettes), la source sera "Logical Drive".
@@ -81,7 +81,7 @@ FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans labora
 
 ![FTK3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture3.PNG) 
 
-* Sélectionnez "Add" pour ajouter la destination de l'image. Cochez "Verify images after they are created", mais laissez "Create directory listings..." non coché.
+* Sélectionnez "Add..." pour ajouter la destination de l'image. Cochez "Verify images after they are created", mais laissez "Create directory listings..." non coché.
 
 ![FTK4](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture4.PNG)
 
