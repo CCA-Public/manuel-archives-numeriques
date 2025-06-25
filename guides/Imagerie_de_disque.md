@@ -121,7 +121,7 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 * Étape 2 : Ouvrez le logiciel IsoBuster et allez directement dans le menu Start pour vérifier les paramêtres suivants. Il se peut que vous deviez modifier certains paramètres en fonction des besoins de votre projet de préservation numérique.
    * **Image file size** : Allez à Image Files dans le menu Options , allez à *Image File Creation* images et décochez l'option *Split large Image Files to specified size*.
    * **Cuesheet file** : Toujours sous Image Files, allez à *Select when a cuesheet file will be created*, sélectionnez **Always after a CD, DVD or BD image is created**.
-   * **MD5 checksum file** : Toujours sous Image Files, allez à *Select when an MD5 checksum file will be created* et sélectionnez **Always after an image is created.
+   * **MD5 checksum file** : Toujours sous Image Files, allez à *Select when an MD5 checksum file will be created* et sélectionnez **Always after an image is created**.
   
 * IsoBuster lit automatiquement le contenu entier du disque et affiche une vue arborescente des fichiers dans la colonne de gauche. Si ce n'est pas le cas, sélectionnez le bon lecteur d'option dans la boîte déroulante sous le menu. Le message "No media present" s'affiche si aucun disque n'est monté sur le lecteur.
 ![IsoBuster](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/isobuster_01.PNG?raw=true)
@@ -148,7 +148,7 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 * Vérifiez que les dépôts et les fichiers sont tous là, pour garantir l'intégrité du fichier image. Si un X rouge apparaît à côté de certains fichiers, c'est que ces fichiers comportent des erreurs de lecture et qu'ils n'ont peut-être pas été imagés correctement.
 * Faites un clic droit sur l'icône du support (CD), puis dans le menu déroulant, sélectionnez "Verify this image file with existing MD5 Checksum file". Le message "The checksum matches with the image file" confirme que l'image disque correspond aux données du support original.
 
-#### Pour créer une image disque d'un CD audio
+#### Pour extraire les pistes d'un CD audio
 1. Suivez les étapes 1 et 2.
 2. Utiliser le paramètre d'ajustement de la taille de fichier IsoBuster évite de fractionner les gros fichiers images - comme le contenu d'un DVD - en plusieurs fichiers images plus petits. Si vous avez un DVD ou tout autre support contenant plus de 1024 Mo de données, vous pouvez utiliser IsoBuster au lieu de l'imageur FTK. Ce dernier fractionnera tout fichier image volumineux en fichiers image plus petits de 1024 Mo.
 3. Dans le panneau de gauche, cliquez avec le bouton droit de la souris sur l'icône du média (DVD+R). Sous "Extract DVD+R", sélectionnez "User Data (.tao, .bin, .iso)". Les DVD n'ont qu'un seul type de blocs, qui ne contiennent que des données utilisateur (il n'existe pas de DVD RAW). Sous "Extract DVD+R", les options RAW et RAW2User ont été grisées. Sélectionnez "Données utilisateur (.tao, .bin, .iso)" pour lancer le processus d'imagerie du disque.
@@ -349,7 +349,7 @@ ImgBurn génère automatiquement un rapport qui répertorie toutes les actions r
 
 <a name="cdparanoia"></a>
 ### Extraction d’un CD audio avec cdparanoia (Bitcurator)  
-cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-d'un-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
+cdparanoia est un utilitaire de lecture de CD audio en ligne de commande qui récupère les pistes audio d'un disque compact audio numérique (CD-DA). Au CCA, nous utilisons le logiciel cdparanoia lorsqu’on ne peut pas utiliser IsoBuster pour l'extraction des pistes audios. Cliquez [ici](#pour-creer-une-image-disque-dun-cd-audio) pour découvrir comment extraire un CD audio avec IsoBuster et cliquez [ici](#depannage) pour plus d'informations sur le problème rencontré qui est à l'origine de ce nouveau flux de travail.
 
 Avant de commencer l'extraction, créez un dossier dans le répertoire `/mnt/1TB_RAID` pour y enregistrer votre travail. Nommez ce dossier avec un nom facile à retenir et significatif, comme un numéro d'acquisition ou un autre identifiant unique.
 
