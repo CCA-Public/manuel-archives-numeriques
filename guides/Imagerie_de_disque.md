@@ -149,6 +149,14 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 * Faites un clic droit sur l'icône du support (CD), puis dans le menu déroulant, sélectionnez "Verify this image file with existing MD5 Checksum file". Le message "The checksum matches with the image file" confirme que l'image disque correspond aux données du support original.
 
 #### Pour extraire les pistes d'un CD audio
+Les CD audio ne contiennent aucune donnée et n'ont donc pas de système de fichiers. Il n'y a ni fichiers de données ni dossiers sur un CD audio, mais des pistes audio répertoriées dans une table des matières (TOC).
+* Suivez les étapes 1 et 2
+* Extrayez le contenu de chaque piste audio dans un fichier WAVE non compressé.
+* Faites un clic droit sur l'icône du CD, puis sous « Extract CD <Content> », sélectionnez « Extract Audio to Wave File (\*.wav) ».
+* Une fois l'extraction terminée, assurez-vous que les fichiers Wave se trouvent dans le dossier de travail actuel et renommez-le(s) en utilisant le numéro d'accès du média (par exemple, DR2008_0016_264.wav). Si vous avez plusieurs pistes, ajoutez le numéro de piste à la fin du titre (par exemple : DR2008_0016_264_01 ; DR2008_0016_264_02).
+* Signalez tous les CD audio dans votre document de travail Excel.
+
+#### Pour créer une image disque d'un DVD
 1. Suivez les étapes 1 et 2.
 2. Utiliser le paramètre d'ajustement de la taille de fichier IsoBuster évite de fractionner les gros fichiers images - comme le contenu d'un DVD - en plusieurs fichiers images plus petits. Si vous avez un DVD ou tout autre support contenant plus de 1024 Mo de données, vous pouvez utiliser IsoBuster au lieu de l'imageur FTK. Ce dernier fractionnera tout fichier image volumineux en fichiers image plus petits de 1024 Mo.
 3. Dans le panneau de gauche, cliquez avec le bouton droit de la souris sur l'icône du média (DVD+R). Sous "Extract DVD+R", sélectionnez "User Data (.tao, .bin, .iso)". Les DVD n'ont qu'un seul type de blocs, qui ne contiennent que des données utilisateur (il n'existe pas de DVD RAW). Sous "Extract DVD+R", les options RAW et RAW2User ont été grisées. Sélectionnez "Données utilisateur (.tao, .bin, .iso)" pour lancer le processus d'imagerie du disque.
@@ -159,7 +167,6 @@ Avant de passer au processus d'imagerie de disque, assurez-vous que vous utilise
 8. Une fois l'extraction terminée avec succès, créera un fichier MD5 Checksum
 9. Suivez l'étape 3 pour vérifier l'intégrité du fichier d'image disque.
 10. Marquez les DVD dans la feuille de calcul de stabilisation du versement.
-
 
 #### Supports endommagés par la création d'image disque
 Les lignes directrices suivantes peuvent être utiles si vous rencontrez des difficultés de lecture et/ou de support d'imagerie de disque. Elles ne vous permettront pas nécessairement de régler le problème, mais elles peuvent certainement vous aider à documenter l'état actuel du matériel numérique que vous conservez. Veuillez consulter l'archiviste numérique avant d'acquérir des supports numériques endommagés.
@@ -182,9 +189,7 @@ Les lignes directrices suivantes peuvent être utiles si vous rencontrez des dif
 ### Création d'une image disque avec FC5025
 Le FC5025 est un contrôleur de disquettes 5,25" qui se branche sur le port USB de n'importe quel ordinateur et permet de lire des disquettes 5,25". Il est accompagné d’un programme d'image disque et d'outils de navigation permettant de créer et d'accéder à des copies de matériel numérique. Il y a deux façons d'utiliser le logiciel FC5025 pour l'imagerie disque : à partir de l'interface graphique ou de la ligne de commande. Chacune de ces options possèdent ses avantages et ses inconvénients : l'interface graphique offre une interface instinctive et facile à utiliser, tandis que la ligne de commande vous permettra de capturer le processus d'imagerie du disque en envoyant la sortie standard et les erreurs standards dans un fichier.
 
-
 Avant de commencer le traitement, vous devez d'abord insérer la disquette dans le lecteur FC5025, situé dans la station de travail d'imagerie de disque (DSK-065-14), avec la face avant vers le haut - généralement celle sur laquelle se trouvent les étiquettes - dirigée vers vous. L'encoche de protection en écriture devrait se trouver sur la gauche de la disquette lorsque vous la placez avec l'étiquette plus proche de vous. Une autre façon de s'assurer que la disquette est correctement insérée, consiste à examiner les faces de la disquette et à identifier le verso : vous devriez pouvoir discerner les parties pliées au verso de la pochette en plastique. Une fois la disquette insérée, tournez le bouton dans le sens des aiguilles d'une montre pour verrouiller la disquette dans le lecteur. Le témoin lumineux devrait alors s'allumer en vert lorsque la disquette est lue dans le lecteur. Lorsque le voyant s'éteint, vous pouvez retirer la disquette du lecteur en toute sécurité en la déverrouillant d'abord.
-
 
 #### Images du disque avec l’interface graphique
 1. Une fois le disque correctement inséré, démarrez le logiciel FC5025. Une fenêtre s'affiche avec quatre paramètres à configurer : Lecteur source, Type de disque, Répertoire de l'image de sortie et Nom du fichier de l'image de sortie.
