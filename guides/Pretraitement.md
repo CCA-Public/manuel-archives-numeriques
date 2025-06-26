@@ -135,11 +135,11 @@ Si l'image de la disquette Encase a été divisée en plusieurs parties (E01, E0
 
 Une fois l'image disque brute obtenue, ouvrez HFSExplorer (situé dans le dossier "Additional Tools" sur le bureau).
 
-![hfsexplorer1](http://wiki.bitcurator.net/images/c/c2/HFS1.png)
+![hfsexplorer1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs1.png)
 
 Dans le menu "Fichier", sélectionnez "Charger le système de fichiers à partir du fichier", puis sélectionnez le fichier image disque brut.
 
-![hfsexplorer2](http://wiki.bitcurator.net/images/3/30/HFS2.png)  
+![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs2.png)  
 
 Si le chargement de l'image brute entraîne une erreur, le support n'a probablement pas été formaté comme un disque HFS. À ce stade, prenez note dans votre tableur de stabilisation du versement et consultez l'archiviste numérique.
 
@@ -149,15 +149,13 @@ La dernière étape consiste à exporter ces fichiers de HFSExplorer vers un emp
 
 * Sélectionnez tous les fichiers à exporter (à ce stade, il devrait s'agir de tout, y compris les fichiers système) et appuyez sur le bouton "Extraire".
 
-![hfsexplorer3](http://wiki.bitcurator.net/images/8/88/HFSextract1.png)  
+![hfsexplorer3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs3.png)  
 
 * Choisissez votre lieu de destination et sélectionnez "Extraire ici".
 
-![hfsexplorer4](http://wiki.bitcurator.net/images/6/61/HFSextract2.png)  
-
 * Une fenêtre pop-up apparaîtra pour vous demander si vous souhaitez suivre des liens symboliques pendant l'extraction. Sélectionnez "Yes".
 
-![hfsexplorer5](http://wiki.bitcurator.net/images/0/0a/HFSextract3.png)  
+![hfsexplorer5](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs4.png)  
 
 * Si tout se passe bien, vous recevrez un message disant "Extraction terminée". REMARQUE : il est fréquent que HFSExplorer rencontre un problème de caractères non valides dans les noms de fichiers pendant le processus d'exportation, en raison des différences entre les caractères de noms de fichiers autorisés par HFS et les systèmes de fichiers modernes. Lorsque HFSExplorer rencontre des fichiers contenant de tels caractères, une fenêtre contextuelle apparaît et vous demande de renommer automatiquement ou manuellement les fichiers. Vous pouvez sélectionner le renommage automatique, qui remplacera les caractères "illégaux" tels que les barres obliques ("/") et les points (".") par des traits de soulignement ("_").
 
