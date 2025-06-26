@@ -27,19 +27,19 @@ Pour utiliser Emailchemy :
    * Général, cochez :
       * Dédupliquer les messages lors de la conversion
       * Effacement automatique de la mémoire du duplicateur après les conversions
-   * Fichiers / Dossiers, vérifier :
+   * Fichiers / Dossiers, cochez :
       * Conserver la structure des dossiers
       * Autoriser les caractères non anglais dans les nouveaux noms de fichiers et de dossiers
       * Remplacer les caractères de noms de fichiers interdits par un tiret
-   * Journalisation, ;vérification :
+   * Journalisation, cochez :
       * Rédiger un journal de conversion
       * Utiliser l'emplacement par défaut du fichier journal
       * Enregistrer les sommes de contrôle du fichier source avant et après la conversion
-   * En-têtes, vérifiez :
+   * En-têtes, cochez :
       * Respect strict de la norme RFC-2822 pour l'analyse syntaxique
       * Préserver les champs optionnels d'extension et d'en-tête définis par l'utilisateur
       * Normaliser les dates
-   * Outlook (Win), vérifier :
+   * Outlook (Win), cochez :
       * Enregistrer le texte du message crypté en pièce jointe
       * Traduire une adresse électronique de type Exchange en adresse de type Internet (SMTP)
       * Extraire tous les types d'objets de message
