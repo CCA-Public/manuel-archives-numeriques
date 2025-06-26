@@ -36,7 +36,7 @@ Avant de commencer à créer des images disques à partir d'une acquisition, cr�
 * Faites un clic droit avec la souris sur le lecteur que vous souhaitez copier et sélectionnez "Acquire image". Si le lecteur/appareil que vous souhaitez copier n'apparaît pas, actualisez la fenêtre en cliquant sur "Rescan" dans le coin supérieur gauche de l'interface graphique Guymager.
 
 ![Bitcurator2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/guymager1_AcquireImage.png)
-*(Ces images ont été prises sur le site suivant : <a href="https://bitcurator.github.io/documentation/All%20Step-by-Step%20Guides/Imaging%20and%20Recovery%20Guides/Imaging%20with%20Guymager/">BitCurator Docs</a>)*
+*(Ces images ont été prises sur l'ancienne version du site web suivant : <a href="https://bitcurator.github.io/documentation/All%20Step-by-Step%20Guides/Imaging%20and%20Recovery%20Guides/Imaging%20with%20Guymager/">BitCurator Docs</a>)*
 
 * Choisissez le format de fichier "Linux dd raw image" (extension de fichier .dd ou .xxx).
 * Assurez-vous que l’option “Split size” ne soit pas cochée.
