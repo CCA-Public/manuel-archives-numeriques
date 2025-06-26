@@ -226,17 +226,25 @@ Avant de commencer le traitement, vous devez d'abord insérer la disquette dans 
 <a name ="kryoflux"></a>
 ### Création d'une image disque avec Kryoflux
 Note : Les éléments des lignes directrices ci-dessous ont été recueillis dans le [Guide de l'archiviste pour KryoFlux](https://docs.google.com/document/d/1LViSnYpvr2jf1TrCh6ELuL-FWo14ICw-WZeb8j5GGpU/edit#), une ressource complète pour les praticiens travaillant avec des documents nés numériques dans un contexte archivistique.
+
 Le [Kryoflux](https://www.kryoflux.com/) est une carte contrôleur de disquettes développée par [Software Preservation Society](http://www.softpres.org/) pour l'imagerie d'une grande variété de disquettes anciennes. Sa particularité réside dans sa capacité à capturer des données de piste brutes en échantillonnant la fluctuation des cellules de bits sur le plateau, permettant la capture de tout type de disquette 5,25" ou 3,5", malgré son format.
+
 #### Capture d'images de disque à l'aide de l'interface utilisateur graphique (GUI)
 1. Au poste de travail BitCurator03, lancez l'interface graphique KryoFlux en double-cliquant sur le fichier appelé kryoflux-ui.jar situé sur le Bureau.
 2. Au début de chaque session d'imagerie, calibrer le lecteur de disquettes en sélectionnant le bon lecteur dans le menu Lecteur puis en sélectionnant Calibrate dans le même menu. Le lecteur 5,25" correspond au lecteur 0 et le lecteur 3,5" au lecteur 1. Vous ne devriez avoir à calibrer le lecteur qu'une seule fois par session d'imagerie et chaque fois que vous passez d'un lecteur à l'autre.
+   
 ![Kryoflux](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/kryoflux_step2_calibrate.png)
-3. Configurez l'interface graphique de KryoFlux pour sélectionner le répertoire de sortie de vos images disques et fichiers journaux nouvellement créés. Pour ce faire, sélectionnez *File → Settings* et cliquez sur l'onglet *Output*. Naviguez jusqu'au chemin d'accès approprié au stockage. Assurez-vous que le bouton Logs est coché, puis cliquez sur *OK*.
+
+3. Configurez l'interface graphique de KryoFlux pour sélectionner le répertoire de sortie de vos images disque et fichiers journaux nouvellement créés. Pour cela, sélectionnez *Fichier → Paramètres* et cliquez sur l'onglet *Output*. Accédez au chemin d'accès au stockage. Assurez-vous que le bouton Journaux est coché, puis cliquez sur *OK*.
 4. Pour chaque disque, entrez un identifiant unique. Cliquez sur *Enter name…* et saisissez un identifiant unique associé au disque. Le texte saisi ici deviendra le nom de fichier pour toutes les images de disque et tous les fichiers journaux créés. Ne pas inclure l'extension du nom de fichier.
 5. Sélectionnez le(s) format(s) d'image pour l'image disque en utilisant la liste déroulante sous le champ du nom de fichier.
+
 ![Kryoflux](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/kryoflux_step5_selectformat_02.png)
-6. Utilisez les tableaux ci-dessous pour sélectionner le(s) bon(s) format(s) d'image. Afin de choisir plusieurs sorties, maintenez la touche Ctrl enfoncée tout en effectuant vos sélections. Dans la plupart des cas, la sélection d'un format d'image pour obtenir une image de secteur nécessite que vous connaissiez un peu le média en question (format physique, format système, densité, etc.)
+
+Utilisez les tableaux ci-dessous pour sélectionner le(s) bon(s) format(s) d'image. Afin de choisir plusieurs sorties, maintenez la touche Ctrl enfoncée tout en effectuant vos sélections. Dans la plupart des cas, la sélection d'un format d'image pour obtenir une image de secteur nécessite que vous connaissiez un peu le média en question (format physique, format système, densité, etc.)
+
 **Types de médias et formats d'images courants**
+
 |Format physique|        Format du système        | Encodage        | Capacité | Profil/Format de l'image |
 | ------------- |:-------------:| -------- | -------- | -------------------- |
 | 3.5” double densité |        Macintosh |        GCR        | 400 KB; 800 KB | Apple DOS 400K/800K sector image
@@ -247,6 +255,7 @@ Le [Kryoflux](https://www.kryoflux.com/) est une carte contrôleur de disquettes
 
 
 **Spécifications pour les profils d'images couramment utilisés**
+
 | Nom du profil |        Piste de départ        | Piste finale        | Mode secondaire | Taille du secteur | Comptage des secteurs | Distance de la piste | Objectif RPM |
 | ------------ | ----------- | --------- | --------- | ----------- | ------------ | -------------- | ---------- |
 | MFM sector image [1.2MB] |        Au moins 0 |        Au maximum 83        | Les deux côtés  | 512 Bytes | Exactement 15 | 80 Pistes | 360 |
@@ -255,41 +264,36 @@ Le [Kryoflux](https://www.kryoflux.com/) est une carte contrôleur de disquettes
 | Apple DOS 400K/800K sector image | Au moins 0 | Au maximum 83 | Les deux côtés | 512 Bytes | tous | 80 Pistes | Par type d'image |
 
 
+6. Une fois que vous avez tout configuré, insérez le disque dans le lecteur approprié et cliquez sur *Start*. Dans la section Pistes de la fenêtre, vous devriez voir les cellules se remplir progressivement de différentes couleurs. Voici la signification de chaque couleur :
 
+ | Couleur | Signification |
+| ------------- | ------------- |
+| Verte | Bon : La piste a été imagée avec succès ! |
+| Orange | Bon + modifié : La piste a été imagée avec succès mais comporte un ou plusieurs secteurs qui ont été modifiés après formatage ou mastering.|  
+| Rouge | Mauvais : La piste n'a pas été imagée avec succès |
+| Gris | Inconnu : le logiciel Kryoflux n'a pas pu déterminer le statut de cette piste. Cela peut signifier ou non qu'elle a été lue avec succès. Cela pourrait indiquer que cette piste n'était pas formatée ou que le mauvais format a été sélectionné avant la capture. Si vous ne créez que des fichiers de flux de préservation, tous les secteurs seront gris.| 
 
-
-
-Une fois que vous avez tout configuré, insérez le disque dans le lecteur approprié et cliquez sur Démarrer. Dans la section Pistes de la fenêtre, vous devriez voir les cellules se remplir progressivement de différentes couleurs. Voici la signification de chaque couleur :
-
-
-Couleur
-	Signification
-	Verte
-	Bon : La piste a été imagée avec succès !
-	Orange
-	Bon + modifié : La piste a été imagée avec succès mais comporte un ou plusieurs secteurs qui ont été modifiés après formatage ou mastering.
-	Rouge
-	Mauvais : La piste n'a pas été imagée avec succès
-	Gris
-	Inconnu : le logiciel Kryoflux n'a pas pu déterminer le statut de cette piste. Cela peut signifier ou non qu'elle a été lue avec succès. Cela pourrait indiquer que cette piste n'était pas formatée ou que le mauvais format a été sélectionné avant la capture. Si vous ne créez que des fichiers de flux de préservation, tous les secteurs seront gris.
-	
-
-9. Lorsque vous entendez la tête de lecture revenir à son point de départ (0), le disque cesse de tourner et le voyant lumineux du lecteur s'éteint, ce qui signifie que la capture est terminée. Un fichier sera automatiquement généré dans le répertoire que vous avez sélectionné à l'étape 3.
-10. Pour imager un autre disque, revenez à l'étape 4 et continuez à partir de là. Si vous changez de disque et que vous n'avez pas calibré l'autre disque, continuez à partir de l'étape 3.
+7. Lorsque vous entendez la tête de lecture revenir à son point de départ (0), le disque cesse de tourner et le voyant lumineux du lecteur s'éteint, ce qui signifie que la capture est terminée. Un fichier sera automatiquement généré dans le répertoire que vous avez sélectionné à l'étape 3.
+8. Pour imager un autre disque, revenez à l'étape 4 et continuez à partir de là. Si vous changez de disque et que vous n'avez pas calibré l'autre disque, continuez à partir de l'étape 3.
 
 ![Kryoflux](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/kryoflux_step7_cells.png)
 
-11. (Under image) *Les cellules colorées montrent que le profil d'image choisi n'était pas approprié pour le disque. Chaque fois que vous voyez un modèle de résultat alternant entre Inconnu et Bon (+ Modifié), vous avez probablement un disque de 40 pistes. Réessayez l'imagerie avec le profil de l'image du secteur MFM [40 pistes] et comparez les résultats.*
+*Les cellules colorées montrent que le profil d'image choisi n'était pas approprié pour le disque. Chaque fois que vous voyez un modèle de résultat alternant entre Inconnu et Bon (+ Modifié), vous avez probablement un disque de 40 pistes. Réessayez l'imagerie avec le profil de l'image du secteur MFM [40 pistes] et comparez les résultats.*
+
 ####Capture de disquettes présentant des dommages physiques ou des difficultés de lecture
+
 REMARQUE IMPORTANTE : chaque fois que vous remarquez la présence de moisissures ou de champignons sur un support numérique, consultez la Conservation et l'Archiviste numérique avant de capturer l'image disque. La moisissure pourrait se répandre à l'intérieur du lecteur et sur la tête de lecture risquant de contaminer d'autres disques par la suite. Pour réduire le risque de contamination, vous pourriez utiliser un lecteur exclusivement dédié à l'imagerie de supports contaminés. Pour les disques tenaces, qui semblent avoir de multiples mauvais secteurs et des dommages physiques, voici la procédure
+
 1. Dans la liste déroulante des formats de sortie, sélectionnez **le format que vous pensez être celui du disque et les fichiers de flux Kryoflux, formats de préservation**. Vous pourrez ainsi vérifier si le disque a été lu correctement, et effectuer des tentatives en cas d'erreurs. En outre, les fichiers de flux bruts serviront de fichiers de préservation si le format de codage sélectionné ne correspond pas au format du disque. Ils peuvent également être utilisés pour produire de nouveaux fichiers d'image disque en mode [sans périphérique](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/diskimaging.md#deviceless).
 2. **AVERTISSEMENT : faire tourner la tête du lecteur plusieurs fois sur le même secteur d'un disque peut créer des dommages physiques permanents sur le support. N'utilisez cette option que si la préservation des données prévaut sur la préservation physique du support**. Vous pouvez régler le nombre de tentatives sur une valeur plus élevée si le disque est particulièrement difficile à lire. Chaque fois que la tête essaie de lire un secteur, elle le "polit" en coupant les substances intrusives, telles que la poussière, les champignons et les moisissures. Nous avons fixé le nombre de tentatives à 20 - ce qui est déjà plus important que le nombre par défaut de 5 tentatives - mais vous pourriez aller jusqu'à 100. Pour définir le nombre de tentatives, allez dans Fichier > Paramètres > Sortie et saisissez le nombre de tentatives que vous souhaitez exécuter dans le champ "Retries".
 3. Suivez les étapes 6 à 8 de la section précédente.
 4. Faites attention : Écoutez le son du disque dur et remarquez toute anomalie. Examinez l'état de l'interface graphique de Kryoflux et notez tout secteur défectueux ou format inconnu dans votre feuille de calcul de traitement.
+
 *Les instructions de cette section ont été inspirées par l'article du Dr Gough dans la Tech Zone sur le [traitement des disques et des lecteurs difficiles](http://goughlui.com/2013/05/19/project-kryoflux-part-6-dealing-with-difficult-disks-and-drives/). Veuillez vous référer à l'article complet pour plus de détails sur l'entretien du matériel et la récupération des données à l'aide du Kryoflux.*
+
+<a name="deviceless"></a>
 ####Utilisation de l'interface graphique en mode sans dispositif**
 Une fois capturés, les fichiers de flux Kryoflux peuvent être utilisés directement à partir de l'interface graphique pour produire des fichiers d'images encodés et pour éviter de faire fonctionner un quelconque matériel externe. Cette technique peut être utile pour traiter des disques fragiles qui ne doivent pas être lus plusieurs fois afin d'éviter des dommages physiques permanents. Elle peut également être utilisée pour traiter des fichiers de préservation à un moment ultérieur de votre workflow. D'un autre côté, les fichiers de flux Kryoflux sont propriétaires et sont beaucoup plus volumineux que les fichiers d'image disque : leur préservation à long terme n'est donc pas encouragée au CCA.
-
 
 Voici les étapes à suivre pour produire de nouveaux fichiers d'images encodés à partir des fichiers de flux Kryoflux :
 1. Allez sur le *Drive* et sélectionnez "Stream Files”
@@ -300,13 +304,14 @@ Voici les étapes à suivre pour produire de nouveaux fichiers d'images encodés
 
 <a name="nimbie"></a>
 ### Création d'une image disque avec le Nimbie et ImgBurn
+
 Le Nimbie est un dispositif d'autochargement utilisé pour lire, écrire et créer simultanément, des images disques pour de nombreux CD ou DVD, tout en requérant un minimum d'intervention de l'utilisateur. Veuillez lire le [manuel d'utilisation du Nimbie](https://disc.acronova.com/file/2/download.html) pour savoir comment configurer l'unité Nimbie. Le logiciel qui peut être utilisé en conjonction avec le Nimbie est ImgBurn. Pour créer des images disque en utilisant le Nimbie et ImgBurn, vous aurez besoin de ce qui suit :
+
 * Windows XP/Vista/ 7 ou Apple OS X 10.6 / 10.7 (pour QQGetTray uniquement)
 * 1 Go de RAM ou plus
 * Port USB 3.0 (rétrocompatible avec USB 2.0)
 * ImgBurn version 2.5.8.0 (y compris le pack de [mise à jour BSRobots](https://disc.acronova.com/files/BSRobots_2.2.0.333.zip)) ou ultérieure
 * Unité Nimbie USB Plus avec les [pilotes appropriés installés](https://disc.acronova.com/file/51/download.html)
-
 
 **Comment configurer le Nimbie pour la création d'image disque**
 1. Assurez-vous que l'appareil Nimbie est branché dans une prise murale et que le cordon USB est connecté à l'ordinateur.
