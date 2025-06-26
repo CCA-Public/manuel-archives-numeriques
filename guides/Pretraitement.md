@@ -50,7 +50,7 @@ L'utilisation du mode Analyse peut vous aider à comprendre des aspects cruciaux
 ## Extraction de fichiers à partir de paquets et d'images disques
 Une autre possibilité consiste à utiliser l'un des nombreux outils permettant soit de découper des fichiers à partir d'images disque, soit de monter l'image disque et de copier les fichiers à partir du disque monté. Dans les deux cas, cela vous permettra de copier les fichiers sur le lecteur du catalogueur et de les visualiser ensuite à partir de n'importe quel ordinateur connecté au réseau du CCA.
 
-Pour l'extraction de fichiers à partir d'images disques en dehors du processus de rapport, nous utilisons généralement l'un des deux outils d'extraction de fichiers à partir d'images de disques : [Bitcurator](guides/extraction-de-fichiers-a-partir-dimages-disques-avec-bitcurator) ou [FTK Imager](guides/extraction-de-fichiers-a-partir-dimages-disques-avec-ftk-imager).
+Pour l'extraction de fichiers à partir d'images disques en dehors du processus de rapport, nous utilisons généralement l'un des deux outils d'extraction de fichiers à partir d'images de disques : [Bitcurator](#extraction_bitcurator) ou [FTK Imager](#ftk).
 
 <a name="extraction_bitcurator"></a>
 ### Extraction de fichiers à partir d'images disques avec Bitcurator
