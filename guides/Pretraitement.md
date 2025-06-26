@@ -50,14 +50,14 @@ L'utilisation du mode Analyse peut vous aider à comprendre des aspects cruciaux
 ## Extraction de fichiers à partir de paquets et d'images disques
 Une autre possibilité consiste à utiliser l'un des nombreux outils permettant soit de découper des fichiers à partir d'images disque, soit de monter l'image disque et de copier les fichiers à partir du disque monté. Dans les deux cas, cela vous permettra de copier les fichiers sur le lecteur du catalogueur et de les visualiser ensuite à partir de n'importe quel ordinateur connecté au réseau du CCA.
 
-Pour l'extraction de fichiers à partir d'images disques en dehors du processus de rapport, nous utilisons généralement l'un des deux outils d'extraction de fichiers à partir d'images de disques : [Bitcurator](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#bitcuratorfiles) ou [FTK Imager](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#ftkimagerfiles).
+Pour l'extraction de fichiers à partir d'images disques en dehors du processus de rapport, nous utilisons généralement l'un des deux outils d'extraction de fichiers à partir d'images de disques : [Bitcurator](script-de-montage-de-limage-disque) ou [FTK Imager](extraction-de-fichiers-a-partir-dimages-de-disque-avec-ftk-imager).
 
 <a name="extraction_bitcurator"></a>
 ### Extraction de fichiers à partir d'images disques avec Bitcurator
 Bitcurator dispose de deux outils natifs pour extraire des fichiers d'images disque : [l'interface d'accès aux images disque Bitcurator](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#bcaccess) et le script de [montage d'images disque](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#mountscript).
 
 <a name="reporting"></a>
-#### Outil de création de rapport BitCurator - Accès aux fichiers
+#### Outil de création de rapports BitCurator - Accès aux fichiers
 Voir les instructions pour [l'exportation de fichiers à partir d'images disque](https://wiki.bitcurator.net/index.php?title=File_Access) sur le wiki BitCurator
 Notez que cette méthode peut ne pas conserver les horodatages originaux des dossiers. Si les dates originales du système de fichiers doivent être conservées, vous pouvez tenter d'extraire les fichiers de l'image disque par la méthode suivante : [Script de montage de l'image disque](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/triage.md#mountscript) de Bitcurator.
 
