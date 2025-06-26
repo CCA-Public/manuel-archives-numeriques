@@ -77,7 +77,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 * **[Accès](guides/acces.md)**
 	* [Définition des DIP de type CCA](guides/acces.md#definition)
 	* [Créer des DIP de type CCA](guides/acces.md#creer)
-	* [Workflow d’Accès](guides/acces.md#workflow)
+	* [Flux de travail d’accès](guides/acces.md#workflow)
  
  * **[L'administration d'Archivematica](guides/administration.md)**
  	* [Connexion](guides/administration.md#connexion)
