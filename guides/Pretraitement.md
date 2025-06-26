@@ -67,7 +67,7 @@ En plus de l'onglet Accès aux fichiers de l'outil de reporting BitCurator, BitC
 
 Étapes :
 
-* Cliquez avec le bouton droit de la souris sur l'image disque. Dans le menu Scripts, choisissez "Monter l'image disque".
+* Cliquez avec le bouton droit de la souris sur l'image disque. Dans le menu Scripts, choisissez l'option "Mount Disk Image".
 
 ![mountscript1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/mountscript1.png)  
 
