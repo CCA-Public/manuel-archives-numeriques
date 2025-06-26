@@ -135,23 +135,23 @@ Si l'image de la disquette Encase a été divisée en plusieurs parties (E01, E0
 
 Une fois l'image disque brute obtenue, ouvrez HFSExplorer (situé dans le dossier "Additional Tools" sur le bureau).
 
-![hfsexplorer1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs1.png)
-
 Dans le menu "Fichier", sélectionnez "Charger le système de fichiers à partir du fichier", puis sélectionnez le fichier image disque brut.
-
-![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs2.png)  
 
 Si le chargement de l'image brute entraîne une erreur, le support n'a probablement pas été formaté comme un disque HFS. À ce stade, prenez note dans votre tableur de stabilisation du versement et consultez l'archiviste numérique.
 
-Si HFSExplorer peut lire le disque, il vous donnera une option sur la partition à lire. En général, vous voudrez choisir HFS (si ce n'est pas une option ou si vous n'êtes pas sûr ici, consultez l'archiviste numérique). Vous devriez maintenant voir une liste de fichiers.
+Si HFSExplorer peut lire le disque, il vous donnera une option sur la partition à lire. En général, vous voudrez choisir HFS (si ce n'est pas une option ou si vous n'êtes pas sûr ici, consultez l'archiviste numérique). 
+
+![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs2.png)  
+
+Vous devriez maintenant voir une liste de fichiers.
 
 La dernière étape consiste à exporter ces fichiers de HFSExplorer vers un emplacement de bureau ou de réseau. Pour exporter des fichiers :
 
 * Sélectionnez tous les fichiers à exporter (à ce stade, il devrait s'agir de tout, y compris les fichiers système) et appuyez sur le bouton "Extraire".
 
-![hfsexplorer3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs3.png)  
+* Choisissez votre lieu de destination et sélectionnez "Extract here".
 
-* Choisissez votre lieu de destination et sélectionnez "Extraire ici".
+![hfsexplorer3](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs3.png)  
 
 * Une fenêtre pop-up apparaîtra pour vous demander si vous souhaitez suivre des liens symboliques pendant l'extraction. Sélectionnez "Yes".
 
