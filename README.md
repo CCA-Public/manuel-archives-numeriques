@@ -106,7 +106,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 	* [Ressources en matière de script](guides/ressources.md#res_script)
 	* [Scripts utiles en ligne de commande](guides/ressources.md#scripts)
 	* [Préservation de la conception assistée par ordinateur](guides/ressources.md#conception)
-	* [Ressources générales](#generales)
+	* [Ressources générales](guides/ressources.md#generales)
 
 <a name="introduction"></a>
 ## Introduction au traitement des archives nées-numériques
