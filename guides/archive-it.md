@@ -5,7 +5,7 @@ L'archivage web est la pratique qui consiste à utiliser des outils de capture p
 Le CCA utilise l'application web [Archive-It](https://archive-it.org/) pour capturer certains types de contenu web liés à nos intérêts de collecte. Les collections web sont accessibles via le [microsite du CCA](https://archive-it.org/home/Canadian-Centre-for-Architecture). Les métadonnées sont contrôlées localement, et la lecture se fait par l'intermédiaire de la [Wayback Machine](https://archive.org/web/).
 
 
-Archive-It dispose d'un [centre d'aide](https://support.archive-it.org/hc/en-us), [d'un guide de l'utilisateur](https://support.archive-it.org/hc/en-us/categories/201179946-Archive-It-User-Guide) et d'un [forum](https://support.archive-it.org/hc/en-us/community/topics), qui devraient servir de documentation principale et de ressource pour le dépannage.
+Archive-It dispose d'un [centre d'aide](https://support.archive-it.org/hc/en-us), [d'un guide de l'utilisateur](https://support.archive-it.org/hc/en-us/articles/360041250172-Guide-for-new-Archive-It-users) et d'un [forum](https://support.archive-it.org/hc/en-us/community/topics), qui devraient servir de documentation principale et de ressource pour le dépannage.
 ## Workflow
 1. Consultez la liste des seeds de l'archivage web pour voir quelles seeds doivent être capturés. Il vit ici : H:\Archives\Archives numériques\Systems Development\Web Archiving.
 2. [Définissez des règles de cadrage et effectuez des tests et des captures de production.](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/web.md#scoping)
