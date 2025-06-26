@@ -280,7 +280,7 @@ Utilisez les tableaux ci-dessous pour sélectionner le(s) bon(s) format(s) d'ima
 
 *Les cellules colorées montrent que le profil d'image choisi n'était pas approprié pour le disque. Chaque fois que vous voyez un modèle de résultat alternant entre Inconnu et Bon (+ Modifié), vous avez probablement un disque de 40 pistes. Réessayez l'imagerie avec le profil de l'image du secteur MFM [40 pistes] et comparez les résultats.*
 
-####Capture de disquettes présentant des dommages physiques ou des difficultés de lecture
+#### Capture de disquettes présentant des dommages physiques ou des difficultés de lecture
 
 REMARQUE IMPORTANTE : chaque fois que vous remarquez la présence de moisissures ou de champignons sur un support numérique, consultez la Conservation et l'Archiviste numérique avant de capturer l'image disque. La moisissure pourrait se répandre à l'intérieur du lecteur et sur la tête de lecture risquant de contaminer d'autres disques par la suite. Pour réduire le risque de contamination, vous pourriez utiliser un lecteur exclusivement dédié à l'imagerie de supports contaminés. Pour les disques tenaces, qui semblent avoir de multiples mauvais secteurs et des dommages physiques, voici la procédure
 
@@ -292,7 +292,7 @@ REMARQUE IMPORTANTE : chaque fois que vous remarquez la présence de moisissures
 *Les instructions de cette section ont été inspirées par l'article du Dr Gough dans la Tech Zone sur le [traitement des disques et des lecteurs difficiles](http://goughlui.com/2013/05/19/project-kryoflux-part-6-dealing-with-difficult-disks-and-drives/). Veuillez vous référer à l'article complet pour plus de détails sur l'entretien du matériel et la récupération des données à l'aide du Kryoflux.*
 
 <a name="deviceless"></a>
-####Utilisation de l'interface graphique en mode sans dispositif**
+#### Utilisation de l'interface graphique en mode sans dispositif
 Une fois capturés, les fichiers de flux Kryoflux peuvent être utilisés directement à partir de l'interface graphique pour produire des fichiers d'images encodés et pour éviter de faire fonctionner un quelconque matériel externe. Cette technique peut être utile pour traiter des disques fragiles qui ne doivent pas être lus plusieurs fois afin d'éviter des dommages physiques permanents. Elle peut également être utilisée pour traiter des fichiers de préservation à un moment ultérieur de votre workflow. D'un autre côté, les fichiers de flux Kryoflux sont propriétaires et sont beaucoup plus volumineux que les fichiers d'image disque : leur préservation à long terme n'est donc pas encouragée au CCA.
 
 Voici les étapes à suivre pour produire de nouveaux fichiers d'images encodés à partir des fichiers de flux Kryoflux :
