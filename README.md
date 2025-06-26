@@ -4,8 +4,8 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 ## Table des matières
 
 * **[Guides détaillés](#details)**
-* **[Introduction au traitement des archives nées-numériques](#introduction)**
-* **[Le workflow des archives numériques en bref](#workflow)**
+* **[Introduction au traitement des archives nées numériques](#introduction)**
+* **[Flux de travail des archives numériques en bref](#workflow)**
 * **[Aperçu général sur la préservation numérique au CCA](#aperçu)**
 
 <a name="details"></a>
@@ -23,7 +23,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    * [Création d'images disques (pour les disquettes souples de 5,25") avec FC5025](guides/Imagerie_de_disque.md#fc5025)
    * [Création d'images disques avec Kryoflux](guides/Imagerie_de_disque.md#kryoflux)
    * [Création d'images disques avec Nimbie et ImgBurn](guides/Imagerie_de_disque.md#nimbie)
-   * [Extraction d'un CD audio avec cdparanoia](guides/diskimaging.md/#cdparanoia)
+   * [Extraction d'un CD audio avec cdparanoia](guides/Imagerie_de_disque.md/#cdparanoia)
    * [Dépannage](guides/Imagerie_de_disque.md#depannage)
    
 * **[Prétraitement : Triage et évaluation des archives nées numériques](guides/Pretraitement.md)**
