@@ -37,11 +37,11 @@ Des ressources utiles, notamment :
 
 <a name="preservation"></a>
 ## Outils de préservation numérique
-* [COPTR](http://coptr.digipres.org/Main_Page) : le registre des outils de préservation numérique appartenant à la communauté. Comprend la grille d'outils utiles et classe les outils de préservation numérique par fonction.
+* [COPTR](http://coptr.digipres.org/Main_Page) : le registre des outils de préservation numérique appartenant à la communauté. Comprend la grille d'outils utiles et une classification des outils de préservation numérique par fonction.
 * [Spécification BagIt 0.97](http://www.digitalpreservation.gov/documents/bagitspec.pdf) : Les spécifications du schéma de conditionnement et de validation largement utilisé, développé par la Library of Congress.
-* [Bitcurator wiki](http://wiki.bitcurator.net/index.php?title=Main_Page)
-* [Archivematica documentation](https://www.archivematica.org/en/docs/archivematica-1.4/)
-* [Preserving optical media from the command line](http://blog.kbresearch.nl/2015/11/13/preserving-optical-media-from-the-command-line/)
+* [Bitcurator Docs](https://bitcurator.github.io/documentation/) : Contient toute la documentation nécessaire pour comprendre le fonctionnement du BitCurator et ses différents outils disponibles.
+* [Archivematica documentation](https://www.archivematica.org/en/docs/) : Ce site nous donne accès à la documentation de toutes les différentes versions d'Archivematica.
+* [Preserving optical media from the command line](https://bitsgalore.org/2015/11/13/preserving-optical-media-from-the-command-line.html) : Référence très utile que nous avons d'ailleurs utilisé dans notre flux de travail. Voir la section [Extraction d'un CD audio avec cdparanoia](guides/Imagerie_de_disque.md/#cdparanoia)
 
 <a name="res_script"></a>
 ## Ressources en matière de commandes
