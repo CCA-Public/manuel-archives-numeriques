@@ -1,14 +1,14 @@
 # Archives courriel et ePADD
-Les formats de courrier électronique nécessitent un traitement supplémentaire, car ils contiennent souvent des informations sensibles ou personnelles et, en tant que format, sont difficiles d'accès pour les utilisateurs. [ePADD](https://library.stanford.edu/projects/epadd), développé par les bibliothèques de l'université Stanford, permet à l'archiviste chargé du traitement de faire des recherches dans les courriers électroniques, de restreindre les documents éventuellement sensibles, de créer des copies d'accès et de conservation et de fournir une interface d'accès conviviale à l’utilisateur.
+Les formats de courrier électronique nécessitent un traitement supplémentaire, car ils contiennent souvent des informations sensibles ou personnelles et, en tant que format, sont difficiles d'accès pour les utilisateurs. [ePADD](https://www.epaddproject.org/), développé par les bibliothèques de l'université Stanford, permet à l'archiviste chargé du traitement de faire des recherches dans les courriers électroniques, de restreindre les documents éventuellement sensibles, de créer des copies d'accès et de conservation et de fournir une interface d'accès conviviale à l’utilisateur.
 
 
-Une documentation complète sur ePADD se trouve dans leur [guide de l'utilisateur](https://docs.google.com/document/d/1ZMuWU0z-IVsk80_lUEYMfVrwfCsS1bp0sjL28GBGcMU/edit) et dans le [forum communautaire](https://epadd.nimeyo.com/).
+Une documentation complète sur ePADD se trouve dans leur [guide de l'utilisateur (2023)](https://docs.google.com/document/d/1PWzKyonRdogAChtHOQs-CVjCTMuQi00pLsHZRJateKw/edit?tab=t.0) et dans le [forum communautaire](https://groups.google.com/g/epaddusers).
 
 
-ePADD peut être téléchargé [ici](https://library.stanford.edu/projects/epadd/download), et les instructions d'installation se trouvent dans le guide de l'utilisateur. Le CCA recommande d'installer ePADD dans les environnements Mac ou Windows.
+ePADD peut être téléchargé [ici](https://www.epaddproject.org/using-epadd/download-and-install), et les instructions d'installation se trouvent dans le [guide de l'utilisateur](https://www.epaddproject.org/using-epadd/user-guide). Le CCA recommande d'installer ePADD dans les environnements Mac ou Windows.
 
 
-Cette documentation est à jour à partir de la version 5.0 d'ePADD (mai 2018).
+Cette documentation est à jour à partir de la version 10 d'ePADD (janvier 2023).
 
 * [Formats de courriel](#formats)
 * [Module d'importation et d'évaluation](#importation)
