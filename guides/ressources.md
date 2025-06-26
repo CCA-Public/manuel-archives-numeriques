@@ -199,9 +199,9 @@ Le script crée une copie du dossier source, nommé de la même façon, dans le 
 
 <a name="generales"></a>
 ## Ressources générales
-* [Digital Curation Google group](https://groups.google.com/forum/?fromgroups#!forum/digital-curation)
+* [Digital Curation Google group](https://groups.google.com/forum/?fromgroups#!forum/digital-curation) : Un groupe Google sur la curation numérique.
 * [BitCurator Users Google group](https://groups.google.com/g/bitcurator-users) : Le groupe Google des utilisateurs de BitCurator.
-* [Manuel de préservation numérique du Digital Preservation Coalition](https://www.dpconline.org/handbook) : une version français est disponible ! 
-* [The Signal](http://blogs.loc.gov/digitalpreservation/): Blog de la Library of Congress sur la préservation numérique.
-* [DSHR's blog](http://blog.dshr.org/): Blog de David S. Rosenthal, vétéran de la préservation numérique et développeur de LOCKSS.
-* [Bentley Historical Library ArchivesSpace-Archivematica-DSpace Integration project blog](http://archival-integration.blogspot.ca/): Bien qu'il s'agisse d'un blog qui parle d'un projet spécifique de préservation numérique, il contient de nombreux articles pertinents sur les problèmes auxquels sont confrontés les archivistes et les institutions qui traitent des archives numériques.
+* [Manuel de préservation numérique du Digital Preservation Coalition](https://www.dpconline.org/handbook) : une version française est disponible ! 
+* [The Signal](http://blogs.loc.gov/digitalpreservation/) : Un blog de la Library of Congress sur la préservation numérique.
+* [DSHR's blog](http://blog.dshr.org/) : Le blog de David S. Rosenthal, vétéran de la préservation numérique et développeur de LOCKSS.
+* [Bentley Historical Library ArchivesSpace-Archivematica-DSpace Integration project blog](http://archival-integration.blogspot.ca/) : Bien qu'il s'agisse d'un blog qui parle d'un projet spécifique de préservation numérique, il contient de nombreux articles pertinents sur les problèmes auxquels sont confrontés les archivistes et les institutions qui traitent des archives numériques.
