@@ -125,11 +125,11 @@ HFSExplorer ne peut lire que des images disque brutes. Si vous commencez avec un
 Si l'image de la disquette Encase a été divisée en plusieurs parties (E01, E02, etc.), il suffit de faire pointer ewfexport sur le fichier E01.
 À ce stade, ewfexport vous demandera de fournir des informations supplémentaires. Saisissez les données suivantes :
 
-* **Exportation au format** : brut (ce devrait être le format par défaut ; si c'est le cas, il suffit d'appuyer sur entrée)
-* **Chemin cible et nom de fichier sans extension**... : ./FILENAME
-* Taille du fichier du segment de preuve en octets : 0 (ce devrait être la valeur par défaut ; si c'est le cas, il suffit d'appuyer sur la touche Entrée)
-* **Démarrer l'exportation à la valeur de décalage** : 0 (ce devrait être la valeur par défaut ; si c'est le cas, il suffit d'appuyer sur la touche Entrée)
-* **Nombre d'octets à exporter** : valeur maximale dans la plage (ce devrait être la valeur par défaut ; si c'est le cas, il suffit d'appuyer sur la touche Entrée)
+* **Export to format:** raw (ce devrait être le format par défaut ; si c'est le cas, il suffit d'appuyer sur *Enter*)
+* **Target path and filename without extension... :** ./FILENAME
+* **Evidence segment file size in bytes:** 0 (ce devrait être la valeur par défaut ; si c'est le cas, il suffit d'appuyer sur la touche *Enter*)
+* **Start export at offset:** 0 (ce devrait être la valeur par défaut ; si c'est le cas, il suffit d'appuyer sur la touche *Enter*)
+* **Number of bytes to export:** valeur maximale dans la plage (ce devrait être la valeur par défaut ; si c'est le cas, il suffit d'appuyer sur la touche *Enter*)
 
 À ce stade, ewfexport vous indiquera que le processus peut prendre quelques minutes et que vous pouvez commencer. Lorsque le processus est terminé, il devrait y avoir un fichier *.raw dans votre destination cible pour correspondre au fichier E01 que vous avez sélectionné comme entrée.
 
