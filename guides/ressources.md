@@ -26,7 +26,7 @@ Des ressources utiles, notamment :
 
 <a name="stockage"></a>
 ## Identification et information des supports de stockage numérique
-* [Connaître vos médias](http://lib.utsa.edu/knowyourmedia/)
+* [Know your digital storage media](http://lib.utsa.edu/knowyourmedia/)
 
 <a name="format_de_fichier"></a>
 ## Identification et informations sur le format de fichier
