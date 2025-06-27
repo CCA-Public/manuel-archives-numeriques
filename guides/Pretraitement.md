@@ -137,6 +137,8 @@ Une fois l'image disque brute obtenue, ouvrez HFSExplorer (situé dans le dossie
 
 Dans le menu "Fichier", sélectionnez "Charger le système de fichiers à partir du fichier", puis sélectionnez le fichier image disque brut.
 
+![hfsexplorer2](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/hfs1.png)  
+
 Si le chargement de l'image brute entraîne une erreur, le support n'a probablement pas été formaté comme un disque HFS. À ce stade, prenez note dans votre tableur de stabilisation du versement et consultez l'archiviste numérique.
 
 Si HFSExplorer peut lire le disque, il vous donnera une option sur la partition à lire. En général, vous voudrez choisir HFS (si ce n'est pas une option ou si vous n'êtes pas sûr ici, consultez l'archiviste numérique). 
