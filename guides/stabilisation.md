@@ -21,10 +21,10 @@ Les directives suivantes décrivent comment le CCA procède pour acquérir et st
 * **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou un membre de l'équipe de gestion de collection, GesCo)**
    * Aviser l'équipe GesCo ou l'archiviste numérique dès la réception du transfert.
    * Compresser les fichiers et déplacer le fichier nouvellement compressé dans le répertoire Processing du serveur de fichiers.
-* **GesCo : Création de l'acquisition dans TMS**
+* **GesCo : Créer des dossiers d'acquisition**
    * Pour les acquisitions comprenant exclusivement des archives nées numériques, ne créer qu'un numéro de versement dans TMS (pas de versement-objet ni de numéro ARCH). Inclure une brève note permettant d'identifier l'acquisition dans la section "Description du contenu". Par exemple, vous pouvez utiliser le nom du dossier Dropbox de l'acquisition.
    * Pour les acquisitions de photos ou de P&D, créer des enregistrements de groupe ou de pièce comme d'habitude.
-* **Archiviste numérique : ingestion**
+* **Archiviste numérique : ingérer**
    * Ajouter de l'information concernant le contenu des fichiers nouvellement acquis dans la section "Description du contenu" dans TMS.
    * Emballer le fichier compressé sous forme de SIP (paquet d'information à archiver) et ingérez-le dans Archivematica en suivant les [procédures d'ingestion des données brutes](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
    * Faire une demande de déplacement auprès de GesCo afin de déplacer les fichiers vers l'emplacement "Dark Archive" dans TMS.
