@@ -65,12 +65,12 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
    * Supprimer les fichiers inutiles dans le répertoire Digital Shipping Space ou sur les postes de travail BitCurator.
 * **GesCo**
    * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
-* **Archiviste numérique en chef**
-   * Pendant ou après le traitement, l'Archiviste numérique en chef évalue la valeur artéfactuelle de chaque support physique original. Cette évaluation peut aboutir à trois résultats :
+* **Archiviste Numérique**
+   * Pendant ou après le traitement, l'Archiviste Numérique évalue la valeur artéfactuelle de chaque support physique original. Cette évaluation peut aboutir à trois résultats :
       * Les supports ont une valeur artéfactuelle et seront conservés en permanence au CCA dans leur intégralité.
       * Les supports ont une valeur artéfactuelle et un échantillon (un seul support) sera conservé en permanence au CCA.
       * Les supports n'ont pas de valeur artéfactuelle et seront détruits ou retournés au donateur ou à la donatrice.
-   * Au CCA, tous les supports sont conservés uniquement pour leur valeur artéfactuelle et non comme supports de stockage ou de sauvegarde. L'Archiviste en chef doit alors prendre la décision finale de ce qui doit être fait en terme de description et de classification pour ces supports. Lorsqu'on se débarrase d'un support physique original, l'archiviste chargé du traitement doit l'indiquer dans TMS dans la section "Évaluation-destruction" au niveau du fonds.
+   * Au CCA, tous les supports sont conservés uniquement pour leur valeur artéfactuelle et non comme supports de stockage ou de sauvegarde. L'Archiviste Numérique doit alors prendre la décision finale de ce qui doit être fait en terme de description et de classification pour ces supports. Lorsqu'on se débarrase d'un support physique original, l'archiviste chargé du traitement doit l'indiquer dans TMS dans la section "Évaluation-destruction" au niveau du fonds.
 
 <a name="integrer"></a>
 ## Ingestion des données brutes dans un dépôt numérique
