@@ -106,20 +106,18 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
 
 <a name="integrer"></a>
 ## Ingestion des données brutes dans le système de préservation numérique 
-Une fois que l'archiviste au traitement ou que le technicien/ la technicienne ait téléchargé les fichiers et stabilisé tous les supports physiques ou temporaires, l'acquisition doit être ingérée dans le dépôt numérique du CCA, Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données telles qu'elles sont arrivées au CCA. 
+Une fois que l'archiviste au traitement ou que le technicien/ la technicienne ait téléchargé les fichiers et stabilisé tous les supports physiques ou temporaires, l'acquisition doit être ingérée dans le système de préservation numérique du CCA, Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données telles qu'elles sont arrivées au CCA. 
 
 **Il est à noter que tous les fichiers provenant de transferts en réseau ou de supports temporaires doivent être exportés dans un format d'archive approprié (zip, tar, rar, etc.), faute de quoi Archivematica modifiera les noms des fichiers et les dates de créations des fichiers, allant à l'encontre de l'ingestion brute des données sans modification aucune. 
 Au CCA, nous préférons créer nos SIP en utilisant le format tar. Il est alors suggéré de bien vérifier que les fichiers ont été compressés avec succès et qu'ils peuvent être rouverts, car les fichiers zip défectueux peuvent entraîner la perte de documents et donc, de matériel de collection. Notez également que cette étape peut être facultative si les images disques doivent être conservées.**
 
 Ce SIP est composé de tous les fichiers, les paquets d'archives et les images disques en lien avec l'acquisition. Il est nommé selon la convention de nommage suivante `<numéro d'acquisition>_raw`, toute la ponctuation est remplacée par des traits de soulignement (par exemple, `AR2018_0001_raw`).
 
-
-Pour l'ingestion de données brutes non traitées, nous utilisons le pipeline de traitement VSP-AMPL-01. Dans ce pipeline, Archivematica est configuré par défaut pour ne pas extraire de paquets, examiner le contenu ou normaliser les fichiers.
+Pour l'ingestion de données brutes non traitées, nous utilisons le pipeline de traitement VSP-AMPL-01. Dans ce pipeline, Archivematica est configuré pour ne pas extraire de paquets, examiner le contenu ou normaliser les fichiers.
 
 **Procédure**:
 
-
-1. Créez un SIP nommé `<numéro d'acquisition>_raw`, contenant les fichiers tels qu'envoyés par le donateur et/ou les images disque. Si une acquisition n'a pas encore été créée dans TMS, stockez temporairement le SIP dans l'espace d'expédition numérique jusqu'à ce que le numéro d'acquisition ait été attribué et qu'un enregistrement ait été créé dans TMS.
+1. Créez un SIP nommé `<numéro d'acquisition>_raw`, contenant les fichiers (et/ ou les images disques) tels qu'envoyés par le donateur ou la donatrice. Si une acquisition n'a pas encore été créée dans ArchivesSpace, stockez temporairement le SIP dans le dossier nommé Shipping Space" jusqu'à ce que le numéro d'acquisition ait été attribué et qu'un enregistrement ait été créé dans ArchivesSpace.
 2. Copiez le SIP dans le pipeline VSP-AMPL-01 à l'aide du script `send_to_archivematica.py.`
-3. (Administrateur Digital Archivist/Archivematica) Déplacez le SIP dans le dossier surveillé Automation Tools pour l'ingérer. Suivez les procédures d'ingestion et d'assurance qualité habituelles.
-Une fois l'acquisition ingérée dans Archivematica, supprimez toute copie supplémentaire des machines BitCurator, Digital Shipping Space, etc. et demandez à Déplacement de mettre à jour l'emplacement des enregistrements d'acquisition appropriés à "Dark Archive".
+3. L'Archiviste Numérique ou l'Administrateur d'Archivematica va déplacer le SIP dans le dossier "Automation Tools" pour l'ingérer. Suivez les procédures d'ingestion et d'assurance qualité habituelles.
+Une fois l'acquisition ingérée dans Archivematica, supprimez toute copie supplémentaire des machines BitCurator, Digital Shipping Space, etc. et demandez au Technicien/ à la technicienne aux archives numérique de mettre à jour le conteneur des enregistrements d'acquisition à "Dark Archive".
