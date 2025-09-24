@@ -74,25 +74,35 @@ Le présent guide a été mis à jour en 2025 suite à l'implémentation d'Archi
 Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports optiques (CD/DVD), les ordinateurs, les disques durs internes et les stockages à bandes magnétiques tels que les LTO par exemple. Pour vous aider à identifier correctement les types de supports, veuillez consulter le [guide d'identification des supports informatiques](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/mediaIDGuide.docx) ou la page ["Know Your Media"](http://lib.utsa.edu/knowyourmedia/) des bibliothèques de l'Université du Texas à San Antonio (UTSA).
 
 Étapes :
-* **GesCo**
-   * Créer l'acquisition dans TMS comme décrit ci-dessus.
+* **L'équipe de la gestion de la collection (GesCo) : Réception**
+   * Création de l'acquisition dans ArchivesSpace.
    * À l'arrivée des boîtes d'archives, déterminer s'il est possible de séparer les supports numériques.
    * SI OUI : GesCo sépare les supports numériques des documents papiers (entreposé sur les étagères de la chambre froide) et crée des versement-objets distincts par conteneur.
-   * SI NON : GesCo doit indiquer dans TMS dans la section "Description du contenu" de la page du versement-objet que le versement contient des supports numériques. Le matériel numérique sera ensuite stabilisé par le technicien ou la technicienne des archives numériques ou le versement-objet sera ajouté dans le fichier du "Backlog Project". 
-* **Archiviste numérique**
-   * Note : Ces étapes peuvent ne pas être réalisées immédiatement.
-   * Superviser le technicien ou la technicienne des archives numériques lors de la tâche de la création d'images disques.
-   * Si le versement ne peut pas être traité immédiatement, regrouper toutes les images disques dans un seul SIP et ingérer le SIP dans Archivematica en suivant les [procédures d'insertion des données "brutes"](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/stabilization.md#rawingest).
-   * Faire une demande de déplacement auprès de GesCo afin de changer l'emplacement du versement-objet dans TMS au "Dark Archive".
-   * Supprimer les fichiers inutiles dans le répertoire Digital Shipping Space ou sur les postes de travail BitCurator.
-* **GesCo**
-   * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
-* **Archiviste Numérique**
-   * Pendant ou après le traitement, l'Archiviste Numérique évalue la valeur artéfactuelle de chaque support physique original. Cette évaluation peut aboutir à trois résultats :
-      * Les supports ont une valeur artéfactuelle et seront conservés en permanence au CCA dans leur intégralité.
-      * Les supports ont une valeur artéfactuelle et un échantillon (un seul support) sera conservé en permanence au CCA.
-      * Les supports n'ont pas de valeur artéfactuelle et seront détruits ou retournés au donateur ou à la donatrice.
-   * Au CCA, tous les supports sont conservés uniquement pour leur valeur artéfactuelle et non comme supports de stockage ou de sauvegarde. L'Archiviste Numérique doit alors prendre la décision finale de ce qui doit être fait en terme de description et de classification pour ces supports. Lorsqu'on se débarrase d'un support physique original, l'archiviste chargé du traitement doit l'indiquer dans TMS dans la section "Évaluation-destruction" au niveau du fonds.
+   * SI NON : GesCo doit indiquer dans ArchivesSpace que le versement contient des supports numériques. Le matériel numérique sera ensuite stabilisé par le Technicien ou la Technicienne des Archives Numériques, et le versement-objet sera ajouté dans le fichier du "Backlog Project".
+* **Technicien/ne aux Archives Numériques: Stabilisation**
+  * À noter que les étapes suivantes peuvent se dérouler après un certain temps
+  * Ouvrir le fichier Excel consacré au projet du "Media Backlog" et sélectionner un projet de stabilisation par ordre de priorité.
+  * Noter l'emplacement actuel des boites dans lesquelles se retrouvent le versement choisi et amenez-les dans le laboratoire numérique à l'aide d'un charriot.
+  * Mettre à jour l'emplacement du versement dans ArchivesSpace.  
+  * Stabiliser les supports numériques physiques selon leur type en suivant les indications présentées [ici](diskimaging.md).
+  * Identifier chaque support avec un identifiant AS unique à l'aide d'un stylo ou d'un crayon à mine, selon la surface du support.
+  * Utiliser le fichier [versement stabilization](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/versement_stabilization.xlsx) pour consigner votre travail.
+  * Lancer une analyse antivirus sur toutes les images disques nouvellement créées.
+  * Si ce versement ne va pas être traité tout de suite, empaqueter tous le contenu brut en tant que SIP Archivematica en compressant les fichiers dans un des divers formats d'archive (zip, tar, rar, etc.), sauvegardez-le sur le RAID, sur un des BitCurator et renommer le SIP en suivant les [procédures pour l'ingestion des données brutes](#integrer).
+  * Sinon, vous pouvez empaqueter chaque image disque individuellement dans leur propre SIP en utilisant les [CCA tools](#CCAtools). Sauvegarder tous les SIPs sur le RAID sur l'un des BitCurator et placez-les dans un dossier que vous pourrez renommer en utilisant le numéro du fonds d'archives et une version abrégée du nom du fonds, comme ceci : "AP149_MCHG" où le numéro de fonds d'archives est "AP149" et "MCHG" se réfère à "Minimum Cost Housing Group".
+  * Aviser l'Archiviste Numérique que le SIP est prêt à être ingéré.
+* **Archiviste Numérique : Ingestion**
+  * Si le versement ne va pas être traité immédiatement, ingérer le SIP dans Archivematica en suivant les [procédures pour l'ingestion des données brutes](#integrer).
+  * Supprimer toutes copies inutiles de fichiers dans le dossier _Processing_, _Digital Shipping Space_ ou sur les postes de travail BitCurator.
+  * Demander au Technicien/ à la Technicienne aux Archives Numériques de mettre à jour le conteneur de l'acquisition dans ArchivesSpace pour refléter le nouvel emplacement.
+* **Technicien/ne aux Archives Numériques: Mise à jour de l'emplacement**
+   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition sur ArchivesSpace.
+* **Archiviste Numérique: Évaluation**
+   * Pendant ou après le traitement, l'Archiviste Numérique évalue la valeur de chaque support physique original. Cette évaluation peut aboutir à trois résultats :
+      * Les supports ont une valeur historique et seront conservés en permanence au CCA dans leur intégralité.
+      * Les supports ont une valeur historique et un échantillon (un seul support) sera conservé en permanence au CCA.
+      * Les supports n'ont pas de valeur historique et seront détruits ou retournés au donateur ou à la donatrice.
+   * Au CCA, tous les supports sont conservés uniquement pour leur valeur historique et non comme supports de stockage ou de sauvegarde. L'Archiviste Numérique doit alors prendre la décision finale de ce qui doit être fait en terme de description et de classification pour ces supports. Lorsqu'on se débarrase d'un support physique original, l'archiviste chargé du traitement doit l'indiquer dans ArchiveSpace au niveau du fonds.
 
 <a name="integrer"></a>
 ## Ingestion des données brutes dans le système de préservation numérique 
