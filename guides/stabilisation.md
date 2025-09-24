@@ -95,7 +95,7 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
    * Au CCA, tous les supports sont conservés uniquement pour leur valeur artéfactuelle et non comme supports de stockage ou de sauvegarde. L'Archiviste Numérique doit alors prendre la décision finale de ce qui doit être fait en terme de description et de classification pour ces supports. Lorsqu'on se débarrase d'un support physique original, l'archiviste chargé du traitement doit l'indiquer dans TMS dans la section "Évaluation-destruction" au niveau du fonds.
 
 <a name="integrer"></a>
-## Ingestion des données brutes dans un dépôt numérique
+## Ingestion des données brutes dans le système de préservation numérique 
 Une fois que l'archiviste au traitement ou que le technicien/ la technicienne ait téléchargé les fichiers et stabilisé tous les supports physiques ou temporaires, l'acquisition doit être ingérée dans le dépôt numérique du CCA, Archivematica. Le but de cette étape est de conserver et de stocker en toute sécurité une copie des données telles qu'elles sont arrivées au CCA. 
 
 **Il est à noter que tous les fichiers provenant de transferts en réseau ou de supports temporaires doivent être exportés dans un format d'archive approprié (zip, tar, rar, etc.), faute de quoi Archivematica modifiera les noms des fichiers et les dates de créations des fichiers, allant à l'encontre de l'ingestion brute des données sans modification aucune. 
