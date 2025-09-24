@@ -97,6 +97,8 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
   * Demander au Technicien/ à la Technicienne aux Archives Numériques de mettre à jour le conteneur de l'acquisition dans ArchivesSpace pour refléter le nouvel emplacement.
 * **Technicien/ne aux Archives Numériques: Mise à jour de l'emplacement**
    * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition.
+   * Remettre les supports numériques dans leur boite respective et ramener les boites dans les réserves à leur emplacement d'origine.
+   * Mettre à jour l'emplacement physique des boites.
 * **Archiviste Numérique: Évaluation**
    * Pendant ou après le traitement, l'Archiviste Numérique évalue la valeur de chaque support physique original. Cette évaluation peut aboutir à trois résultats :
       * Les supports ont une valeur historique et seront conservés en permanence au CCA dans leur intégralité.
