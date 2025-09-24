@@ -43,7 +43,7 @@ Le présent guide a été mis à jour en 2025 suite à l'implémentation d'Archi
    * Supprimer toutes copies inutiles de fichiers dans le dossier _Processing_, _Digital Shipping Space_ ou sur les postes de travail BitCurator.
    * Demander au Technicien/ à la Technicienne aux Archives Numériques de mettre à jour le conteneur de l'acquisition dans ArchivesSpace pour refléter le nouvel emplacement.
 * **Technicien/ne aux Archives Numériques: Mise à jour de l'emplacement**
-   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition sur ArchivesSpace.
+   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition.
 
 <a name="supports_temps"></a>
 ### Supports physiques temporaires
@@ -67,7 +67,7 @@ Le présent guide a été mis à jour en 2025 suite à l'implémentation d'Archi
   * Demander au Technicien/ à la Technicienne aux Archives Numériques de mettre à jour le conteneur de l'acquisition dans ArchivesSpace pour refléter le nouvel emplacement.
   * Reformater (effacer) le support et le retourner au donateur ou à la donatrice, le réutiliser ou le détruire selon le cas.
 * **Technicien/ne aux Archives Numériques: Mise à jour de l'emplacement**
-   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition sur ArchivesSpace.
+   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition.
 
 <a name="supports_originaux"></a>
 ### Supports physiques originaux
@@ -96,7 +96,7 @@ Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports 
   * Supprimer toutes copies inutiles de fichiers dans le dossier _Processing_, _Digital Shipping Space_ ou sur les postes de travail BitCurator.
   * Demander au Technicien/ à la Technicienne aux Archives Numériques de mettre à jour le conteneur de l'acquisition dans ArchivesSpace pour refléter le nouvel emplacement.
 * **Technicien/ne aux Archives Numériques: Mise à jour de l'emplacement**
-   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition sur ArchivesSpace.
+   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition.
 * **Archiviste Numérique: Évaluation**
    * Pendant ou après le traitement, l'Archiviste Numérique évalue la valeur de chaque support physique original. Cette évaluation peut aboutir à trois résultats :
       * Les supports ont une valeur historique et seront conservés en permanence au CCA dans leur intégralité.
