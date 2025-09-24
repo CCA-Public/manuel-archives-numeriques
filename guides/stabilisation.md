@@ -3,9 +3,10 @@
 Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des documents d'archives nés numériques, quelle que soit la forme sous laquelle ils arrivent au CCA. Il comprend :
 
 * [Aperçu général](#aperçu)
-* [Transferts de fichiers en réseau](#transferts)
-* [Supports physiques temporaires](#supports_temps)
-* [Supports physiques originaux](#supports_originaux)
+* [Stabilization](#stabilization)
+  * [Transferts de fichiers en réseau](#transferts)
+  * [Supports physiques temporaires](#supports_temps)
+  * [Supports physiques originaux](#supports_originaux)
 * [Ingestion des données brutes dans un dépôt numérique](#integrer)
 
 <a name="aperçu"></a> 
@@ -19,8 +20,11 @@ Il est à noter qu'avant la réception d'une acquisition d'archives nées numér
 
 Le présent guide a été mis à jour en 2025 suite à l'implémentation d'ArchivesSpace dans notre flux de travail.
 
+<a name="stabilization"></a> 
+## Stabilization
+
 <a name="transferts"></a>
-## Transferts de fichiers en réseau
+### Transferts de fichiers en réseau
 Étapes :
 * **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique ou un membre de l'équipe de gestion de collection, GesCo)**
    * Aviser l'équipe GesCo ou l'archiviste numérique dès la réception du transfert.
@@ -37,7 +41,7 @@ Le présent guide a été mis à jour en 2025 suite à l'implémentation d'Archi
    * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
 
 <a name="supports_temps"></a>
-## Supports physiques temporaires
+### Supports physiques temporaires
 Étapes : 
 * **GesCo : Créer des dossiers d'acquisition**
    * Pour les archives, créez uniquement un enregistrement de versement (pas d'objet de versement ou d'enregistrement ARCH). Inclure une brève note dans la "Description du contenu" indiquant comment les fichiers sont arrivés (par exemple "Fichiers arrivés au CCA sur une clé USB de 64 Go")
@@ -52,7 +56,7 @@ Le présent guide a été mis à jour en 2025 suite à l'implémentation d'Archi
    * Ajouter "Dark Archive" comme emplacement du versement dans TMS.
 
 <a name="supports_originaux"></a>
-## Supports physiques originaux
+### Supports physiques originaux
 Note : Il s'agit d'une vaste catégorie qui inclut les disquettes, les supports optiques (CD/DVD), les ordinateurs, les disques durs internes et les stockages à bandes magnétiques tels que les LTO par exemple. Pour vous aider à identifier correctement les types de supports, veuillez consulter le [guide d'identification des supports informatiques](https://github.com/CCA-Public/digital-archives-manual/blob/master/guides/mediaIDGuide.docx) ou la page ["Know Your Media"](http://lib.utsa.edu/knowyourmedia/) des bibliothèques de l'Université du Texas à San Antonio (UTSA).
 
 Étapes :
