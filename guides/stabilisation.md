@@ -7,7 +7,7 @@ Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des do
   * [Transferts de fichiers en réseau](#transferts)
   * [Supports physiques temporaires](#supports_temps)
   * [Supports physiques originaux](#supports_originaux)
-* [Ingestion des données brutes dans un dépôt numérique](#integrer)
+* [Ingestion des données brutes dans le système de préservation numérique](#integrer)
 
 <a name="aperçu"></a> 
 ## Aperçu général
