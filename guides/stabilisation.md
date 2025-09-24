@@ -16,7 +16,7 @@ En général, le contenu numérique arrive au CCA par l'une des trois façons su
 
 Les directives suivantes décrivent comment le CCA procède pour acquérir et stabiliser le contenu numérique d'un versement et la manière dont le CCA ingère le contenu brut dans son système de préservation numérique, une fois toutes les étapes préparatoires complétées.
 
-Il est à noter qu'avant la réception d'une acquisition d'archives nées numériques, le CCA envoie 2 documents au donateur ou à la donatrice afin d'avoir une meilleure compréhension du contexte de création et de l'usage des fichiers numériques : [Le guide des donateurs et donatrices (en anglais seulement)](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/ccaDonorTransferGuide.pdf) et la [Fiche d'information sur la soumission des fichiers numériques (en anglais seulement)](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/Submission_of_Digital_Files_Questionnaire.pdf).
+Il est à noter qu'avant la réception d'une acquisition d'archives nées numériques, le CCA envoie 2 documents au donateur ou à la donatrice afin d'avoir une meilleure compréhension du contexte de création et de l'usage des fichiers numériques : [Le guide des donateurs et donatrices](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/ccaDonorTransferGuide.pdf) et la [Fiche d'information sur la soumission des fichiers numériques](https://github.com/CCA-Public/digital-archives-manual/blob/master/forms/Submission_of_Digital_Files_Questionnaire.pdf), disponibles en anglais seulement.
 
 Le présent guide a été mis à jour en 2025 suite à l'implémentation d'ArchivesSpace dans notre flux de travail.
 
