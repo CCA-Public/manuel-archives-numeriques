@@ -3,7 +3,7 @@
 Ce guide décrit les normes du CCA pour l'acquisition et la stabilisation des documents d'archives nés numériques, quelle que soit la forme sous laquelle ils arrivent au CCA. Il comprend :
 
 * [Aperçu général](#aperçu)
-* [Stabilization](#stabilization)
+* [Stabilisation](#stabilisation)
   * [Transferts de fichiers en réseau](#transferts)
   * [Supports physiques temporaires](#supports_temps)
   * [Supports physiques originaux](#supports_originaux)
@@ -20,8 +20,8 @@ Il est à noter qu'avant la réception d'une acquisition d'archives nées numér
 
 Le présent guide a été mis à jour en 2025 suite à l'implémentation d'ArchivesSpace dans notre flux de travail.
 
-<a name="stabilization"></a> 
-## Stabilization
+<a name="stabilisation"></a> 
+## Stabilisation
 
 <a name="transferts"></a>
 ### Transferts de fichiers en réseau
