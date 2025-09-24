@@ -26,7 +26,7 @@ Le présent guide a été mis à jour en 2025 suite à l'implémentation d'Archi
 <a name="transferts"></a>
 ### Transferts de fichiers en réseau
 Étapes :
-* **Le membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique): Réception**
+* **Membre du personnel qui reçoit le transfert (généralement l'Archiviste Numérique): Réception**
    * Création de l'acquisition dans ArchivesSpace.
    * S'assurer que les documents administratifs relatifs à l'acquisition (ex. acte de donation, pro forma, inventaires, correspondance, documents d'expédition, etc.) se trouvent dans le dossier approprié situé sur le serveur.
    * Envoyer le transfert au Technicien/ à la technicienne aux Archives Numériques.
@@ -38,20 +38,37 @@ Le présent guide a été mis à jour en 2025 suite à l'implémentation d'Archi
    * Empaqueter les fichiers reçus en tant que SIP (paquet d'information à archiver) Archivematica en zippant les fichiers dans un des divers formats d'archive (zip, tar, rar, etc.).
    * Renommer le SIP selon les [procédures pour l'ingestion des données brutes](#integrer).
    * Aviser l'Archiviste Numérique que le SIP est prêt à être ingéré dans Archivematica.
-* **Archiviste numérique : ingérer**
+* **Archiviste numérique : ingestion**
    * Ingérer le SIP dans Archivematica en suivant les [procédures pour l'ingestion des données brutes](#integrer).
-   * Supprimer les copies des fichiers extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
-   * Send a request to the Digital Archives Technician for the files to be localized to Dark Archive.
-   * Ajouter de l'information concernant le contenu des fichiers nouvellement acquis dans la section "Description du contenu" dans TMS.
-   * Emballer le fichier compressé sous forme de SIP (paquet d'information à archiver) et ingérez-le dans Archivematica en suivant les [procédures d'ingestion des données brutes](#integrer).
-   * Faire une demande de déplacement auprès de GesCo afin de déplacer les fichiers vers l'emplacement "Dark Archive" dans TMS.
-   * Supprimer toutes copies inutiles de fichiers dans le répertoire _Processing_, _Digital Shipping Space_ ou sur les postes de travail BitCurator.
+   * Supprimer toutes copies inutiles de fichiers dans le dossier _Processing_, _Digital Shipping Space_ ou sur les postes de travail BitCurator.
+   * Demander au Technicien/ à la Technicienne aux Archives Numériques de mettre à jour le conteneur de l'acquisition dans ArchivesSpace pour refléter le nouvel emplacement.
 * **Technicien/ne aux Archives Numériques: Mise à jour de l'emplacement**
-   * Ajouter "Dark Archive" comme conteneur dans ArchivesSpace au niveau de l'acquisition.
+   * Ajouter "Dark Archive" comme conteneur dans le dossier d'acquisition d'ArchivesSpace.
 
 <a name="supports_temps"></a>
 ### Supports physiques temporaires
 Étapes : 
+* **Membre du personnel qui reçoit le support physique temporaire (généralement l'Archiviste Numérique): Réception** 
+  * Création de l'acquisition dans ArchivesSpace.
+  * S'assurer que les documents administratifs relatifs à l'acquisition (ex. acte de donation, pro forma, inventaires, correspondance, documents d'expédition, etc.) se trouvent dans le dossier approprié situé sur le serveur.
+  * Donner le support physique temporaire au Technicien/ à la technicienne aux Archives Numériques.
+* **Technicien/ne aux Archives Numériques: Stabilisation**
+  * Utiliser le bloqueur d'écriture et le logiciel Guymager pour créer une image disque du support physique temporaire sur un des BitCurator. 
+  * Lancer une analyse antivirus sur l'entièreté de l'acquisition.
+  * Vérifier les métadonnées, spécifiquement la date de la dernière modification sur chacun des fichiers afin de s'assurer que rien n'a été modifié durant le transfert.
+  * Comparer l'inventaire du donateur/ de la donatrice avec les fichiers reçus, si disponible.
+  * Empaqueter les fichiers en tant que SIP (paquet d'information à archiver) Archivematica en zippant les fichiers dans un des divers formats d'archive (zip, tar, rar, etc.).
+  * Renommer le SIP selon les [procédures pour l'ingestion des données brutes](#integrer).
+  * Aviser l'Archiviste Numérique que le SIP est prêt à être ingéré dans Archivematica.
+  * Transférer le SIP vers le dossier AP/CD dans le répertoire _Shipping Space_ situé sur le serveur.
+  * Return temporary physical media to Digital Archivist and let them know that the SIP is ready for ingest.
+* **Digital Archivist: Ingest**  
+  * Ingest the SIP into Archivematica, following the [procedures for ingesting "raw" data](#rawingest).
+  * Delete extraneous copies of files from Digital Shipping Space, BitCurator workstations, etc.
+  * Send request to Digital Archives Technician for the files to be localized to Dark Archive.
+  * Reformat (erase) media and return to donor, repurpose, or weed as appropriate.
+* **Digital Archives Technician: Update location**  
+  * Add "Dark archive" as a container to the accession record in ArchivesSpace.
 * **GesCo : Créer des dossiers d'acquisition**
    * Pour les archives, créez uniquement un enregistrement de versement (pas d'objet de versement ou d'enregistrement ARCH). Inclure une brève note dans la "Description du contenu" indiquant comment les fichiers sont arrivés (par exemple "Fichiers arrivés au CCA sur une clé USB de 64 Go")
    * Pour Photo/P&D, créez des enregistrements de groupe ou de pièce comme d'habitude
