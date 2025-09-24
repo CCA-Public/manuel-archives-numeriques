@@ -117,9 +117,9 @@ Ce SIP est composé de tous les fichiers, les paquets d'archives et les images d
 
 Pour l'ingestion de données brutes non traitées, nous utilisons le pipeline de traitement VSP-AMPL-01. Dans ce pipeline, Archivematica est configuré pour ne pas extraire de paquets, examiner le contenu ou normaliser les fichiers.
 
-**Procédure**:
+**Procédure** :
 
-1. Créez un SIP nommé `<numéro d'acquisition>_raw`, contenant les fichiers (et/ ou les images disques) tels qu'envoyés par le donateur ou la donatrice. Si une acquisition n'a pas encore été créée dans ArchivesSpace, stockez temporairement le SIP dans le dossier nommé Shipping Space" jusqu'à ce que le numéro d'acquisition ait été attribué et qu'un enregistrement ait été créé dans ArchivesSpace.
-2. Copiez le SIP dans le pipeline VSP-AMPL-01 à l'aide du script `send_to_archivematica.py.`
-3. L'Archiviste Numérique ou l'Administrateur d'Archivematica va déplacer le SIP dans le dossier "Automation Tools" pour l'ingérer. Suivez les procédures d'ingestion et d'assurance qualité habituelles.
-Une fois l'acquisition ingérée dans Archivematica, supprimez toute copie supplémentaire des machines BitCurator, Digital Shipping Space, etc. et demandez au Technicien/ à la Technicienne aux Archives Numérique de mettre à jour le conteneur des enregistrements d'acquisition à "Dark Archive".
+1. Créer un SIP nommé `<numéro d'acquisition>_raw`, contenant les fichiers (et/ ou les images disques) tels qu'envoyés par le donateur ou la donatrice. Si une acquisition n'a pas encore été créée dans ArchivesSpace, stockez temporairement le SIP dans le dossier nommé Shipping Space" jusqu'à ce que le numéro d'acquisition ait été attribué et qu'un enregistrement ait été créé dans ArchivesSpace.
+2. Copier le SIP dans le pipeline VSP-AMPL-01 à l'aide du script `send_to_archivematica.py.`
+3. L'Archiviste Numérique ou l'Administrateur d'Archivematica : déplacer le SIP dans le dossier "Automation Tools" pour l'ingérer. Suivre les procédures d'ingestion et d'assurance qualité habituelles.
+Une fois l'acquisition ingérée dans Archivematica, supprimer toute copie supplémentaire des machines BitCurator, Digital Shipping Space, etc. et demander au Technicien/ à la Technicienne aux Archives Numérique de mettre à jour le conteneur des enregistrements d'acquisition à "Dark Archive".
