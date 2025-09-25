@@ -11,9 +11,11 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
 <a name="details"></a>
 ### Guides détaillés
 * **[L'acquisition et la stabilisation des archives nées numériques](guides/stabilisation.md)**
-   * [Transferts de réseau](guides/stabilisation.md#transferts)
-   * [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
-   * [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
+   * [Aperçu général](guides/stabilisation.md#aperçu)
+   * [Stabilisation](guides/stabilisation.md#stabilisation)
+     * [Transferts de réseau](guides/stabilisation.md#transferts)
+     * [Supports physiques temporaires](guides/stabilisation.md#supports-physiques-temporaires)
+     * [Supports physiques originaux](guides/stabilisation.md#supports-physiques-originaux)
    * [Ingestion des données "brutes" dans le système de préservation numérique](guides/stabilisation.md#integrer)
 
 * **[Création d'images disques à partir d'un support physique original](guides/Imagerie_de_disque.md)**
