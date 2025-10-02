@@ -33,7 +33,7 @@ Il s'agit du manuel de traitement du CCA pour les archives nées numériques. Il
    * [Extraction de fichiers à partir de paquets et d'images disques](guides/Pretraitement.md#paquets)
       - [Extraction de fichiers à partir d'images disques avec Bitcurator](guides/Pretraitement.md#extraction_bitcurator)
          + [Outil de création de rapports BitCurator - Accès aux fichiers](guides/Pretraitement.md#reporting)
-         + [Script de montage d'images disques](guides/Pretraitement.md#script)
+         + [Script de montage pour images disques](guides/Pretraitement.md#script)
       - [Extraction de fichiers à partir d'images disques avec FTK Imager](guides/Pretraitement.md#ftk)
       - [Extraction de fichiers HFS (Hierarchical File System) à partir d'images disques](guides/Pretraitement.md#hfs)
    * [Extraction des archives et rapport sur les fichiers logiques](guides/Pretraitement.md#fichiers_logiques)
