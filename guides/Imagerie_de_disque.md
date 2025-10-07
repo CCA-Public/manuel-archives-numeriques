@@ -59,16 +59,15 @@ Avant de commencer à créer des images disques à partir d'une acquisition, cr�
 
 <a name="ftkimager"></a>
 ### Création d'une image disque avec FTK Imager
-AccessData FTK Imager est un outil d'imagerie de disque gratuit mais propriétaire utilisé sur l'un de nos ordianteurs Windows et fait partie de la suite logicielle Forensics Toolkit. Au CCA, nous utilisons FTK Imager pour créer des images disques pour des supports ne pouvant être traitées par Guymager.
+AccessData FTK Imager est un outil d'imagerie de disque gratuit mais propriétaire utilisé sur l'un de nos ordianteurs Windows et fait partie de la suite logicielle Forensics Toolkit. Au CCA, nous utilisons FTK Imager pour créer des images disques pour les supports ne pouvant être traitées par Guymager.
 
-FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans laboratoire numérique du CCA. Avant de commencer la création d'images disques créez d'abord un dossier dans lequel vous allez enregistrer votre travail et donnez lui un nom significatif, par exemple un numéro d'acquisition ou d'identification.
+FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans laboratoire numérique du CCA. Avant de commencer la création d'images disques, créez d'abord un dossier dans lequel vous allez enregistrer votre travail et donnez lui un nom significatif, par exemple un numéro d'acquisition ou d'identification.
 
 #### Étapes :
 
 * Avant de créer une image disque, effectuez une analyse antivirus à l'aide du logiciel SentinelOne :
-   * Faite un clic droit sur le fichier ou sur le dossier que vous souhaitez analyser et sélectionnez l'option "Scan for threats" dans le menu déroulant.
-   * Si le logiciel ne trouve pas de virus informatique, procédez à l'étape suivante. Sinon, arrêtez-vous et assurez vous de notez le ou les virus trouvé(s) dans le fichier de travail "versement_stabilization", alertez ensuite l'Archiviste Numérique.
-     
+   * Faite un clic droit sur le fichier que vous souhaitez analyser et sélectionnez l'option "Scan for threats" dans le menu déroulant.
+   * Si le logiciel ne trouve pas de virus informatique, procédez à l'étape suivante. Sinon, arrêtez-vous et assurez vous de noter le ou les virus trouvé(s) dans le fichier de travail "versement_stabilization", alertez ensuite l'Archiviste Numérique.
 * Ouvrez le logiciel FTK Imager.
 * Dans le menu Fichier, sélectionnez "Create Disk Image...".
 ![FTK1](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture1-2.PNG)  
@@ -104,9 +103,9 @@ FTK Imager est installé sur le poste de travail (DSK-065-14) situé dans labora
 
 ![FTK6](https://github.com/CCA-Public/digital-archives-manual/blob/master/media/photos/ftk_capture6.PNG)
 
-* Une fenêtre de progression n'apparaîtra pas pour vous tenir informé de la progression de l'imagerie du disque. Si l'imagerie disque échoue ou semble être bloquée sur un grand nombre de secteurs défectueux, notez le dans le fichier Excel de stabilisation du versement et mettez le disque de côté pour que l'archiviste numérique puisse l'examiner.
-* Si l'image est créée avec succès, allez dans votre dossier de projet dans le dossier Dépôt numérique et faites une vérification visuelle rapide pour vous assurer que tout semble bon. Vous devriez voir au moins deux fichiers : la ou les images disque elles-mêmes (éventuellement divisées en plusieurs fichiers portant le même nom mais avec des extensions .001, .002, etc.), un fichier de métadonnées ".txt"., ainsi qu’un fichier de métadonnées ".txt". Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois tous les supports imagés, alertez l'archiviste numérique.
-* Note: Le processus d'imagerie de disque de l'imageur FTK est très persistant. Si le disque que vous voulez imager prend beaucoup de temps à traiter, il n'est pas nécessairement défectueux. L'imageur continuera d'essayer d'imager les secteurs du disque jusqu'à ce que ce soit fait. Il est toujours possible d'extraire une image utilisable d'un disque après 30 heures ou plus de tentatives, alors gardez cela à l'esprit.
+* Une fenêtre de progression apparaîtra pour vous tenir informé de la progression de l'imagerie du disque. Si l'imagerie du disque échoue ou semble s'être arrêté sur un grand nombre de secteurs défectueux, notez le dans le fichier Excel de stabilisation du versement et mettez le disque de côté pour que l'Archiviste Numérique puisse l'examiner.
+* Si l'image est créée avec succès, allez dans votre dossier de projet dans le dossier Dépôt numérique et faites une vérification visuelle rapide pour vous assurer que tout semble bon. Vous devriez voir au moins deux fichiers : la ou les images disque elles-mêmes (éventuellement divisées en plusieurs fichiers portant le même nom mais avec des extensions .001, .002, etc.), un fichier de métadonnées ".txt"., ainsi qu’un fichier de métadonnées ".txt". Si tout semble correct, répétez ce processus avec le disque suivant jusqu'à ce que tous les supports aient été imagés. Une fois tous les supports imagés, alertez l'Archiviste Numérique.
+* Note: Le processus d'imagerie de disque du logiciel FTK est très persistant. Si le disque que vous voulez copier prend beaucoup de temps à traiter, il n'est pas nécessairement défectueux. FTK continuera d'essayer de copier les secteurs du disque jusqu'à ce que ce soit fait. Il est toujours possible d'extraire une image utilisable d'un disque après 30 heures ou plus de tentatives, alors gardez cela à l'esprit.
 
 <a name="isobuster"></a>
 ### Création d'une image disque avec IsoBuster
